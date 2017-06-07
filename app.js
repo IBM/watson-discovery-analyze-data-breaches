@@ -44,7 +44,7 @@ const NewsDemoApp = new Promise((resolve) => {
   });
   // setup query endpoint for news
   app.post('/api/query', (req, res, next) => {
-    const params = Object.assign({}, queryBuilder.build(req.body), {
+    const params = Object.assign({}, queryBuilder.build(req.body, true), {
       environment_id: environment_id,
       collection_id: collection_id
     });
