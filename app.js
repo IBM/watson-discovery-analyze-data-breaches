@@ -21,8 +21,8 @@ const discovery = new DiscoveryV1({
   // If unspecified here, the DISCOVERY_USERNAME and
   // DISCOVERY_PASSWORD env properties will be checked
   // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
-  // username: '<username>',
-  // password: '<password>',
+  username: process.env.DISCOVERY_USERNAME,
+  password: process.env.DISCOVERY_PASSWORD,
   version_date: '2016-11-09',
   qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
 });
