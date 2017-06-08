@@ -1,19 +1,16 @@
 // Aggregations used to build the different parts of the UI
 const entities = [
+  'term(enriched_text.entities.text)',
 ];
 
 const sentiments = [
   'term(enriched_text.docSentiment.type)',
 ];
 
-const mentions = [
-];
-
 module.exports = {
-  aggregations: [].concat(entities, sentiments, mentions),
+  aggregations: [].concat(entities, sentiments),
   entities,
   sentiments,
-  mentions,
   build(query={}, full) {
     const params = {
       return: 'id,text,enriched_text',
@@ -22,7 +19,7 @@ module.exports = {
       params.query = `"${query.text}"`;
     }
     if (full) {
-      params.aggregations = [].concat(entities, sentiments, mentions);
+      params.aggregations = [].concat(entities, sentiments);
     }
     return params;
   },
