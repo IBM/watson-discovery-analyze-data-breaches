@@ -46,51 +46,18 @@ export default React.createClass({
               </button>
             </div>
             <p className="base--p top-entities--description">
-              Easily extract frequently mentioned entities - such as people, topics and companies with Pre-enriched News.
+              Enriched with entity extraction
             </p>
-            <Tabs selected={0}>
-              <Pane label="Topics">
-                {this.props.entities.topics.length > 0 ? (
-                  <Cloud data={this.props.entities.topics} />
-                  ) : (
-                    <NoContent
-                      query={this.props.query}
-                      message={'No Topics found.'}
-                    />
-                  )
-                }
+            {this.props.entities.results.length > 0 ? (
+              <Cloud data={this.props.entities.results} />
+            ) : (
+              <NoContent
+                query={this.props.query}
+                message={'No Topics found.'}
+              />
+            )
+            }
 
-              </Pane>
-              <Pane label="Companies">
-              {this.props.entities.companies.length > 0 ? (
-                <Cloud
-                  data={
-                    this.props.entities.companies ?
-                    this.props.entities.companies.filter((item) =>
-                      item.key.toLowerCase() !== this.props.query.text.toLowerCase()) :
-                    []
-                  }
-                />
-                ) : (
-                  <NoContent
-                    query={this.props.query}
-                    message={'No Companies found.'}
-                  />
-                )
-              }
-              </Pane>
-              <Pane label="People">
-              {this.props.entities.people.length > 0 ? (
-                <Cloud data={this.props.entities.people} />
-                ) : (
-                <NoContent
-                  query={this.props.query}
-                  message={'No People found.'}
-                />
-                )
-              }
-              </Pane>
-            </Tabs>
           </div>
         ) : (
           <QuerySyntax

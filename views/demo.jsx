@@ -17,16 +17,18 @@ const hasResults = (entities) =>
 const parseQueryResults = (data) => {
   const parsedData = {
     results: data.results, // Top Results
-    entities: {}, // Topic cloud
-    sentiments: null, // Sentiment by source
+    entities: null, // Top entities
     sentiment: null, // Overall sentiment
-    mentions: null, // Mentions and Sentiments
   };
 
   data.aggregations.forEach((aggregation) => {
     // Overall sentiment
     if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.docSentiment.type')) {
       parsedData.sentiment = aggregation;
+    }
+
+    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.entities.text')) {
+      parsedData.entities = aggregation;
     }
   });
 
@@ -101,7 +103,11 @@ export default React.createClass({
             <div className="_container _container_large">
               <div className="row">
                 <div className="results--panel-1">
-                  <span>TopEntities</span>
+                  <TopEntities
+                    query={this.state.query}
+                    entities={this.state.data.entities}
+                    onShowCode={this.toggleTopEntities}
+                  />
                 </div>
                 <div className="results--panel-2">
                   <span>TopStories</span>
