@@ -4,10 +4,7 @@ import { Icon } from 'watson-react-components';
 
 import Query from './Query/index.jsx';
 import TopEntities from './TopEntities/index.jsx';
-import TopStories from './TopStories/index.jsx';
-import SentimentAnalysis from './SentimentAnalysis/index.jsx';
 import GeneralSentiments from './GeneralSentiments/index.jsx';
-import MentionsAndSentiments from './MentionsAndSentiments/index.jsx';
 import NoResults from './NoResults/index.jsx';
 
 const hasResults = (entities) =>
@@ -37,7 +34,6 @@ const parseQueryResults = (data) => {
     }
   });
 
-  console.log('data:', parsedData)
   return parsedData;
 };
 
@@ -132,11 +128,6 @@ export default React.createClass({
                     query={this.state.query}
                     sentiment={this.state.data.sentiment}
                   />
-                </div>
-              </div>
-              <div className="row">
-                <div className="results--panel-4">
-                  <span>MentionsAndSentiments</span>
                 </div>
               </div>
             </div>
