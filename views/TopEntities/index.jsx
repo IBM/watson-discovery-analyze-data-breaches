@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import { Tabs, Pane } from 'watson-react-components';
 import Cloud from './cloud.jsx';
 import QuerySyntax from '../QuerySyntax/index.jsx';
 import queryBuilder from '../../query-builder.js';  // eslint-disable-line
@@ -9,6 +8,8 @@ export default React.createClass({
   displayName: 'TopEntities',
 
   propTypes: {
+    title: React.PropTypes.string,
+    description: React.PropTypes.string,
     entities: PropTypes.object.isRequired,
     query: React.PropTypes.shape({
       text: React.PropTypes.string,
@@ -36,7 +37,7 @@ export default React.createClass({
         {!this.state.showQuery ? (
           <div className="top-entities widget">
             <div className="widget--header">
-              <h2 className="base--h2 widget--header-title">Top Entities</h2>
+              <h2 className="base--h2 widget--header-title">{this.props.title}</h2>
               <div className="widget--header-spacer" />
               <button
                 className="base--button widget--header-button"
@@ -46,7 +47,7 @@ export default React.createClass({
               </button>
             </div>
             <p className="base--p top-entities--description">
-              Enriched with entity extraction
+              {this.props.description}
             </p>
             {this.props.entities.results.length > 0 ? (
               <Cloud data={this.props.entities.results} />

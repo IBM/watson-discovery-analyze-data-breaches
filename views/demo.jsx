@@ -18,6 +18,7 @@ const parseQueryResults = (data) => {
   const parsedData = {
     results: data.results, // Top Results
     entities: null, // Top entities
+    keywords: null, // Top keywords
     sentiment: null, // Overall sentiment
   };
 
@@ -29,6 +30,10 @@ const parseQueryResults = (data) => {
 
     if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.entities.text')) {
       parsedData.entities = aggregation;
+    }
+
+    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.keywords.text')) {
+      parsedData.keywords = aggregation;
     }
   });
 
@@ -107,10 +112,18 @@ export default React.createClass({
                     query={this.state.query}
                     entities={this.state.data.entities}
                     onShowCode={this.toggleTopEntities}
+                    title="Top Entities"
+                    description="Enriched with entity extraction"
                   />
                 </div>
                 <div className="results--panel-2">
-                  <span>TopStories</span>
+                  <TopEntities
+                    query={this.state.query}
+                    entities={this.state.data.keywords}
+                    onShowCode={this.toggleTopEntities}
+                    title="Top Keywords"
+                    description="Enriched with keyword extraction"
+                  />
                 </div>
               </div>
               <div className="row">
