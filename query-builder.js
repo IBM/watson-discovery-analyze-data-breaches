@@ -1,8 +1,5 @@
 // Aggregations used to build the different parts of the UI
 const entities = [
-  'filter(enriched_text.docSentiment.type:positive)',
-  'filter(enriched_text.docSentiment.type:neutral)',
-  'filter(enriched_text.docSentiment.type:negative)',
 ];
 
 const sentiments = [
