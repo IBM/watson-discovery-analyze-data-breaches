@@ -6,6 +6,7 @@ import Query from './Query/index.jsx';
 import TopEntities from './TopEntities/index.jsx';
 import TopStories from './TopStories/index.jsx';
 import SentimentAnalysis from './SentimentAnalysis/index.jsx';
+import GeneralSentiments from './GeneralSentiments/index.jsx';
 import MentionsAndSentiments from './MentionsAndSentiments/index.jsx';
 import NoResults from './NoResults/index.jsx';
 
@@ -23,39 +24,13 @@ const parseQueryResults = (data) => {
   };
 
   data.aggregations.forEach((aggregation) => {
-    // sentiments by source
-    if (aggregation.type === 'term' && aggregation.field.startsWith('blekko.basedomain')) {
-      parsedData.sentiments = aggregation;
-    }
     // Overall sentiment
-    if (aggregation.type === 'term' && aggregation.field.startsWith('docSentiment')) {
+    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.docSentiment.type')) {
       parsedData.sentiment = aggregation;
-    }
-
-    if (aggregation.type === 'term' && aggregation.field === 'enrichedTitle.concepts.text') {
-      parsedData.entities.topics = aggregation.results;
-    }
-
-    // Mentions and sentiments
-    if (aggregation.type === 'filter' &&
-      'aggregations' in aggregation &&
-      aggregation.aggregations[0].field === 'enrichedTitle.entities.text') {
-      parsedData.mentions = aggregation;
-    }
-
-    if (aggregation.type === 'nested' && aggregation.path === 'enrichedTitle.entities') {
-      const entities = aggregation.aggregations;
-      if (entities && entities.length > 0 && hasResults(entities[0])) {
-        if (entities[0].match === 'enrichedTitle.entities.type:Company') {
-          parsedData.entities.companies = entities[0].aggregations[0].results;
-        }
-        if (entities[0].match === 'enrichedTitle.entities.type:Person') {
-          parsedData.entities.people = entities[0].aggregations[0].results;
-        }
-      }
     }
   });
 
+  console.log('data:', parsedData)
   return parsedData;
 };
 
@@ -71,13 +46,17 @@ export default React.createClass({
     };
   },
 
+  componentDidMount() {
+    this.fetchNewData();
+  },
+
   handleQueryChange(query) {
     this.fetchNewData(query);
   },
   /**
    * Call the query API every time the query change.
    */
-  fetchNewData(query) {
+  fetchNewData(query={}) {
     this.setState({ query, loading: true });
     fetch('/api/query', {
       method: 'POST',
@@ -122,36 +101,23 @@ export default React.createClass({
             <div className="_container _container_large">
               <div className="row">
                 <div className="results--panel-1">
-                  <TopEntities
-                    query={this.state.query}
-                    entities={this.state.data.entities}
-                    onShowCode={this.toggleTopEntities}
-                  />
+                  <span>TopEntities</span>
                 </div>
                 <div className="results--panel-2">
-                  <TopStories
-                    query={this.state.query}
-                    stories={this.state.data.results}
-                    onShowCode={this.toggleTopResults}
-                    onSortChange={this.handleQueryChange}
-                  />
+                  <span>TopStories</span>
                 </div>
               </div>
               <div className="row">
                 <div className="results--panel-3">
-                  <SentimentAnalysis
+                  <GeneralSentiments
                     query={this.state.query}
                     sentiment={this.state.data.sentiment}
-                    sentiments={this.state.data.sentiments}
                   />
                 </div>
               </div>
               <div className="row">
                 <div className="results--panel-4">
-                  <MentionsAndSentiments
-                    query={this.state.query}
-                    mentions={this.state.data.mentions}
-                  />
+                  <span>MentionsAndSentiments</span>
                 </div>
               </div>
             </div>
