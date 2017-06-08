@@ -17,11 +17,13 @@ module.exports = {
   entities,
   sentiments,
   mentions,
-  build(query, full) {
+  build(query={}, full) {
     const params = {
       return: 'id,text,enriched_text',
-      query: `"${query.text}"`,
     };
+    if (query.text && query.text.length) {
+      params.query = `"${query.text}"`;
+    }
     if (full) {
       params.aggregations = [].concat(entities, sentiments, mentions);
     }
