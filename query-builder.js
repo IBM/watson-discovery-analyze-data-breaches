@@ -19,8 +19,8 @@ module.exports = {
   build(query={}, full) {
     let filters = [];
     const params = {
-      count: 300,
-      return: 'id,title,text,enriched_text,method_of_leak',
+      count: 255,
+      return: 'id,title,text,enriched_text.entities,method_of_leak',
     };
     if (query.text && query.text.length) {
       params.query = `"${query.text}"`;

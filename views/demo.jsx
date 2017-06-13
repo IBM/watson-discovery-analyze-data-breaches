@@ -6,6 +6,7 @@ import HackTypes from './HackTypes/index.jsx';
 import TopEntities from './TopEntities/index.jsx';
 import GeneralSentiments from './GeneralSentiments/index.jsx';
 import NoResults from './NoResults/index.jsx';
+import ResultsList from './ResultsList/index.jsx';
 
 const hasResults = (entities) =>
   entities.aggregations && entities.aggregations.length > 0 &&
@@ -123,8 +124,11 @@ export default React.createClass({
           </div>
         ) : null }
         { !this.state.loading && this.state.data && this.state.data.results.length === 0 ?
-          <NoResults query={this.state.query} />
-        : null }
+          <NoResults query={this.state.query} /> :
+          null }
+          { this.state.data && this.state.data.results.length ?
+              <ResultsList query={this.state.query} items={this.state.data.results} /> :
+              null}
       </div>
     );
   },
