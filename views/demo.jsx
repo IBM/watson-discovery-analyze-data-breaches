@@ -113,17 +113,6 @@ export default React.createClass({
                   />
                 </div>
                 <div className="results--panel-2">
-                  <TopEntities
-                    query={this.state.query}
-                    entities={this.state.data.keywords}
-                    onShowCode={this.toggleTopEntities}
-                    title="Top Keywords"
-                    description="Enriched with keyword extraction"
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div className="results--panel-3">
                   <GeneralSentiments
                     query={this.state.query}
                     sentiment={this.state.data.sentiment}
