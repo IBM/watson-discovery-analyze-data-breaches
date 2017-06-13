@@ -18,7 +18,7 @@ module.exports = {
   sentiments,
   build(query={}, full) {
     const params = {
-      return: 'id,text,enriched_text',
+      return: 'id,title,text,enriched_text',
     };
     if (query.text && query.text.length) {
       params.query = `"${query.text}"`;
