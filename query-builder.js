@@ -17,8 +17,10 @@ module.exports = {
   keywords,
   sentiments,
   build(query={}, full) {
+    let filters = [];
     const params = {
-      return: 'id,title,text,enriched_text',
+      count: 300,
+      return: 'id,title,text,enriched_text,method_of_leak',
     };
     if (query.text && query.text.length) {
       params.query = `"${query.text}"`;
@@ -26,6 +28,15 @@ module.exports = {
     if (full) {
       params.aggregations = [].concat(entities, keywords, sentiments);
     }
+
+    if (query.hackType && query.hackType !== 'all') {
+      filters.push(`method_of_leak:"${query.hackType}"`);
+    }
+
+    if (filters.length) {
+      params.filter = filters.join(',');
+    }
+
     return params;
   },
 };

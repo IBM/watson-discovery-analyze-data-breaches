@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 import React from 'react';
 import { Icon } from 'watson-react-components';
 
-import Query from './Query/index.jsx';
+import HackTypes from './HackTypes/index.jsx';
 import TopEntities from './TopEntities/index.jsx';
 import GeneralSentiments from './GeneralSentiments/index.jsx';
 import NoResults from './NoResults/index.jsx';
@@ -91,7 +91,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <Query onQueryChange={this.handleQueryChange} query={this.state.query} />
+        <HackTypes onQueryChange={this.handleQueryChange} query={this.state.query} />
         { this.state.loading ?
           (
             <div className="results">
