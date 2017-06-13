@@ -33,6 +33,12 @@ module.exports = {
       filters.push(`method_of_leak:"${query.hackType}"`);
     }
 
+    if (query.entityTypes) {
+      query.entityTypes.forEach((entity) => {
+        filters.push(`enriched_text.entities.text:"${entity}"`);
+      });
+    }
+
     if (filters.length) {
       params.filter = filters.join(',');
     }
