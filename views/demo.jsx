@@ -126,7 +126,7 @@ export default React.createClass({
         { !this.state.loading && this.state.data && this.state.data.results.length === 0 ?
           <NoResults query={this.state.query} /> :
           null }
-          { this.state.data && this.state.data.results.length ?
+          { !this.state.loading && this.state.data && this.state.data.results.length ?
               <ResultsList query={this.state.query} items={this.state.data.results} /> :
               null}
       </div>
