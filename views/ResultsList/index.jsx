@@ -46,7 +46,10 @@ export default React.createClass({
               </button>
             </div>
 
-            <div>{this.props.items.length} result(s)</div>
+            <div>
+              {this.props.items.length}
+              {this.props.items.length === 1 ? ' result' : ' results'}
+            </div>
           </div>
         ) : (
           <QuerySyntax
