@@ -120,15 +120,18 @@ export default React.createClass({
                   />
                 </div>
               </div>
+
+              <div className="row">
+                <div className="results--panel-3">
+                  <ResultsList query={this.state.query} items={this.state.data.results} />
+                </div>
+              </div>
             </div>
           </div>
         ) : null }
         { !this.state.loading && this.state.data && this.state.data.results.length === 0 ?
           <NoResults query={this.state.query} /> :
           null }
-          { !this.state.loading && this.state.data && this.state.data.results.length ?
-              <ResultsList query={this.state.query} items={this.state.data.results} /> :
-              null}
       </div>
     );
   },
