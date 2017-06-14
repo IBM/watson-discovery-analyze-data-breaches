@@ -8,9 +8,17 @@ export default React.createClass({
 
   render() {
     return (
-      <li>
-        {this.props.item.title}
-      </li>
+      <div className="widget--detail">
+        <h3>{this.props.item.title}</h3>
+        <div className="widget--text">
+          <p>
+            {this.props.item.text}
+          </p>
+        </div>
+        <div className="widget--entities">
+          Extracted Entities
+        </div>
+      </div>
     );
   }
 });

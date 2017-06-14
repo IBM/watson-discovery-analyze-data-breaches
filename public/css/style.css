@@ -1874,3 +1874,34 @@ input:focus, button:focus, textarea:focus {
     width: 100%;
   }
 }
+
+.widget--detail {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 16px;
+}
+
+.widget--detail:last-of-type {
+  border-bottom-style: none;
+}
+
+.widget--text {
+  width: 60%;
+  float: left;
+  padding-right: 32px;
+}
+
+.widget--entities {
+  width: 30%;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  .widget--text {
+    width: 100%;
+    padding-right: 0;
+  }
+  .widget--entities {
+    width: 100%;
+    float: left;
+  }
+}

@@ -48,11 +48,11 @@ export default React.createClass({
               {this.props.items.length === 1 ? ' result' : ' results'}
             </div>
 
-            <ul>
+            <div className="widget--list">
               {this.props.items.map((item) =>
                 <Detail key={item.id} item={item} />
               )}
-            </ul>
+            </div>
           </div>
         ) : (
           <QuerySyntax
