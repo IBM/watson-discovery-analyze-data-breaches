@@ -1,5 +1,4 @@
 import React from 'react';
-import { RadioGroup, Radio } from 'watson-react-components';
 
 export default React.createClass({
   displayName: 'HackTypes',
@@ -15,7 +14,8 @@ export default React.createClass({
     return {selectedValue: 'all'};
   },
 
-  handleChange(value) {
+  handleChange(event) {
+    let value = event.target.value;
     this.setState({selectedValue: value});
     this.props.onQueryChange({
       hackType: value
@@ -26,22 +26,21 @@ export default React.createClass({
     return (
       <div>
         <h2>HackTypes</h2>
-        <RadioGroup tabStyle={true}
-                    name="type-of-leak"
-                    selectedValue={this.state.selectedValue}
-                    onChange={this.handleChange}>
-          <Radio value="all">All</Radio>
-          <Radio value="hacked">Hacked</Radio>
-          <Radio value="accidentally published">Accidentally published</Radio>
-          <Radio value="vulnerability">Vulnerability</Radio>
-          <Radio value="leak">Leak</Radio>
-          <Radio value="poor security">Poor security</Radio>
-          <Radio value="configuration error">Configuration error</Radio>
-          <Radio value="inside job">Inside job</Radio>
-          <Radio value="lost / stolen computer">Lost / stolen computer</Radio>
-          <Radio value="lost / stolen media">Lost / stolen media</Radio>
-          <Radio value="inside job, hacked">Inside job, hacked</Radio>
-        </RadioGroup>
+        <select
+          onChange={this.handleChange}
+          value={this.state.selectedValue}>
+          <option value="all">All</option>
+          <option value="hacked">Hacked</option>
+          <option value="accidentally published">Accidentally published</option>
+          <option value="vulnerability">Vulnerability</option>
+          <option value="leak">Leak</option>
+          <option value="poor security">Poor security</option>
+          <option value="configuration error">Configuration error</option>
+          <option value="inside job">Inside job</option>
+          <option value="lost / stolen computer">Lost / stolen computer</option>
+          <option value="lost / stolen media">Lost / stolen media</option>
+          <option value="inside job, hacked">Inside job, hacked</option>
+        </select>
       </div>
     );
   }
