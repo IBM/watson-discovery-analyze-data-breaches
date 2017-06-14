@@ -1,5 +1,6 @@
 import React from 'react';
 import QuerySyntax from '../QuerySyntax/index.jsx';
+import Detail from './Detail.jsx';
 import queryBuilder from '../../query-builder.js';  // eslint-disable-line
 
 export default React.createClass({
@@ -26,10 +27,6 @@ export default React.createClass({
     this.setState({ showQuery: false });
   },
 
-  response(results) {
-    return {results};
-  },
-
   render() {
     return (
       <div>
@@ -50,6 +47,12 @@ export default React.createClass({
               {this.props.items.length}
               {this.props.items.length === 1 ? ' result' : ' results'}
             </div>
+
+            <ul>
+              {this.props.items.map((item) =>
+                <Detail key={item.id} item={item} />
+              )}
+            </ul>
           </div>
         ) : (
           <QuerySyntax
