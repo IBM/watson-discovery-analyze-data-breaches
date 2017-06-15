@@ -2,17 +2,18 @@ import React from 'react';
 import { Header, Jumbotron, Footer } from 'watson-react-components';
 
 // eslint-disable-next-line
-const DESCRIPTION = 'Add a cognitive search and content analytics engine to applications to identify patterns, trends and actionable insights that drive better decision-making.';
+const DESCRIPTION = 'Learn more about which companies have been affected by which cyber breaches';
+const TITLE = 'Cognitive Security';
 
 function Layout(props) {
   return (
     <html lang="en">
       <head>
-        <title>Discovery Demo</title>
+        <title>{TITLE}</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="og:title" content="Discovery Demo" />
+        <meta name="og:title" content={TITLE} />
         <meta name="og:description" content={DESCRIPTION} />
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
         <link rel="stylesheet" href="/css/watson-react-components.min.css" />
@@ -21,7 +22,7 @@ function Layout(props) {
         <script type="text/javascript">{`
           window._analytics = { coremetrics: false, optimizely: false, addRoll: false };
         `}</script>
-        <meta name="segment" property="watson-demos" value="discovery-news-demo" />
+        <meta name="segment" property="watson-demos" value="watson-cognitive-security" />
         <script src={props.bluemixAnalytics} />
         {/* Bluemix Analytics  - end*/}
       </head>
@@ -29,12 +30,12 @@ function Layout(props) {
         <Header
           mainBreadcrumbs="Discovery"
           mainBreadcrumbsUrl="http://www.ibm.com/watson/developercloud/discovery.html"
-          subBreadcrumbs="Discovery Demo"
-          subBreadcrumbsUrl="https://discovery-news-demo.mybluemix.net"
+          subBreadcrumbs={TITLE}
+          subBreadcrumbsUrl="https://watson-cognitive-security-papercutting-subtenancy.mybluemix.net/"
         />
         <Jumbotron
-          serviceName="Discovery"
-          repository="https://github.com/watson-developer-cloud/discovery-nodejs"
+          serviceName={TITLE}
+          repository="https://github.com/nelstrom/discovery-nodejs"
           documentation="http://www.ibm.com/watson/developercloud/doc/discovery/index.html"
           apiReference="http://www.ibm.com/watson/developercloud/discovery/api"
           startInBluemix="https://console.ng.bluemix.net/registration/?target=/catalog/services/discovery/"
