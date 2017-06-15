@@ -33,7 +33,10 @@ export default React.createClass({
         {!this.state.showQuery ? (
           <div className="results-list widget">
             <div className="widget--header">
-              <h2 className="base--h2 widget--header-title">Results</h2>
+              <h2 className="base--h2 widget--header-title">
+                {this.props.items.length}
+                {this.props.items.length === 1 ? ' result' : ' results'}
+              </h2>
               <div className="widget--header-spacer" />
               <button
                 className="base--button widget--header-button"
@@ -41,11 +44,6 @@ export default React.createClass({
               >
                 View Query
               </button>
-            </div>
-
-            <div>
-              {this.props.items.length}
-              {this.props.items.length === 1 ? ' result' : ' results'}
             </div>
 
             <div className="widget--list">
