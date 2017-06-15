@@ -1,5 +1,5 @@
 import React from 'react';
-import SentimentChart from '../SentimentAnalysis/SentimentChart.jsx';
+import SentimentChart from './SentimentChart.jsx';
 import QuerySyntax from '../QuerySyntax/index.jsx';
 import queryBuilder from '../../query-builder.js';  // eslint-disable-line
 
