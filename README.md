@@ -57,13 +57,13 @@ Create the following services:
 
 ### 4. Configure Watson Discovery
 
-### 5. Configure the data collection
+![Upload data to collection](readme-images/getting-credentials.gif)
 
-### 6. Upload data to the collection
+### 5. Upload data to the collection
 
 ![Upload data to collection](readme-images/upload-data.gif)
 
-### 7. Setup environment variables
+### 6. Setup environment variables
 
 Create a `.env` file, using the `.env.example` file provided as a template:
 
@@ -87,7 +87,7 @@ After you've done that, load these variables into your shell's environment by ru
 $ export `cat .env`
 ```
 
-### 8. Run the app locally
+### 7. Run the app locally
 
 Start the app by running:
 
@@ -95,7 +95,9 @@ Start the app by running:
 $ npm install
 ```
 
-### 9. Deploy the app
+You can stop the app running by pressing `ctrl-c`.
+
+### 8. Deploy the app
 
 To deploy to Bluemix make sure you have cloud foundry CLI tool installed. Then run the following commands to connect it with Bluemix and login with your Bluemix credentials.
 
