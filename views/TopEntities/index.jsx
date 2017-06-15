@@ -12,8 +12,7 @@ export default React.createClass({
     description: React.PropTypes.string,
     entities: PropTypes.object.isRequired,
     query: React.PropTypes.shape({
-      text: React.PropTypes.string,
-      date: React.PropTypes.object,
+      hackType: React.PropTypes.string,
     }),
   },
 

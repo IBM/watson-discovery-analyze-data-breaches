@@ -9,8 +9,7 @@ export default React.createClass({
   propTypes: {
     sentiment: React.PropTypes.object.isRequired,
     query: React.PropTypes.shape({
-      text: React.PropTypes.string,
-      date: React.PropTypes.object,
+      hackType: React.PropTypes.string,
     }),
   },
 

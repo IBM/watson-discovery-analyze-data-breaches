@@ -8,8 +8,7 @@ export default React.createClass({
   propTypes: {
     items: React.PropTypes.array,
     query: React.PropTypes.shape({
-      text: React.PropTypes.string,
-      date: React.PropTypes.object,
+      hackType: React.PropTypes.string,
     }),
   },
 
