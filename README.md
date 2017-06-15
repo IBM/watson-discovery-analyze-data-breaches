@@ -61,6 +61,8 @@ Create the following services:
 
 ### 6. Upload data to the collection
 
+![Upload data to collection](readme-images/upload-data.gif)
+
 ### 7. Setup environment variables
 
 Create a `.env` file, using the `.env.example` file provided as a template:
