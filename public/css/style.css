@@ -1895,6 +1895,16 @@ input:focus, button:focus, textarea:focus {
   float: left;
 }
 
+.widget--source-details table {
+  border-bottom-style: none;
+}
+.widget--source-details th {
+  text-align: left;
+}
+.widget--source-details td {
+  padding: 0.2em 0em;
+}
+
 @media (max-width: 600px) {
   .widget--original-data {
     width: 100%;

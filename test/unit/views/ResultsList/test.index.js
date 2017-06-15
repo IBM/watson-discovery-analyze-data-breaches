@@ -50,7 +50,7 @@ describe('<Detail />', () => {
     'no_of_records_stolen': 1700000,
     'data_sensitivity': 1,
     'source_link': 'http://www.bgr.in/news/indian-hacker-group-leaks-data-of-1-7-million-snapchat-users-after-ceos-poor-country-comments-report/',
-    'source_name': '',
+    'source_name': 'BGR',
     'enriched_text': {
       'entities': [{
         'count': 1,
@@ -109,6 +109,9 @@ describe('<Detail />', () => {
   it('Renders data fields', () => {
     let wrapper = shallow(<Detail item={snapchat} />);
     assert.equal(wrapper.find('h3').text(), 'Snapchat');
-    assert.equal(wrapper.find('.widget--source-link a').prop('href'), 'http://www.bgr.in/news/indian-hacker-group-leaks-data-of-1-7-million-snapchat-users-after-ceos-poor-country-comments-report/');
+    assert.equal(wrapper.find('.widget--source a').prop('href'), 'http://www.bgr.in/news/indian-hacker-group-leaks-data-of-1-7-million-snapchat-users-after-ceos-poor-country-comments-report/');
+    assert.equal(wrapper.find('.widget--type td').text(), 'hacked');
+    assert.equal(wrapper.find('.widget--quantity td').text(), '1,700,000');
+    assert.equal(wrapper.find('.widget--year td').text(), '2017');
   });
 });
