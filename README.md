@@ -1,5 +1,6 @@
 # Discovery Demo [![Build Status](https://travis-ci.org/nelstrom/discovery-nodejs.svg?branch=byod)](https://travis-ci.org/nelstrom/discovery-nodejs)
 
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/nelstrom/discovery-nodejs&branch=byod)
 
 Use the IBM Watson [Discovery][service_url] service to add a cognitive search and content analytics engine to your applications to identify patterns, trends and actionable insights that drive better decision-making.
 
