@@ -2,9 +2,9 @@
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/nelstrom/discovery-nodejs&branch=byod)
 
-Use the IBM Watson [Discovery][service_url] service to add a cognitive search and content analytics engine to your applications to identify patterns, trends and actionable insights that drive better decision-making.
+In this developer journey you will upload your own data into the Watson Discovery Service. Then you'll configure a web application so that it can query the data collection you created. The web app allows you to explore that data.
 
-![Demo](readme-images/new-demo.gif)
+![Demo](readme-images/basic-demo.gif)
 
 Demo: https://discovery-news-demo.mybluemix.net/
 
