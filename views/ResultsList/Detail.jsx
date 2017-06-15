@@ -15,10 +15,13 @@ export default React.createClass({
     return (
       <div className="widget--detail">
         <h3>{this.props.item.title}</h3>
-        <div className="widget--text">
+        <div className="widget--original-data">
           <p>{text}</p>
+          <div className="widget--source-link">
+            <a href={this.props.item.source_link} target="_blank">Source</a>
+          </div>
         </div>
-        <div className="widget--entities">
+        <div className="widget--enriched-data">
           {entities.map((entity) =>
             <div>{entity.text} ({entity.type})</div>
           )}

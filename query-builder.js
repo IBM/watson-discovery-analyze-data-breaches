@@ -20,7 +20,7 @@ module.exports = {
     let filters = [];
     const params = {
       count: 255,
-      return: 'id,title,text,enriched_text.entities,method_of_leak',
+      return: 'id,title,text,enriched_text.entities,method_of_leak,source_link',
     };
     if (query.text && query.text.length) {
       params.query = `"${query.text}"`;

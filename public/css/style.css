@@ -1884,23 +1884,23 @@ input:focus, button:focus, textarea:focus {
   border-bottom-style: none;
 }
 
-.widget--text {
+.widget--original-data {
   width: 60%;
   float: left;
   padding-right: 32px;
 }
 
-.widget--entities {
+.widget--enriched-data {
   width: 30%;
   float: left;
 }
 
 @media (max-width: 600px) {
-  .widget--text {
+  .widget--original-data {
     width: 100%;
     padding-right: 0;
   }
-  .widget--entities {
+  .widget--enriched-data {
     width: 100%;
     float: left;
   }
