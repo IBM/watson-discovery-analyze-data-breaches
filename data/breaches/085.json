@@ -1,0 +1,12 @@
+{
+  "title": "Drupal",
+  "alternative_name": "open-source content management platform",
+  "text": "Malicious files placed on association.drupal.org servers via a 3rd-party application. Exposed usernames, e-mail addresses, country information, and cryptographically hashed passwords.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1000000,
+  "data_sensitivity": 1,
+  "source_link": "http://arstechnica.com/security/2013/05/drupal-org-resets-login-credentials-after-hack-exposes-password-data/",
+  "source_name": "Ars Technica"
+}

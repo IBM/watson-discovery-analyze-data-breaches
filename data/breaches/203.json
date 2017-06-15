@@ -1,0 +1,12 @@
+{
+  "title": "TK / TJ Maxx",
+  "alternative_name": "Largest retail breach to date",
+  "text": "Hackers hacked a Minnesota store wifi network and stole data from credit and debit cards of shoppers at off-price retailers TJX, owners of nearly 2,500 stores, including T.J. Maxx and Marshalls. This case is believed to be the largest such breach of consumer information.",
+  "year": "2007",
+  "organisation": "retail",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 94000000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.zdnet.com/wi-fi-hack-caused-tk-maxx-security-breach-3039286991/",
+  "source_name": "ZD Net"
+}

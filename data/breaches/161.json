@@ -1,0 +1,12 @@
+{
+  "title": "South Shore Hospital, Massachusetts",
+  "alternative_name": "",
+  "text": "South Shore Hospital hired a contractor to destroy files no longer in use and lost the shipment. The back-up computer files possibly contained names, addresses, phone numbers, dates of birth, Social Security numbers, driver’s license numbers, medical record numbers, patient numbers, health plan information, protected health information including diagnoses and treatments. As well as bank account and credit card numbers for some. Patients, employees, physicians, volunteers, donors, vendors and other business partners were effected.",
+  "year": "2010",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 800000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

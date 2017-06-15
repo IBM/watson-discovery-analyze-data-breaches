@@ -1,0 +1,12 @@
+{
+  "title": "VK",
+  "alternative_name": "Russia's Facebook",
+  "text": "Over 100m user accounts were hacked and the data put up for sale online. A VK spokesperson has denied that the site was breached, claiming the data for sale is old details no longer in use.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 100544934,
+  "data_sensitivity": 4000,
+  "source_link": "http://motherboard.vice.com/read/another-day-another-hack-100-million-accounts-for-vk-russias-facebook",
+  "source_name": "Motherboard"
+}

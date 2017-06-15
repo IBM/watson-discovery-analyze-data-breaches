@@ -1,0 +1,12 @@
+{
+  "title": "Telegram",
+  "alternative_name": "Instant messaging service",
+  "text": "Despite Telegram's claims of super security, they've been hacked by a group called Rocket Kitten.",
+  "year": "2017",
+  "organisation": "tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 15000000,
+  "data_sensitivity": 1,
+  "source_link": "http://venturebeat.com/2016/08/02/hackers-break-into-telegram-revealing-15-million-users-phone-numbers/",
+  "source_name": "VentureBeat"
+}

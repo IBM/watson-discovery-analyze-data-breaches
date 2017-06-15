@@ -1,0 +1,12 @@
+{
+  "title": "Sony Pictures",
+  "alternative_name": "",
+  "text": "LulzSec hacking collective stated all of the information it took was unencrypted, “Sony stored over 1,000,000 passwords of its customers in plaintext.\" More than 1 million user accounts were compromised. An additional 75,000 music codes and 3.5 million coupons were also uncovered.",
+  "year": "2011",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1000000,
+  "data_sensitivity": 1,
+  "source_link": "http://mashable.com/2011/06/02/sony-pictures-hacked/",
+  "source_name": "Mashable"
+}

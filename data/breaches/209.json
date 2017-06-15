@@ -1,0 +1,12 @@
+{
+  "title": "Ameritrade Inc.",
+  "alternative_name": "Computer backup tape containing personal information was lost.",
+  "text": "online broker",
+  "year": "2005",
+  "organisation": "financial",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 200000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.nbcnews.com/id/7561268/",
+  "source_name": "NBC"
+}

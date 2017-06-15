@@ -1,0 +1,12 @@
+{
+  "title": "New York State Electric & Gas",
+  "alternative_name": "",
+  "text": "An employee from a software consulting firm was allowed unauthorized access to the company’s databases.",
+  "year": "2012",
+  "organisation": "energy",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 1800000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

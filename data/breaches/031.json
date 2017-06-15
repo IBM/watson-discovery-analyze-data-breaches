@@ -1,0 +1,12 @@
+{
+  "title": "Minecraft",
+  "alternative_name": "Lifeboat' community",
+  "text": "Players using the Lifeboat servers have had their email addresses and passwords leaked.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 7000000,
+  "data_sensitivity": 1,
+  "source_link": "http://motherboard.vice.com/read/another-day-another-hack-7-million-emails-and-hashed-passwords-for-minecraft",
+  "source_name": "Motherboard"
+}

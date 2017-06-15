@@ -1,0 +1,12 @@
+{
+  "title": "Evernote",
+  "alternative_name": "online note-taking site",
+  "text": "Evernote asked its 50 million users to reset their passwords following an attempt to hack the note-taking network. The company said it’d found no evidence that any payment information for Evernote Premium or Evernote Business customers had been accessed, nor was there any indication that content stored by users had been accessed, changed or lost.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 50000000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.wired.co.uk/news/archive/2013-03/04/evernote-hacked",
+  "source_name": "Wired"
+}

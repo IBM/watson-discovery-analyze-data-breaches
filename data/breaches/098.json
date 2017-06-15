@@ -1,0 +1,12 @@
+{
+  "title": "Tumblr",
+  "alternative_name": "",
+  "text": "Tumblr apparently only just found out about a 2013 data breach, affecting 65m users.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 65000000,
+  "data_sensitivity": 1,
+  "source_link": "https://motherboard.vice.com/read/hackers-stole-68-million-passwords-from-tumblr-new-analysis-reveals",
+  "source_name": "Motherboard"
+}

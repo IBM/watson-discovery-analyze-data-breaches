@@ -1,0 +1,12 @@
+{
+  "title": "NHS",
+  "alternative_name": "UK's national health service, govt funded",
+  "text": "A laptop holding the unencrypted records of eight million patients went missing from an NHS store room and wasn't reported until 3 weeks later.",
+  "year": "2011",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 8300000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.techweekeurope.co.uk/news/nhs-researchers-lose-laptop-with-8m-patients-records-31810",
+  "source_name": "Tech Week"
+}

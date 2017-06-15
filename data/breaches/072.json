@@ -1,0 +1,12 @@
+{
+  "title": "Yahoo",
+  "alternative_name": "",
+  "text": "Happened in 2014, but no. records stolen was originally thought to be much smaller. Yahoo recently revealed the real numbers.",
+  "year": "2014",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 500000000,
+  "data_sensitivity": 20,
+  "source_link": "http://uk.businessinsider.com/yahoo-hack-by-state-sponsored-actor-biggest-of-all-time-2016-9?r=US&IR=T",
+  "source_name": "Business Insider"
+}

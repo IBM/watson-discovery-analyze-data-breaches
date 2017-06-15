@@ -1,0 +1,12 @@
+{
+  "title": "Stanford University",
+  "alternative_name": "",
+  "text": "Tens of thousands of past and current Stanford University employees had personal information - including their dates of birth, Social Security numbers and home addresses - stored on the hard drive of a stolen university laptop.",
+  "year": "2008",
+  "organisation": "academic",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 72000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

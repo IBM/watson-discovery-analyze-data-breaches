@@ -1,0 +1,12 @@
+{
+  "title": "Blizzard",
+  "alternative_name": "Activision, Battle.net",
+  "text": "Scrambled passwords, e-mail addresses, and personal security answers were knowingly stolen from Blizzard's internal network. Blizzard would not elaborate on the size of the hack (\"millions\").",
+  "year": "2012",
+  "organisation": "gaming",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 14000000,
+  "data_sensitivity": 20,
+  "source_link": "https://us.battle.net/support/en/article/important-security-update-faq#5",
+  "source_name": "Blizzard"
+}

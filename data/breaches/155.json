@@ -1,0 +1,12 @@
+{
+  "title": "Seacoast Radiology, PA",
+  "alternative_name": "",
+  "text": "Computer gamers hacked a server at Seacoast Radiology in Rochester in search of more bandwidth in November to play Call of Duty: Black Ops. In the process they also gained access to personal records of the more than 230,000 patients of the health center.",
+  "year": "2010",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 200000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.fosters.com/apps/pbcs.dll/article?AID=/20110120/GJNEWS_01/701209744",
+  "source_name": null
+}

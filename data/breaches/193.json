@@ -1,0 +1,12 @@
+{
+  "title": "Texas Lottery",
+  "alternative_name": "",
+  "text": "Data on more than 89,000 lottery winners (including names, Social Security numbers, addresses and prize amounts )were taken from the agency without permission by a former computer analyst who copied the password-free data. The employee added he wanted the information \"for possible future reference as a programmer at other state agencies.\"",
+  "year": "2007",
+  "organisation": "government",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 90000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

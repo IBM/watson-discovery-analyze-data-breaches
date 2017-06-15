@@ -1,0 +1,12 @@
+{
+  "title": "RockYou!",
+  "alternative_name": "Developer of online games (Zoo World/Zoo World 2) and advertising products",
+  "text": "The site did not allow users to use special characters or punctuation in their passwords and e-mailed user passwords in plain text. Hackers took advantage of these security lapses, using simple techniques to gain access to 32 million user accounts.",
+  "year": "2009",
+  "organisation": "web, gaming",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 32000000,
+  "data_sensitivity": 1,
+  "source_link": "http://techcrunch.com/2009/12/14/rockyou-hack-security-myspace-facebook-passwords/",
+  "source_name": "Tech Crunch"
+}

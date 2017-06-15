@@ -1,0 +1,12 @@
+{
+  "title": "City and Hackney Teaching Primary Care Trust",
+  "alternative_name": "",
+  "text": "Heavily encrypted disks containing details of children are lost by couriers.",
+  "year": "2007",
+  "organisation": "government",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 160000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.computerweekly.com/news/2240104003/Hackney-NHS-trust-encrypts-IT-equipment-following-loss-of-child-data",
+  "source_name": "Computer Weekly"
+}

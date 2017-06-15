@@ -1,0 +1,12 @@
+{
+  "title": "Ankle & foot Center of Tampa Bay, Inc.",
+  "alternative_name": "",
+  "text": "The information hacked included information such as patient names, social security numbers, date of birth, home addressees, account numbers, and healthcare services and related diagnostic codes.",
+  "year": "2010",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 160000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.phiprivacy.net/?p=5743",
+  "source_name": "PhiPrivacy"
+}

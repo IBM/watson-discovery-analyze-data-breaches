@@ -1,0 +1,12 @@
+{
+  "title": "Massachusetts Government",
+  "alternative_name": "Massachusetts Executive Office of Labor and Workforce",
+  "text": "Over 1,500 departmental computers were infected with the W32.QAKBOT virus, a malicious program which “downloads additional files, steals information, and opens a back door on the compromised computer”.",
+  "year": "2011",
+  "organisation": "government",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 200000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

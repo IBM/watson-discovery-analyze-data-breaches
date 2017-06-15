@@ -1,0 +1,12 @@
+{
+  "title": "Last.fm",
+  "alternative_name": "Owned by CBS",
+  "text": "Historical 2012 hack, details have only just been disclosed.",
+  "year": "2012",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 43500000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.zdnet.com/article/hackers-stole-43-million-last-fm-account-details-in-2012-breach/",
+  "source_name": "ZDNet"
+}

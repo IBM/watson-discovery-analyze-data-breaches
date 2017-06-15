@@ -1,0 +1,12 @@
+{
+  "title": "Hewlett Packard",
+  "alternative_name": "",
+  "text": "Laptop lost/stolen containing employee data: names, addresses, Social Security numbers, dates of birth and other employment-related information.",
+  "year": "2006",
+  "organisation": "tech, retail",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 200000,
+  "data_sensitivity": 20,
+  "source_link": "http://news.cnet.com/Laptop-with-HP-employee-data-stolen/2100-7348_3-6052964.html",
+  "source_name": "CNET"
+}

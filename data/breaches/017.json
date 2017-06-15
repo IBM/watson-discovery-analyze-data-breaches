@@ -1,0 +1,12 @@
+{
+  "title": "Weebly",
+  "alternative_name": "",
+  "text": "Feb. Usernames, passwords and IP addresses stolen, although passwords secured with bcrypt.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 43000000,
+  "data_sensitivity": 4000,
+  "source_link": "https://techcrunch.com/2016/10/20/weebly-hacked-43-million-credentials-stolen/",
+  "source_name": "TechCrunch"
+}

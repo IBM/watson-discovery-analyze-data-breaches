@@ -1,0 +1,12 @@
+{
+  "title": "Florida Department of Juvenile Justice",
+  "alternative_name": "",
+  "text": "Three computers were stolen that contained both youth and employee records was reported stolen on January 2, 2013.  Over 100,000 records were on the device and may have been exposed.",
+  "year": "2013",
+  "organisation": "government",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 100000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.privacyrights.org/data-breach",
+  "source_name": "Privacy Rights"
+}

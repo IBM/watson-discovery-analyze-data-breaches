@@ -1,0 +1,12 @@
+{
+  "title": "MySpace",
+  "alternative_name": "",
+  "text": "The same hacker who was selling LinkedIn user data now claims to have MySpace user data too, and lots of it.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 164000000,
+  "data_sensitivity": 1,
+  "source_link": "http://motherboard.vice.com/read/427-million-myspace-passwords-emails-data-breach",
+  "source_name": "Motherboard"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Wendy's",
+  "alternative_name": "Restaurant chain",
+  "text": "Malware has been used in 1025 of Wendy's restaurants to steal credit card data from customers. It's currently unknown how many individuals have been impacted.",
+  "year": "2016",
+  "organisation": "retail",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1025,
+  "data_sensitivity": 300,
+  "source_link": "http://abcnews.go.com/Technology/wireStory/wendys-1000-restaurants-affected-hack-40407208",
+  "source_name": "ABC"
+}

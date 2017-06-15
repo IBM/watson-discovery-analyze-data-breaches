@@ -1,0 +1,12 @@
+{
+  "title": "Nintendo",
+  "alternative_name": "Japan's Club Nintendo service",
+  "text": "Japan's Club Nintendo service was hacked following thousands of unauthorized accesses. Customer information compromised in the attack includes full names, phone numbers, home and email addresses.",
+  "year": "2013",
+  "organisation": "gaming",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 250000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.joystiq.com/2013/07/05/club-nintendo-japan-hacked/",
+  "source_name": "JoyStiq"
+}

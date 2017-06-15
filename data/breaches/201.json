@@ -1,0 +1,12 @@
+{
+  "title": "Dai Nippon Printing",
+  "alternative_name": "Japanese printing company",
+  "text": "A former contractor of Dai Nippon Printing Company in Tokyo, Japan stole 8.6 million records containing the personal data of customers of 43 of the company's clients.",
+  "year": "2007",
+  "organisation": "retail",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 8600000,
+  "data_sensitivity": 1,
+  "source_link": "http://usatoday30.usatoday.com/tech/news/computersecurity/2007-12-30-data_n.htm",
+  "source_name": "USA Today"
+}

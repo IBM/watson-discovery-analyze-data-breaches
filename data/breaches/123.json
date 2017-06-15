@@ -1,0 +1,12 @@
+{
+  "title": "Memorial Healthcare System",
+  "alternative_name": "Florida",
+  "text": "An employee of an affiliated physician’s office may have improperly accessed patient information through a web portal used by physicians who provide care and treatment at MHS. Specifically, patients’ names, dates of birth, and Social Security numbers.",
+  "year": "2011",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 100000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.mhs.net/pdf/release071112.pdf",
+  "source_name": "MHS"
+}

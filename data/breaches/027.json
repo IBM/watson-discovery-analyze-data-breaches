@@ -1,0 +1,12 @@
+{
+  "title": "Syrian government",
+  "alternative_name": "",
+  "text": "Hacking outfit calling itself 'Cyber Justice Team' leaked 10GB of data from the government and private websites. Seems to be just data from old leaks, though.",
+  "year": "2016",
+  "organisation": "government",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 274477,
+  "data_sensitivity": 1,
+  "source_link": "http://news.softpedia.com/news/syrian-government-hacked-43-gb-of-data-spilled-online-by-hacktivists-502765.shtml",
+  "source_name": "Softpedia"
+}

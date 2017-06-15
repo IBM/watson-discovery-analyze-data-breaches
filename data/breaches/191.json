@@ -1,0 +1,12 @@
+{
+  "title": "GS Caltex",
+  "alternative_name": "Private oil company",
+  "text": "Two multimedia discs containing the names, social security numbers, addresses, cell phone numbers, email addresses and workplaces of Korean customers sorted by age were stolen. They were found by an office worker in a backstreet’s trash pile in Seoul. Experts say a GS Caltex employee likely stole the information for personal purposes given there were no signs of hacking.",
+  "year": "2008",
+  "organisation": "energy",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 11100000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.datalossdb.org",
+  "source_name": "Data Loss Database"
+}

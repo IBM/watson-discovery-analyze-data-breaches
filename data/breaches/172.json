@@ -1,0 +1,12 @@
+{
+  "title": "AvMed, Inc.",
+  "alternative_name": "",
+  "text": "Two company laptops containing names, addresses, dates of birth, Social Security numbers and health-related information.",
+  "year": "2009",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 1200000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.governmentsecurity.org/latest-security-news/laptop-theft-exposes-private-info-of-avmed-health-plansaapos-customers.html",
+  "source_name": "HHS"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Premera",
+  "alternative_name": "US healthcare provider",
+  "text": "Detected 29th Jan 2015. Occured May 2014. \"C could include names, date of birth, email address, address, telephone number, Social Security number, member identification numbers, bank account information, and claims information, including clinical information\"",
+  "year": "2015",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 11000000,
+  "data_sensitivity": 50000,
+  "source_link": "http://premeraupdate.com/",
+  "source_name": "Premera"
+}

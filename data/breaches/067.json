@@ -1,0 +1,12 @@
+{
+  "title": "Twitch.tv",
+  "alternative_name": "Gaming site",
+  "text": "March 23rd. Details unknown at this point. All Twitch's 10 million users have been requested to change their passwords.",
+  "year": "2014",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 10000000,
+  "data_sensitivity": 1,
+  "source_link": "http://blog.twitch.tv/2015/03/important-notice-about-your-twitch-account/",
+  "source_name": "Twitch"
+}

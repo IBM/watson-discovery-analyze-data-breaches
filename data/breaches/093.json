@@ -1,0 +1,12 @@
+{
+  "title": "Facebook",
+  "alternative_name": "",
+  "text": "Using the network's \"Download Your Information\" tool, some Facebook members were inadvertently sent the phone numbers or email address of Facebook friends that were otherwise private. Facebook assured users that the bug was fixed within a day, and that there is no evidence that the information was used maliciously.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 6000000,
+  "data_sensitivity": 1,
+  "source_link": "https://www.facebook.com/notes/facebook-security/important-message-from-facebooks-white-hat-program/10151437074840766",
+  "source_name": "Facebook"
+}

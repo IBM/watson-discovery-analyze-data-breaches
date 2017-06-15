@@ -1,0 +1,12 @@
+{
+  "title": "IRS",
+  "alternative_name": "US Tax service",
+  "text": "\"An unnamed cybermafia used an IRS app to download forms full of personal information. They posed as legitimate taxpayers, and tried to download forms on 200,000 people between February and May. They got away with half of them, the IRS said. The crooks used about 15,000 of them to claim tax refunds in other people's names.\"",
+  "year": "2015",
+  "organisation": "government",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 100000,
+  "data_sensitivity": 1,
+  "source_link": "http://money.cnn.com/2015/05/26/pf/taxes/irs-website-data-hack/index.html",
+  "source_name": "CNN"
+}

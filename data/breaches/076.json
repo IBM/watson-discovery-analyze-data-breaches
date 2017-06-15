@@ -1,0 +1,12 @@
+{
+  "title": "Central Hudson Gas & Electric",
+  "alternative_name": "",
+  "text": "Customer banking information and other personal information may have been accessed during the hack.",
+  "year": "2013",
+  "organisation": "energy",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 100000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.privacyrights.org/data-breach",
+  "source_name": "Privacy Rights"
+}

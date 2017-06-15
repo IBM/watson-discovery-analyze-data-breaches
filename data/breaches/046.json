@@ -1,0 +1,12 @@
+{
+  "title": "Hacking Team",
+  "alternative_name": "",
+  "text": "Italian cybersecurity firm sells digital surveillance software to law enforcement and national security organisations. 400 GB of documents - including software source code, private messages & client databases - has been stolen and put online  via BitTorrent. The documents show the company has sold products to repressive regimes.",
+  "year": "2015",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 500000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.theguardian.com/technology/2015/jul/06/hacking-team-hacked-firm-sold-spying-tools-to-repressive-regimes-documents-claim",
+  "source_name": "The Guardian"
+}

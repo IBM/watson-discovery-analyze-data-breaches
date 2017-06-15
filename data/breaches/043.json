@@ -1,0 +1,12 @@
+{
+  "title": "TalkTalk",
+  "alternative_name": "Telecoms provider",
+  "text": "157k customers had personal details stolen, including 15,600 account numbers.",
+  "year": "2015",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 160000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.bbc.co.uk/news/uk-34784980",
+  "source_name": "BBC"
+}

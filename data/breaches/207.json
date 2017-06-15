@@ -1,0 +1,12 @@
+{
+  "title": "AOL",
+  "alternative_name": "American Online",
+  "text": "Durp. AOL VOLUNTARILY released search data for roughly 20 million web queries from 658,000 anonymized users of the service. No one is quite sure why.",
+  "year": "2006",
+  "organisation": "web",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 20000000,
+  "data_sensitivity": 1,
+  "source_link": "http://techcrunch.com/2006/08/06/aol-proudly-releases-massive-amounts-of-user-search-data/",
+  "source_name": "Tech Crunch"
+}

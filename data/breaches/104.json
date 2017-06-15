@@ -1,0 +1,12 @@
+{
+  "title": "California Department of Child Support Services",
+  "alternative_name": "",
+  "text": "California child support records were lost in transit during a disaster preparedness exercise.",
+  "year": "2012",
+  "organisation": "government",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 800000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

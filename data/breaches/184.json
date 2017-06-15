@@ -1,0 +1,12 @@
+{
+  "title": "RBS Worldpay",
+  "alternative_name": "the U.S. payment processing arm of The Royal Bank of Scotland Group",
+  "text": "The hack primarily effected U.S. prepaid and the gift card issuing business of RBS Worldpay. Actual fraud has been committed on approximately 100 cards.  Certain personal information of approximately 1.5 million cardholders and other individuals may have been affected and, of this group, Social Security numbers of 1.1 million people may have been accessed.",
+  "year": "2008",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1500000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.theregister.co.uk/2008/12/29/rbs_worldpay_breach/",
+  "source_name": "The Register"
+}

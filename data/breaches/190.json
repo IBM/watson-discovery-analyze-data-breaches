@@ -1,0 +1,12 @@
+{
+  "title": "Chile Ministry Of Education",
+  "alternative_name": "",
+  "text": "A computer hacker in Chile published confidential records belonging to six million people to illustrate the weakness of their security.",
+  "year": "2008",
+  "organisation": "government",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 6000000,
+  "data_sensitivity": 1,
+  "source_link": "http://news.bbc.co.uk/2/hi/americas/7395295.stm",
+  "source_name": "BBC News"
+}

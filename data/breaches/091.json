@@ -1,0 +1,12 @@
+{
+  "title": "ssndob.ms",
+  "alternative_name": "",
+  "text": "SSNDOB was an underground identity theft service. Teenage hackers used it to collect data for exposed.su, a site that listed the SSNs, birthdays, phone numbers, current and previous addresses for dozens of top celebrities including Beyonce, Kanye West and Michelle Obama. In doing so they revealed SSNDOB had data on more than 4 million people.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 4000000,
+  "data_sensitivity": 20,
+  "source_link": "http://krebsonsecurity.com/2013/09/data-broker-giants-hacked-by-id-theft-service/",
+  "source_name": "Krebs on Security"
+}

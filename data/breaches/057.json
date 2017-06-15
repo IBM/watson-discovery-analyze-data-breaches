@@ -1,0 +1,12 @@
+{
+  "title": "Securus Technologies",
+  "alternative_name": "Prison phone service provider",
+  "text": "Anonymous hacker leaked records of over 70m phone calls, plus links to recordings. Recording/storing attorney-client calls potentially violates constitutional protections.",
+  "year": "2015",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 70000000,
+  "data_sensitivity": 50000,
+  "source_link": "https://theintercept.com/2015/11/11/securus-hack-prison-phone-company-exposes-thousands-of-calls-lawyers-and-clients/",
+  "source_name": "TheIntercept"
+}

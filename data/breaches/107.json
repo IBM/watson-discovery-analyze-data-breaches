@@ -1,0 +1,12 @@
+{
+  "title": "South Carolina State Dept. of Revenue",
+  "alternative_name": "",
+  "text": "A server was breached by an international hacker.",
+  "year": "2012",
+  "organisation": "government",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 3600000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.infoworld.com/article/2615754/cyber-crime/south-carolina-reveals-massive-data-breach-of-social-security-numbers--credit-cards.html",
+  "source_name": "Infoworld"
+}

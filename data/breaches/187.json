@@ -1,0 +1,12 @@
+{
+  "title": "University of Miami",
+  "alternative_name": "",
+  "text": "Thieves stole a briefcase containing data tapes out of a vehicle used by a private off-site storage company. Anyone who had been a patient of a University of Miami physician or visited a UM facility since 1999 is likely included on the tapes. The data included names, addresses, Social Security numbers and health information. 47,000 of these records may have included credit card or other financial information regarding bill payment.",
+  "year": "2008",
+  "organisation": "academic",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 2100000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

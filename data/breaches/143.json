@@ -1,0 +1,12 @@
+{
+  "title": "Tricare",
+  "alternative_name": "Healthcare service for US Military",
+  "text": "The information for some 4.6 million active and retired military personnel, as well as their families, was on back up-tapes from an electronic health care record used to capture and preserve patient data from 1992 through September 7 2011.",
+  "year": "2011",
+  "organisation": "military, healthcare",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 4900000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.reuters.com/article/us-data-breach-texas-idUSTRE78S5JG20110929",
+  "source_name": "ITRC"
+}

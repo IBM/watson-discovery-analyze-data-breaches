@@ -1,0 +1,12 @@
+{
+  "title": "UK Ministry of Defence",
+  "alternative_name": "",
+  "text": "Hard drive containing very sensitive details of Armed Forces personnel - passport & national insurance numbers, bank details etc - went missing. Loss was revealed during National Identity Fraud Prevention Week.",
+  "year": "2008",
+  "organisation": "government",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 1700000,
+  "data_sensitivity": 50000,
+  "source_link": "http://news.bbc.co.uk/1/hi/uk_politics/7667507.stm",
+  "source_name": "BBC"
+}

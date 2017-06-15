@@ -1,0 +1,12 @@
+{
+  "title": "Sutter Medical Foundation",
+  "alternative_name": "",
+  "text": "A password protected but unencrypted company computer was stolen. The compromised database contained names, addresses, dates of birth, phone numbers, email addresses, medical record numbers and the name of each patient's health insurance plan. No medical records were stored on the computer.",
+  "year": "2011",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 4200000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.simplysecurity.com/2011/11/30/sutter-health-sued-for-1-billion-following-data-breach/",
+  "source_name": "HHS"
+}

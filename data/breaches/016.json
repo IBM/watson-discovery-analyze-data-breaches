@@ -1,0 +1,12 @@
+{
+  "title": "Yahoo",
+  "alternative_name": "",
+  "text": "User accounts have been hacked using forged cookies to log in without a password over a 2 year period.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 32000000,
+  "data_sensitivity": 4000,
+  "source_link": "https://www.cnet.com/news/yahoo-says-forged-cookie-attack-accessed-about-32m-accounts/",
+  "source_name": "CNET"
+}

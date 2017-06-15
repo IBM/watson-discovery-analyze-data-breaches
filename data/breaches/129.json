@@ -1,0 +1,12 @@
+{
+  "title": "Southern California Medical-Legal Consultants",
+  "alternative_name": "",
+  "text": "Electronic files containing names and social security numbers of approximately 300,000 individuals who have applied for California workers’ compensation benefits had been exposed to unauthorized access.",
+  "year": "2011",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 300000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "idTheftCentre"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Morgan Stanley Smith Barney",
+  "alternative_name": "",
+  "text": "Morgan Stanley mailed a CD containing sensitive data about investors in tax-exempt funds and bonds to the New York State Department of Taxation and Finance. The package arrived at the building but when it arrived at the relevant desk the data CD was missing.",
+  "year": "2011",
+  "organisation": "financial",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 35000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Scribd",
+  "alternative_name": "\"world's largest online library\"",
+  "text": "Hack resulted in a few hundred thousand stolen passwords.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 500000,
+  "data_sensitivity": 1,
+  "source_link": "http://nakedsecurity.sophos.com/2013/04/05/scribd-worlds-largest-online-library-admits-to-network-intrusion-password-breach/",
+  "source_name": "Naked Security"
+}

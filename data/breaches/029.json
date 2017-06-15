@@ -1,0 +1,12 @@
+{
+  "title": "Banner Health",
+  "alternative_name": "",
+  "text": "Hackers gained access to payment card data via food outlets at Banner Health locations.",
+  "year": "2016",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 3700000,
+  "data_sensitivity": 300,
+  "source_link": "https://www.bannerhealth.com/news/2016/08/banner-health-identifies-cyber-attack#",
+  "source_name": "BannerHealth"
+}

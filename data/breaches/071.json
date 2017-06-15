@@ -1,0 +1,12 @@
+{
+  "title": "Ebay",
+  "alternative_name": "",
+  "text": "The company has said hackers attacked between late February and early March with login credentials obtained from “a small number” of employees. They then accessed a database containing all user records and copied “a large part” of those credentials.",
+  "year": "2014",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 145000000,
+  "data_sensitivity": 1,
+  "source_link": "http://my.chicagotribune.com/#section/-1/article/p2p-80265168/",
+  "source_name": "Chicago Tribune"
+}

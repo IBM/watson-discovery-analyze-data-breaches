@@ -1,0 +1,12 @@
+{
+  "title": "uTorrent",
+  "alternative_name": "",
+  "text": "It's unclear what data has been breached, exactly, but uTorrent has advised passwords are probably compromised.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 35000,
+  "data_sensitivity": 1,
+  "source_link": "https://torrentfreak.com/utorrent-forums-hacked-passwords-compromised-160608/",
+  "source_name": "TorrentFreak"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Formspring",
+  "alternative_name": "Interest-based social Q&A website",
+  "text": "Formspring was tipped off to a breach after 420,000 hashed passwords were posted to a security forum.",
+  "year": "2012",
+  "organisation": "web",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 400000,
+  "data_sensitivity": 1,
+  "source_link": "http://news.cnet.com/8301-1009_3-57469944-83/formspring-disables-user-passwords-in-security-breach/?tag=mncol;txt",
+  "source_name": "CNET"
+}

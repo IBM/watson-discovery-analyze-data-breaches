@@ -1,0 +1,12 @@
+{
+  "title": "TerraCom & YourTel",
+  "alternative_name": "",
+  "text": "The telecom firms TerraCom and YourTel have branded reporters for Scripps News as \"hackers\" after journalists discovered that the personal data of over 170,000 customers - including social security numbers and other identifying data that could be used for identity theft - were sitting on a publicly accessible server.",
+  "year": "2013",
+  "organisation": "telecoms",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 180000,
+  "data_sensitivity": 20,
+  "source_link": "http://boingboing.net/2013/05/23/terracom-and-yourtel-threaten.html",
+  "source_name": "Boing Boing"
+}

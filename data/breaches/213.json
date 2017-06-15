@@ -1,0 +1,12 @@
+{
+  "title": "Bell",
+  "alternative_name": "",
+  "text": "Somebody claiming to be behind the attack has threatened Bell with more leaks if they don't cooporate.",
+  "year": "2017",
+  "organisation": "telecoms",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1900000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.cbc.ca/beta/news/technology/bell-data-breach-customer-names-phone-numbers-emails-leak-1.4116608",
+  "source_name": "CBC"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Quest Diagnostics",
+  "alternative_name": "",
+  "text": "Nov. The stolen data contained names, DOBs, lab results and some telephone numbers.",
+  "year": "2017",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 34000,
+  "data_sensitivity": 4000,
+  "source_link": "http://newsroom.questdiagnostics.com/2016-12-12-Quest-Diagnostics-Provides-Notice-of-Data-Security-Incident#assets_129",
+  "source_name": "Quest"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "UK Home Office",
+  "alternative_name": "",
+  "text": "PA Consulting lost an unencrypted memory stick containing details of high risk, prolific and other offenders.",
+  "year": "2008",
+  "organisation": "government",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 84000,
+  "data_sensitivity": 20,
+  "source_link": "http://en.wikipedia.org/wiki/List_of_UK_government_data_losses",
+  "source_name": "Wikipedia"
+}

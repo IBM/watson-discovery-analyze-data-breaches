@@ -1,0 +1,12 @@
+{
+  "title": "Court Ventures",
+  "alternative_name": "Experian",
+  "text": "A Vietnamese identity theft service was sold personal records, including Social Security numbers, credit card data and bank account information, by Court Ventures, a company now owned by data brokerage firm Experian.",
+  "year": "2012",
+  "organisation": "financial",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 200000000,
+  "data_sensitivity": 20,
+  "source_link": "http://bits.blogs.nytimes.com/2013/10/24/senator-intensifies-probe-of-data-brokers/?_php=true&_type=blogs&_r=0",
+  "source_name": "NY Times / Experian"
+}

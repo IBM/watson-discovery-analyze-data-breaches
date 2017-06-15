@@ -1,0 +1,12 @@
+{
+  "title": "US Law Enforcement",
+  "alternative_name": "",
+  "text": "\"AntiSec\" hackers published 2,719 social security numbers, 8,214 passwords, 15,798 birth dates, 48,182 street addresses, 1,531,628 email addresses, 106,691 phone numbers, 57 bank account numbers, 53 driver's license numbers, and eight credit card numbers of more than 70 different U.S. law enforcement agencies.",
+  "year": "2011",
+  "organisation": "government",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 130000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.pcmag.com/article2/0,2817,2390683,00.asp",
+  "source_name": "PC World"
+}

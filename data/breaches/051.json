@@ -1,0 +1,12 @@
+{
+  "title": "VTech",
+  "alternative_name": "Toymaker company",
+  "text": "Software used to download games to children's computer tablets was hacked, with personal info and photos stolen.",
+  "year": "2015",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 6400000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.theguardian.com/technology/2015/dec/02/vtech-hack-us-hong-kong-investigate-children-exposed",
+  "source_name": "Guardian"
+}

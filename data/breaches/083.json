@@ -1,0 +1,12 @@
+{
+  "title": "Apple",
+  "alternative_name": "",
+  "text": "Developer portal hacked. \"Some\" information about 275,000 3rd-party developers potentially stolen.",
+  "year": "2013",
+  "organisation": "tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 300000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.guardian.co.uk/technology/2013/jul/22/apple-developer-site-hacked",
+  "source_name": "Guardian"
+}

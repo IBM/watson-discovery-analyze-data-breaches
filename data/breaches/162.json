@@ -1,0 +1,12 @@
+{
+  "title": "Gawker.com",
+  "alternative_name": "US news and gossip blog network including Gawker.com Gizmodo.com Lifehacker.com",
+  "text": "Hacked. 1.5 Million usernames, emails, passwords taken.",
+  "year": "2010",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1500000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.guardian.co.uk/technology/2010/dec/13/gawker-hackers-passwords-twitter-wikileaks?INTCMP=SRCH",
+  "source_name": "Guardian"
+}

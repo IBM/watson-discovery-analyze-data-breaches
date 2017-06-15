@@ -1,0 +1,12 @@
+{
+  "title": "Yahoo Japan",
+  "alternative_name": "",
+  "text": "22 million Yahoo user IDs may have been leaked after Yahoo detected an unauthorized attempt to access the administrative system of its web portal Yahoo Japan. The leaked information did not include passwords and data necessary for identity verification to reset passwords.",
+  "year": "2013",
+  "organisation": "tech, web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 22000000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.reuters.com/article/2013/05/17/us-yahoojapan-idUSBRE94G0P620130517",
+  "source_name": "Reuters"
+}

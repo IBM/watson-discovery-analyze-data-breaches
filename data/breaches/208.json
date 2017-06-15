@@ -1,0 +1,12 @@
+{
+  "title": "US Dept of Vet Affairs",
+  "alternative_name": "",
+  "text": "The Veterans Affairs Department agreed to pay $20 million to settle a class action lawsuit over the loss of a laptop. The department originally took three weeks to report the theft. The laptop was recovered with the data apparently intact a month after it was reported stolen. But it is impossible to say with absolute certainty that the data was not accessed and copied.",
+  "year": "2006",
+  "organisation": "government, military",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 26500000,
+  "data_sensitivity": 20,
+  "source_link": "http://gcn.com/Articles/2009/02/02/VA-data-breach-suit-settlement.aspx",
+  "source_name": "GCN"
+}

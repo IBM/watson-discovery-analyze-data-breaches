@@ -1,0 +1,12 @@
+{
+  "title": "Citigroup",
+  "alternative_name": "",
+  "text": "Less than 1% of Citbank card holders' names, account numbers, and contact information such as e-mail addresses were stolen. Card security codes were not stolen.",
+  "year": "2011",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 400000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.pcworld.com/article/229891/Citigroup_Hack_Nets_Over_200k_in_Stolen_Customer_Details.html",
+  "source_name": "PC World"
+}

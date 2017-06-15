@@ -1,0 +1,12 @@
+{
+  "title": "UPS",
+  "alternative_name": "",
+  "text": "Malware was discovered in the credit & debit card processing systems at 51 branches in 24 states.",
+  "year": "2014",
+  "organisation": "retail",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 4000000,
+  "data_sensitivity": 300,
+  "source_link": "http://time.com/3151681/ups-hack/",
+  "source_name": "Time"
+}

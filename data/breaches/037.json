@@ -1,0 +1,12 @@
+{
+  "title": "Anthem",
+  "alternative_name": "Second-largest health insurer in the US",
+  "text": "Feb 2015: Names, dates of birth, member ID/ social security numbers, addresses, phone numbers, email addresses and employment information.",
+  "year": "2016",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 80000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.anthemfacts.com/faq",
+  "source_name": "Anthemfacts"
+}

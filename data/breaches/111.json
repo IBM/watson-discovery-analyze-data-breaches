@@ -1,0 +1,12 @@
+{
+  "title": "LinkedIn, eHarmony, Last.fm",
+  "alternative_name": "",
+  "text": "Hacker 'dwdm' uploaded a file containing 6.5 million passwords on a Russian hacker forum. Soon after another 1.5 million passwords were discovered.  On analysis, 93% of the passwords could be found in the Top 10,000 password list.",
+  "year": "2012",
+  "organisation": "web",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 8000000,
+  "data_sensitivity": 1,
+  "source_link": "http://news.cnet.com/8301-1009_3-57449325-83/what-the-password-leaks-mean-to-you-faq/?tag=mncol;txt",
+  "source_name": "CNET"
+}

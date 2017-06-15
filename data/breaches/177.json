@@ -1,0 +1,12 @@
+{
+  "title": "US Military",
+  "alternative_name": "",
+  "text": "Without first destroying the data the agency sent back a defective unencrypted hard drive for repair and recycling which held detailed records on 76 million veterans, including millions of Social Security numbers dating to 1972.",
+  "year": "2009",
+  "organisation": "military",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 76000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.wired.com/threatlevel/2009/10/probe-targets-archives-handling-of-data-on-70-million-vets/",
+  "source_name": "ITRC"
+}

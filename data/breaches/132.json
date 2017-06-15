@@ -1,0 +1,12 @@
+{
+  "title": "Eisenhower Medical Center",
+  "alternative_name": "California hospital",
+  "text": "Stolen computer contained data listing patients' names, ages, dates of birth, medical record numbers and the last four digits of their social security numbers.",
+  "year": "2011",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 500000,
+  "data_sensitivity": 4000,
+  "source_link": "http://databreachinvestigation.blogspot.com/2011/04/thief-gets-away-with-eisenhower-medical.html",
+  "source_name": "Databreach Investigation"
+}

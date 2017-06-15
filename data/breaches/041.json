@@ -1,0 +1,12 @@
+{
+  "title": "Uber",
+  "alternative_name": "",
+  "text": "Occured Sep 2014. Revealed Feb 2015. Names & license plates of 50,000 driver partners.",
+  "year": "2015",
+  "organisation": "tech",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 50000,
+  "data_sensitivity": 1,
+  "source_link": "http://blog.uber.com/2-27-15",
+  "source_name": "Uber"
+}

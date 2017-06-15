@@ -1,0 +1,12 @@
+{
+  "title": "Cellebrite",
+  "alternative_name": "",
+  "text": "Cellebrite's main product is a device that rips data from mobile phones. 900GB of data was stolen from Cellebrite. The hackers got hacked. The number of records taken is unknown. Motherboard quotes the hacker as stating “I can't say too much about what has been done. It's one thing to slap them, it's a very different thing to take pictures of [their] balls hanging out.”",
+  "year": "2017",
+  "organisation": "tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 3000000,
+  "data_sensitivity": 20,
+  "source_link": "http://motherboard.vice.com/read/hacker-steals-900-gb-of-cellebrite-data",
+  "source_name": "Motherboard"
+}

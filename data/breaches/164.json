@@ -1,0 +1,12 @@
+{
+  "title": "JP Morgan Chase",
+  "alternative_name": "",
+  "text": "In 2007, the personal information of approximately 2.6 million current and former holders of a Chase-Circuit City credit card had been mistakenly identified as trash and thrown out in garbage bags outside five branch offices in New York.",
+  "year": "2010",
+  "organisation": "financial",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 2600000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.pcworld.com/article/131453/article.html",
+  "source_name": "ITRC"
+}

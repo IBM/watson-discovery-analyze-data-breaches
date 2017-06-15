@@ -1,0 +1,12 @@
+{
+  "title": "Advocate Medical Group",
+  "alternative_name": "",
+  "text": "4,000,000 patient names, addresses, dates of birth, and Social Security numbers were contained in four computers stolen from an administrative building. Second biggest security breach ever reported to the Department of Health and Human Services (HHS).",
+  "year": "2013",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 4000000,
+  "data_sensitivity": 20,
+  "source_link": "http://healthitsecurity.com/2013/08/27/advocate-medical-group-endures-massive-data-breach/",
+  "source_name": "HealthITSecurity"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Affinity Health Plan, Inc.",
+  "alternative_name": "",
+  "text": "A rented photocopier used to copy health records did not have its hard-drive wiped before its return.",
+  "year": "2009",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 300000,
+  "data_sensitivity": 4000,
+  "source_link": "http://security-hack1.blogspot.com/2010/04/affinity-health-plan-alerts-public.html",
+  "source_name": "Security Hack"
+}

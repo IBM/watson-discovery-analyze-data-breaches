@@ -1,0 +1,12 @@
+{
+  "title": "MSpy",
+  "alternative_name": "kid & partner tracking service",
+  "text": "Data dump to the dark web \"includes Apple IDs and passwords, tracking data, and payment details on some 145,000 successful transactions\", photos and very private conversations.",
+  "year": "2015",
+  "organisation": "tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 400000,
+  "data_sensitivity": 20,
+  "source_link": "http://krebsonsecurity.com/2015/05/mobile-spy-software-maker-mspy-hacked-customer-data-leaked/",
+  "source_name": "Krebson Security"
+}

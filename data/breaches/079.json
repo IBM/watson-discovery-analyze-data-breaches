@@ -1,0 +1,12 @@
+{
+  "title": "Washington State court system",
+  "alternative_name": "Administrative offices",
+  "text": "Up to 160,000 Social Security numbers and a million driver's license numbers may have been accessed by hackers exploiting old versions of Adobe Cold Fusion software on the server.",
+  "year": "2013",
+  "organisation": "government",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 160000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.reuters.com/article/2013/05/09/us-usa-hack-washingtonstate-idUSBRE9480YY20130509",
+  "source_name": "Reuters"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Gap Inc",
+  "alternative_name": "",
+  "text": "Stolen laptop which contained social security numbers, data on people who applied for positions at Gap stores, including Banana Republic and Old Navy, between July 2006 and June 2007.",
+  "year": "2007",
+  "organisation": "retail",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 800000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.pcworld.com/article/137865/article.html",
+  "source_name": "PC World"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Indiana University",
+  "alternative_name": "",
+  "text": "Students who attended the university between 2011 and 2014 may have had their data exposed after it was stored on an unprotected site. The data was accessed by three webcrawlers but there is not evidence it was accessed by any unauthorized individuals.",
+  "year": "2013",
+  "organisation": "academic",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 150000,
+  "data_sensitivity": 20,
+  "source_link": "http://news.iu.edu/releases/iu/2014/02/data-exposure-disclosure.shtml",
+  "source_name": "Indiana University"
+}

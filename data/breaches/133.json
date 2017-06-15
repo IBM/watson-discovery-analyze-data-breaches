@@ -1,0 +1,12 @@
+{
+  "title": "Stratfor",
+  "alternative_name": "Shadowy global intelligence company",
+  "text": "Hacking collective Anonymous defaced the website of Stratfor and posted a file online of the organization’s confidential client list, along with credit card details, passwords and home addresses for those clients. They released 47,680 unique e-mail addresses and 50,277 unique credit card numbers — 9,651 of which were not yet expired. Of the stolen encrypted passwords, 50% were easily crackable.",
+  "year": "2011",
+  "organisation": "military",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 900000,
+  "data_sensitivity": 300,
+  "source_link": "http://bits.blogs.nytimes.com/2011/12/27/questions-about-motives-behind-stratfor-hack/",
+  "source_name": "NY Times"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "\"Apple\"",
+  "alternative_name": "",
+  "text": "Hacking group AntiSec claimed they hacked an FBI laptop in March 2012 accessing a file of more than 12 million Apple Unique Device Identifiers (UDIDs). Subsequently, it was discovered that app developer BlueToad was the source of the breach. The list contained personal information such as full names, phone numbers and addresses. AntiSec published a million of these UDIDs online.",
+  "year": "2012",
+  "organisation": "tech, retail",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 12400000,
+  "data_sensitivity": 20,
+  "source_link": "http://news.cnet.com/8301-1009_3-57505330-83/antisec-claims-to-have-snatched-12m-apple-device-ids-from-fbi/",
+  "source_name": "CNET"
+}

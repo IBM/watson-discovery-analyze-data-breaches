@@ -1,0 +1,12 @@
+{
+  "title": "Oregon Department of Motor Vehicles",
+  "alternative_name": "",
+  "text": "Sheriff's detectives arrested Tim Nuss  for accessing an old Oregon Department of Motor Vehicles database. The DMV database was once sold to marketing companies, but the department stopped selling the information in the late 1990s. The sold data include the names, addresses, birth dates, gender and ages of people who registered with the DMV, but no financial information.",
+  "year": "2011",
+  "organisation": "government",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 1000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

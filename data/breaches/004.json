@@ -1,0 +1,12 @@
+{
+  "title": "Three",
+  "alternative_name": "Three mobile company in the UK",
+  "text": "Hackers broke into Three's customer database with the intention of fraudulently ordering handsets to sell on. They stole personal details, but no financial records or passwords were stored on the hacked system.",
+  "year": "2017",
+  "organisation": "telecoms",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 200000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.threemediacentre.co.uk/news/2017/handsetfraud-update.aspx",
+  "source_name": "Three"
+}

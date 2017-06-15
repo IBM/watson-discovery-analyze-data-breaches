@@ -1,0 +1,12 @@
+{
+  "title": "SnapChat",
+  "alternative_name": "",
+  "text": "31st Dec 2013. Hackers abused an exploit to syphon 4.7m user details, including phone numbers.  Check here to see if your account was compromised: http://lookup.gibsonsec.org/",
+  "year": "2013",
+  "organisation": "web, tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 4700000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.forbes.com/sites/andygreenberg/2012/01/15/zappos-says-hackers-accessed-24-million-customers-account-details/",
+  "source_name": "Forbes"
+}

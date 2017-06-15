@@ -1,0 +1,12 @@
+{
+  "title": "Mossack Fonseca",
+  "alternative_name": "Panamanian law firm",
+  "text": "2.6TB of data on politicians, criminals, professional athletes etc leaked from law firm Mossack Fonseca, including emails, contracts, scanned documents, transcripts...",
+  "year": "2016",
+  "organisation": "legal",
+  "method_of_leak": "leak",
+  "no_of_records_stolen": 11500000,
+  "data_sensitivity": 50000,
+  "source_link": "http://panamapapers.sueddeutsche.de/articles/56febff0a1bb8d3c3495adf4/",
+  "source_name": "SuddeutscheZeitung"
+}

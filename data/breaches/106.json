@@ -1,0 +1,12 @@
+{
+  "title": "Three Iranian banks",
+  "alternative_name": "Saderat, Eghtesad Novin, & Saman",
+  "text": "After finding a security vulnerability in Iran's banking system, software manager Khosrow Zarefarid\n wrote a formal report and sent it to the CEOs of all the affected banks across the country. When the banks ignored his findings, he hacked 3 million bank accounts, belonging to at least 22 different banks, to prove his point.",
+  "year": "2012",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 3000000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.zdnet.com/blog/security/3-million-bank-accounts-hacked-in-iran/11577",
+  "source_name": "ZD Net"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Code.org",
+  "alternative_name": "Non-profit organisation",
+  "text": "Volunteer email addresses were left accessible via web browser.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 10,
+  "data_sensitivity": 1,
+  "source_link": "http://blog.code.org/post/140938173013/some-volunteer-email-addresses-compromised",
+  "source_name": "Code"
+}

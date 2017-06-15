@@ -1,0 +1,12 @@
+{
+  "title": "T-Mobile, Deutsche Telecom",
+  "alternative_name": "",
+  "text": "Thieves got their hands on a storage device with the data, which included the names, addresses, cell phone numbers, and some birth dates and e-mail addresses for high-profile German citizens. The company said the records did not contain bank details, credit card numbers, or call data.",
+  "year": "2006",
+  "organisation": "telecoms",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 17000000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.datalossdb.org",
+  "source_name": "Data Loss Database"
+}

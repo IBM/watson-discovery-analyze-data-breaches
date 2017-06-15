@@ -1,0 +1,12 @@
+{
+  "title": "Citigroup",
+  "alternative_name": "",
+  "text": "Third big data breach from Citigroup.\"The personal information of 150,000 consumers who went into bankruptcy between 2007 and 2011 – including their social security numbers – were exposed after Citi failed to properly redact court records before they were put on the Public Access to Court Electronic Records (PACER) system.\"",
+  "year": "2013",
+  "organisation": "financial",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 150000,
+  "data_sensitivity": 20,
+  "source_link": "http://news.softpedia.com/news/Citi-Exposes-Details-of-150-000-Individuals-Who-Went-into-Bankruptcy-369979.shtml",
+  "source_name": "Softpedia"
+}

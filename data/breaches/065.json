@@ -1,0 +1,12 @@
+{
+  "title": "\"Gmail\"",
+  "alternative_name": "",
+  "text": "5 million Gmail account passwords leaked to a forum, alongside passwords from other email providers. Close inspection revealed the user details to be old (3+ years). Multiple individual targeted hacks of third party websites where people used their Gmail IDs, rather than one big dataleak, suspected to be the method. Gmail itself was not hacked.",
+  "year": "2014",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 5000000,
+  "data_sensitivity": 1,
+  "source_link": "http://thenextweb.com/google/2014/09/10/4-93-million-gmail-usernames-passwords-published-google-says-evidence-systems-compromised/",
+  "source_name": "Thenextweb"
+}
