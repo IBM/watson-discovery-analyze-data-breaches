@@ -11,7 +11,7 @@ export default React.createClass({
     let text           = item.text || '';
     let enriched_text  = item.enriched_text || {};
     let entities       = enriched_text.entities || [];
-    let records_stolen = item.no_of_records_stolen.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+    let records_stolen = item.no_of_records_stolen.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
     return (
       <div className="widget--detail">
