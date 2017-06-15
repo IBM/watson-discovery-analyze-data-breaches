@@ -6,7 +6,7 @@ declared-services:
 applications:
 - path: .
   name: watson-cognitive-security
-  buildpack: sdk-for-nodejs
+  command: npm start
   memory: 512M
   instances: 1
   disk_quota: 256M
