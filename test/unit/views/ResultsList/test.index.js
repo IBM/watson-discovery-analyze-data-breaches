@@ -92,16 +92,6 @@ describe('<Detail />', () => {
         'text': 'Snapchat',
         'relevance': 0.584976,
         'type': 'Company'
-      }, {
-        'count': 1,
-        'sentiment': {
-          'score': -0.396417,
-          'mixed': false,
-          'type': 'negative'
-        },
-        'text': 'Snapchat',
-        'relevance': 0.550474,
-        'type': 'Person'
       }]
     },
   };
@@ -113,5 +103,7 @@ describe('<Detail />', () => {
     assert.equal(wrapper.find('.widget--type td').text(), 'hacked');
     assert.equal(wrapper.find('.widget--quantity td').text(), '1,700,000');
     assert.equal(wrapper.find('.widget--year td').text(), '2017');
+    assert.equal(wrapper.find('.widget--enriched-data h4').text(), 'Entities');
+    assert.equal(wrapper.find('.widget--enriched-data li').length, 3);
   });
 });
