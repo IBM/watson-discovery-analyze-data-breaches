@@ -14,7 +14,6 @@ import QuerySyntax from '../QuerySyntax/index.jsx';
 import queryBuilder from '../../query-builder.js';  // eslint-disable-line
 import Accordion from '../Accordion/index.jsx';
 import NoContent from '../NoContent/index.jsx';
-import { Icon } from 'watson-react-components';
 import { getNames, getItemsForName } from './mentionsParser';
 import capitalize from './capitalize';
 
@@ -29,7 +28,7 @@ export default React.createClass({
 
   calculateMentionCount(data) {
     let totalSum = data.reduce((acc, item) => {
-      return acc + item.positive + item.neutral + item.negative
+      return acc + item.positive + item.neutral + item.negative;
     }, 0);
     return totalSum;
   },
@@ -49,13 +48,13 @@ export default React.createClass({
             negative: item[2],
             neutral: item[3],
           })),
-    }));
+      }));
 
     mentions = mentions.map((mention) => {
       return Object.assign({}, mention, {
         totalMentions: this.calculateMentionCount(mention.data)
-      })
-    })
+      });
+    });
 
     mentions = mentions.sort((a, b) => (b.totalMentions - a.totalMentions))
       .filter((name, i) => i < 4);

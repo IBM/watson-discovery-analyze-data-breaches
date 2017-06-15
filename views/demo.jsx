@@ -8,10 +8,6 @@ import GeneralSentiments from './GeneralSentiments/index.jsx';
 import NoResults from './NoResults/index.jsx';
 import ResultsList from './ResultsList/index.jsx';
 
-const hasResults = (entities) =>
-  entities.aggregations && entities.aggregations.length > 0 &&
-  entities.aggregations[0].field === 'enrichedTitle.entities.text';
-
 const parseQueryResults = (data) => {
   const parsedData = {
     results: data.results, // Top Results
@@ -77,6 +73,7 @@ export default React.createClass({
         response.json()
         .then((error) => this.setState({ error, loading: false }))
         .catch((errorMessage) => {
+          // eslint-disable-next-line no-console
           console.error(errorMessage);
           this.setState({
             error: { error: 'There was a problem with the request, please try again' },

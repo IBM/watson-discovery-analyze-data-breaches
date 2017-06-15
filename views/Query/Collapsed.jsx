@@ -56,8 +56,8 @@ export default React.createClass({
 
   buttonState() {
     return this.state.query.enabled ?
-        ("query--date-buttons-container") :
-        ("query--date-buttons-disabled query--date-buttons-container")
+        ('query--date-buttons-container') :
+        ('query--date-buttons-disabled query--date-buttons-container');
   },
 
   onFocusChange(focusedInput) {
@@ -115,7 +115,7 @@ export default React.createClass({
   },
   dateButtonChanged(e) {
     var newDates = {};
-    var largestValue = "lasttwomonths";
+    var largestValue = 'lasttwomonths';
     var restrictedDateRange;
     let newButtonState = this.state.dateButtons.map((item) => {
       item.selected = item.value == e.target.value ? true : false;
