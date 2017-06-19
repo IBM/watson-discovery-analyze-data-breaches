@@ -66,11 +66,40 @@ Click on **Service credentials**, then press **View credentials**, as demonstrat
 Take note of the `username` and `password` fields revealed here.
 In step 5, you'll use these credentials to configure the app so that it can access the service that you just created.
 
-### 4. Upload data to the collection
+### 4. Create a collection and upload data to it
+
+Click on **Manage**, then use the **Launch tool** button to open the tooling for your Watson Discovery Service.
+
+![Launch Discovery Tooling](readme-images/launch-discovery-tool.png)
+
+You should now see an index listing for your data collections.
+The **Watson Discovery News** service is provided as an example of pre-enriched data.
+Next, click the **Create a data collection** button.
+In the form that appears, you can enter a name for your collection and specify a configuration to use.
+The default configuration is fine for the data set in this repository.
+
+![Name your new collection](readme-images/create-collection.png)
+
+Click the **Create** button.
+On the next screen, you'll see details about the collection that you just created.
+
+![Collection details](readme-images/collection-details.png)
+
+Under the **API Information** section, you'll find the keys you need to access this collection using the API.
+Take note of the `collection_id` and `environment_id`.
+In step 5, you'll use these credentials to configure the app so that it can access this collection.
+
+### 5. Upload data to your collection
+
+Next, you'll populate your collection with data.
+Find the `data/breaches` directory in this repository.
+Select all the files in that directory, then drag them and drop them on the upload widget, as demonstrated here:
 
 ![Upload data to collection](readme-images/upload-data.gif)
 
-### 5. Setup environment variables
+You can expect to wait a few minutes while the files are uploaded and processed by the Watson Discovery Service.
+
+### 6. Setup environment variables
 
 Create a `.env` file, using the `.env.example` file provided as a template:
 
@@ -94,7 +123,7 @@ After you've done that, load these variables into your shell's environment by ru
 $ export `cat .env`
 ```
 
-### 6. Run the app locally
+### 7. Run the app locally
 
 Start the app by running:
 
@@ -104,7 +133,7 @@ $ npm install
 
 You can stop the app running by pressing `ctrl-c`.
 
-### 7. Deploy the app
+### 8. Deploy the app
 
 To deploy to Bluemix make sure you have cloud foundry CLI tool installed. Then run the following commands to connect it with Bluemix and login with your Bluemix credentials.
 
