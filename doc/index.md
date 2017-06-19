@@ -73,6 +73,26 @@ You can use this interface to explore the data in the collection. Click on the d
 
 If you drill down into the `enriched_text` field, you'll find fields such as `entities`, `docSentiment`, `taxonomy`, and so on. When your data was imported to the Discovery Service, enrichments were applied to the `text` field, and these fields are the result of that process.
 
+## Filtering by original fields
+
+Take another look at the fields in the original JSON files that you uploaded to your collection. It could be useful to filter the dataset on fields such as `year`, `no_of_records_stolen`, `organisation`, and `method_of_leak`.
+
+For example, let's filter the collection to show all of the records where `method_of_leak` is `hacked`. In the query builder, fill out the **Narrow your results (filter)** field with:
+
+    method_of_leak:hacked
+
+Then press the **Run query** button. In the right column, you should now see the result list filtered:
+
+![Running a query](images/filter-by-method-of-leak.png)
+
+Try modifying that query to show all the records where the `method_of_leak` is `'accidentally published'`. Now try modifying it to show results where `year` is `2017`, or where `organisation` is `'healthcare'`.
+
+You can apply more than one filter at a time, by separating your terms with a comma. For example, to show all hacks that affected healthcare organisations, use this:
+
+    organisation:'healthcare',method_of_leak:'hacked'
+
+The Discovery Service makes it easy to query your dataset by these original fields tha t were included in the original documents.
+
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
 [convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
 [data]: https://github.com/nelstrom/discovery-nodejs/tree/byod/data/breaches
