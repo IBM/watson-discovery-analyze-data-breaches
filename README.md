@@ -64,7 +64,7 @@ Click on **Service credentials**, then press **View credentials**, as demonstrat
 ![Upload data to collection](readme-images/getting-credentials.gif)
 
 Take note of the `username` and `password` fields revealed here.
-In step 5, you'll use these credentials to configure the app so that it can access the service that you just created.
+In step 6, you'll use these credentials to configure the app so that it can access the service that you just created.
 
 ### 4. Create a collection and upload data to it
 
@@ -87,7 +87,7 @@ On the next screen, you'll see details about the collection that you just create
 
 Under the **API Information** section, you'll find the keys you need to access this collection using the API.
 Take note of the `collection_id` and `environment_id`.
-In step 5, you'll use these credentials to configure the app so that it can access this collection.
+In step 6, you'll use these credentials to configure the app so that it can access this collection.
 
 ### 5. Upload data to your collection
 
