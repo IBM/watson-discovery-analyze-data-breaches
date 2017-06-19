@@ -21,7 +21,7 @@ For the [Cognitive Security][cog] demonstration, we used a public dataset that l
 The data is available as a [spreadsheet on Google Docs][spreadsheet].
 You can download the dataset as Comma-separated values (CSV), by clicking the **File** menu, then **Download as** then selecting the `.csv` file format.
 
-![Upload data to collection](images/export-csv.png)
+![Export CSV file from Google docs](images/export-csv.png)
 
 The Discovery Service can import documents in various formats, including PDFs, Word documents, HTML files, and JSON files.
 CSV files are not accepted by the Dicovery Service, so we created a [script to convert the data from CSV to JSON format][convert].
@@ -44,7 +44,15 @@ Here's an example JSON file:
 }
 ```
 
-[spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
+The structure of the CSV file has been preserved, but some of the field names have been renamed. For example, the `story` field in the CSV file has been renamed as `text` in the JSON file. When you import a JSON document into the Discovery Service, it automatically applies enrichments to the field called `text`. You can apply enrichments to other fields by creating a custom configuration for your data collection, and we'll discuss how to do this later. But for now it makes sense to massage our data so that it can use the default configuration.
 
+The [README file][readme] for the Cognitive Security demo includes detailed instructions on how to create a Watson Discovery Service of your own. After you've created your own collection, uploading the data into the collection couldn't be easier. You just drag the files from your filesystem and drop them onto the uploader widget:
+
+![Upload data to collection](images/upload-data.gif)
+
+It may take a few minutes for the files to upload, and for the Discovery Service to perform its enrichments on the dataset.
+
+[spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
 [convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
 [data]: https://github.com/nelstrom/discovery-nodejs/tree/byod/data/breaches
+[readme]: https://github.com/nelstrom/discovery-nodejs/blob/byod/README.md
