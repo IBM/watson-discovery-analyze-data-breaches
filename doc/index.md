@@ -103,7 +103,22 @@ In the same way, you could adapt this query to filter on other fields within the
 
 As you can see, applying filters on generated fields is just as easy as filtering on fields from the original dataset.
 
+## Using queries in your own application
+
+The [API documentation][api-query] documents how to run a query against your own collection programatically. For example, to show results where `method_of_leak:hacked` using `curl`, you could run:
+
+```
+curl -u "{username}":"{password}"
+\ "https://gateway.watsonplatform.net/discovery/api/v1/environments/{environment_id}/collections/{collection_id}/query?version=2016-12-01&filter=method_of_leak:hacked&return=text"
+```
+
+If you replace the `{username}`, `{password}`, `{environment_id}`, and `{collection_id}` placeholders with the appropriate keys for your Discovery Service, you should see the same results as when you ran that query through the tooling.
+
+The [Cognitive Security][cog] demo app uses the [Node client][node-client] to connect to the Discovery Service and run queries against it. You can use it as a reference to help you build an application that queries your own dataset.
+
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
 [convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
 [data]: https://github.com/nelstrom/discovery-nodejs/tree/byod/data/breaches
 [readme]: https://github.com/nelstrom/discovery-nodejs/blob/byod/README.md
+[api-query]: https://www.ibm.com/watson/developercloud/discovery/api/v1/?curl#query-collection
+[node-client]: https://www.npmjs.com/package/watson-developer-cloud
