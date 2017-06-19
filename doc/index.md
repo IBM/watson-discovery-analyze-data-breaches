@@ -15,6 +15,13 @@ And you'll find out how to build a search engine using that dataset.
 
 [cog]: https://github.com/nelstrom/discovery-nodejs/tree/byod
 
+## Example use case:
+
+* you have a large dataset, with structured fields and free-form text fields
+* you want to build an application to allow people to find patterns in that dataset
+* users need to be able to filter the data by the existing fields
+* additionally, they should be able to filter on fields added by Discovery Service enrichments
+
 ## Preparing the dataset
 
 For the [Cognitive Security][cog] demonstration, we used a public dataset that lists cyber security breaches between 2004 and 2017.
