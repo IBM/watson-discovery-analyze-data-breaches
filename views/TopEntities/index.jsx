@@ -13,12 +13,14 @@ export default React.createClass({
     entities: PropTypes.object.isRequired,
     query: React.PropTypes.shape({
       hackType: React.PropTypes.string,
+      entityTypes: React.PropTypes.array
     }),
+    onQueryChange: React.PropTypes.func.isRequired,
   },
 
   getInitialState() {
     return {
-      showQuery: false,
+      showQuery: false
     };
   },
 
@@ -28,6 +30,16 @@ export default React.createClass({
 
   onShowResults() {
     this.setState({ showQuery: false });
+  },
+
+  addFilter(event) {
+    event.preventDefault();
+    let text = event.target.text;
+    let filters = this.props.query.entityTypes || [];
+    filters.push(text);
+    this.props.onQueryChange({
+      entityTypes: filters
+    });
   },
 
   render() {
@@ -49,7 +61,7 @@ export default React.createClass({
               {this.props.description}
             </p>
             {this.props.entities.results.length > 0 ? (
-              <Cloud data={this.props.entities.results} />
+              <Cloud data={this.props.entities.results} handleClick={this.addFilter} />
             ) : (
               <NoContent
                 query={this.props.query}

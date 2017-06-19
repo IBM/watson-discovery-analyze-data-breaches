@@ -39,7 +39,10 @@ export default React.createClass({
 
   getInitialState() {
     return {
-      query: null,  // object that has text and date
+      query: {
+        hackType: null,
+        entityTypes: [],
+      },
       error: null,
       data: null,
       loading: false,
@@ -51,7 +54,10 @@ export default React.createClass({
   },
 
   handleQueryChange(query) {
-    this.fetchNewData(query);
+    let newQuery = Object.assign({}, this.state.query);
+    newQuery = Object.assign(newQuery, query);
+    this.setState({ query: newQuery });
+    this.fetchNewData(newQuery);
   },
   /**
    * Call the query API every time the query change.
@@ -106,6 +112,7 @@ export default React.createClass({
                     query={this.state.query}
                     entities={this.state.data.entities}
                     onShowCode={this.toggleTopEntities}
+                    onQueryChange={this.handleQueryChange}
                     title="Top Entities"
                     description="Enriched with entity extraction"
                   />

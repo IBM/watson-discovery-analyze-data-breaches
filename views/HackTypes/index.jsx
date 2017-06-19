@@ -6,6 +6,7 @@ export default React.createClass({
   propTypes: {
     query: React.PropTypes.shape({
       hackType: React.PropTypes.string,
+      entityTypes: React.PropTypes.array,
     }),
     onQueryChange: React.PropTypes.func.isRequired,
   },
