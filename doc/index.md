@@ -52,6 +52,20 @@ The [README file][readme] for the Cognitive Security demo includes detailed inst
 
 It may take a few minutes for the files to upload, and for the Discovery Service to perform its enrichments on the dataset.
 
+## Querying the dataset
+
+Now that you've got your data into a collection, you can start having fun by running queries against your dataset. The tooling for the Discovery Service provides some utilities to help you with building queries. Press the **Query this collection** button, and you'll see an overview showing some insights into your data.
+
+![Data insights](images/data-insights.png)
+
+Now press the **Build your own query** button to bring up a query building form. This interface allows you to compose a query by specifying keywords, filters, and aggregations. To begin with, just leave all fields blank and press the **Run Query** button. In the panel on the right, you should now see the results from running this query.
+
+![Running a query](images/empty-query.png)
+
+You can use this interface to explore the data in the collection. Click on the disclosure icons to expand and contract fields. You should find that all each result corresponds to one of the JSON files that you uploaded earlier. All of the original fields from the JSON file are there, and you'll find some additional fields too: `id`, `score`, `extracted_metadata`, and `enriched_text`.
+
+If you drill down into the `enriched_text` field, you'll find fields such as `entities`, `docSentiment`, `taxonomy`, and so on. When your data was imported to the Discovery Service, enrichments were applied to the `text` field, and these fields are the result of that process.
+
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
 [convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
 [data]: https://github.com/nelstrom/discovery-nodejs/tree/byod/data/breaches
