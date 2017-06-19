@@ -42,7 +42,15 @@ export default React.createClass({
     });
   },
 
+  clearFilter(event) {
+    event.preventDefault();
+    this.props.onQueryChange({
+      entityTypes: []
+    });
+  },
+
   render() {
+    let filterCount = (this.props.query.entityTypes || []).length;
     return (
       <div>
         {!this.state.showQuery ? (
@@ -61,7 +69,12 @@ export default React.createClass({
               {this.props.description}
             </p>
             {this.props.entities.results.length > 0 ? (
-              <Cloud data={this.props.entities.results} handleClick={this.addFilter} />
+              <div>
+                <Cloud data={this.props.entities.results} handleClick={this.addFilter} />
+                {filterCount > 0 ? (
+                  <button onClick={this.clearFilter}>Clear filters</button>
+                ) : null }
+              </div>
             ) : (
               <NoContent
                 query={this.props.query}
