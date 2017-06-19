@@ -41,7 +41,7 @@ $ cd discovery-nodejs
 
 ### 2. Install the dependencies
 
-Install all of the dependencies by running `yarn` command.
+Install all of the dependencies by running:
 
 ```sh
 $ npm install
@@ -49,21 +49,28 @@ $ npm install
 
 This will install of the node modules specified in the package.json
 
-### 3. Create Bluemix Services
+### 3. Create Watson Discovery Service
 
-Create the following services:
+Log in to your Bluemix account, then [create a Watson Discovery Service](https://console.ng.bluemix.net/catalog/services/discovery?env_id=ibm:yp:us-south).
+After clicking that link, you'll see a form like this:
 
-* [Watson Discovery](https://console.ng.bluemix.net/catalog/services/discovery?env_id=ibm:yp:us-south)
+![Create a Watson Discovery Service](readme-images/create-watson-discovery-service.png)
 
-### 4. Configure Watson Discovery
+Change the name of the service to something more memorable (or accept the autogenrated **Discovery-XY** name), then press the **Create** button.
+
+Next, you need to find out the username and password for the service that you just created.
+Click on **Service credentials**, then press **View credentials**, as demonstrated here:
 
 ![Upload data to collection](readme-images/getting-credentials.gif)
 
-### 5. Upload data to the collection
+Take note of the `username` and `password` fields revealed here.
+In step 5, you'll use these credentials to configure the app so that it can access the service that you just created.
+
+### 4. Upload data to the collection
 
 ![Upload data to collection](readme-images/upload-data.gif)
 
-### 6. Setup environment variables
+### 5. Setup environment variables
 
 Create a `.env` file, using the `.env.example` file provided as a template:
 
@@ -87,7 +94,7 @@ After you've done that, load these variables into your shell's environment by ru
 $ export `cat .env`
 ```
 
-### 7. Run the app locally
+### 6. Run the app locally
 
 Start the app by running:
 
@@ -97,7 +104,7 @@ $ npm install
 
 You can stop the app running by pressing `ctrl-c`.
 
-### 8. Deploy the app
+### 7. Deploy the app
 
 To deploy to Bluemix make sure you have cloud foundry CLI tool installed. Then run the following commands to connect it with Bluemix and login with your Bluemix credentials.
 
