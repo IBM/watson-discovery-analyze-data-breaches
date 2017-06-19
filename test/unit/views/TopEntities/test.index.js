@@ -37,7 +37,10 @@ describe('<TopEntities />', () => {
     let entities;
 
     beforeEach(() => {
-      wrapper = shallow(<TopEntities entities={entities_sample} title='Entities' description='Extracted entities' />);
+      let emptyQuery = {
+        entityTypes: []
+      };
+      wrapper = shallow(<TopEntities entities={entities_sample} title='Entities' description='Extracted entities' onQueryChange={() => {}} query={emptyQuery} />);
       entities = wrapper.find(Cloud).nodes[0].props.data;
     });
 
