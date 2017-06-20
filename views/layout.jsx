@@ -35,7 +35,7 @@ function Layout(props) {
         />
         <Jumbotron
           serviceName={TITLE}
-          repository="https://github.com/nelstrom/discovery-nodejs"
+          repository="https://github.com/nelstrom/watson-discovery-byod"
           documentation="http://www.ibm.com/watson/developercloud/doc/discovery/index.html"
           apiReference="http://www.ibm.com/watson/developercloud/discovery/api"
           startInBluemix="https://console.ng.bluemix.net/registration/?target=/catalog/services/discovery/"
