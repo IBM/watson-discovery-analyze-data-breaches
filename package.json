@@ -1,5 +1,5 @@
 {
-  "name": "discovery-nodejs",
+  "name": "watson-discovery-byod",
   "version": "1.0.0",
   "description": "Discovery sample application",
   "main": "server.js",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/watson-developer-cloud/discovery-nodejs.git"
+    "url": "https://github.com/IBM/watson-discovery-byod.git"
   },
   "bugs": {
-    "url": "https://github.com/watson-developer-cloud/discovery-nodejs/issues"
+    "url": "https://github.com/IBM/watson-discovery-byod/issues"
   },
   "author": "IBM Corp.",
   "engines": {
