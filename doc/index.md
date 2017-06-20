@@ -116,6 +116,22 @@ If you replace the `{username}`, `{password}`, `{environment_id}`, and `{collect
 
 The [Cognitive Security][cog] demo app uses the [Node client][node-client] to connect to the Discovery Service and run queries against it. You can use it as a reference to help you build an application that queries your own dataset.
 
+## Applying enrichments to your own data
+
+When you upload a JSON file to your Watson Discovery collection using the default configuration, it applies enrichments to the `text` field. In the resulting dataset, you can find those enrichements under the `enriched_text` key. If your data has other fields that you'd like apply enrichments to, you can create a custom configuration.
+
+On the **Your data** page that summarises the status and API information for your collection, you should see a **Configuration** section. Click the **Switch** link, then **Create a new configuration**. Give your custom configuration a name, then click **Create**.
+
+You can upload sample documents and use these to test your configuration. For example, if you upload the `001.json` file and apply the default configuration to it you should see something like this:
+
+![Default enrichments apply to text field](images/configuring-enrichments.png)
+
+Notice how the preview in the right panel contains an `enriched_text` field with all of the specified enrichements. If you wanted to extract entities from the `title` field, you could set up your configuration like this:
+
+![Entity extraction on title field](images/enriched-title.png)
+
+This time in the preview panel there's an additional `enriched_title` field. With the title of "Netflix Twitter account" in the sample document, the `Netflix` and `Twitter` entities have been extracted and labelled with `type:'company'`. You can tweak your configuration to apply whichever enrichments you need to each of the appropriate fields from your data.
+
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
 [convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
 [data]: https://github.com/nelstrom/discovery-nodejs/tree/byod/data/breaches
