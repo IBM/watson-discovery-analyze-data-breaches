@@ -5,7 +5,7 @@ declared-services:
     plan: free
 applications:
 - path: .
-  name: watson-cognitive-security
+  name: watson-discovery-byod
   command: npm start
   memory: 512M
   instances: 1
