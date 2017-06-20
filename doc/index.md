@@ -3,11 +3,10 @@
 ## Overview
 
 The Watson Discovery Service can analyse your data and enrich it, as well as letting you query your data using a cognitive search engine.
-[Cognitive Security][cog] demonstrates how you can build an application using the Watson Discovery Service with your own dataset.
+[Watson Discovory BYOD][byod] demonstrates how you can build an application using the Watson Discovery Service with your own dataset.
 You'll find out how to prepare a dataset of your own so that it can be imported and enriched by the Discovery Service.
 And you'll find out how to build a search engine using that dataset.
 
-[cog]: https://github.com/nelstrom/discovery-nodejs/tree/byod
 
 ## Example use case:
 
@@ -18,7 +17,7 @@ And you'll find out how to build a search engine using that dataset.
 
 ## Preparing the dataset
 
-For the [Cognitive Security][cog] demonstration, we used a public dataset that lists cyber security breaches between 2004 and 2017.
+For the [Watson Discovory BYOD][byod] demonstration, we used a public dataset that lists cyber security breaches between 2004 and 2017.
 The data is available as a [spreadsheet on Google Docs][spreadsheet].
 You can download the dataset as Comma-separated values (CSV), by clicking the **File** menu, then **Download as** then selecting the `.csv` file format.
 
@@ -114,7 +113,7 @@ curl -u "{username}":"{password}"
 
 If you replace the `{username}`, `{password}`, `{environment_id}`, and `{collection_id}` placeholders with the appropriate keys for your Discovery Service, you should see the same results as when you ran that query through the tooling.
 
-The [Cognitive Security][cog] demo app uses the [Node client][node-client] to connect to the Discovery Service and run queries against it. You can use it as a reference to help you build an application that queries your own dataset.
+The [Watson Discovory BYOD][byod] demo app uses the [Node client][node-client] to connect to the Discovery Service and run queries against it. You can use it as a reference to help you build an application that queries your own dataset.
 
 ## Applying enrichments to your own data
 
@@ -132,9 +131,10 @@ Notice how the preview in the right panel contains an `enriched_text` field with
 
 This time in the preview panel there's an additional `enriched_title` field. With the title of "Netflix Twitter account" in the sample document, the `Netflix` and `Twitter` entities have been extracted and labelled with `type:'company'`. You can tweak your configuration to apply whichever enrichments you need to each of the appropriate fields from your data.
 
+[byod]: https://github.com/nelstrom/watson-discovery-byod
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
 [convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
-[data]: https://github.com/nelstrom/discovery-nodejs/tree/byod/data/breaches
-[readme]: https://github.com/nelstrom/discovery-nodejs/blob/byod/README.md
+[data]: https://github.com/nelstrom/watson-discovery-byod/tree/master/data/breaches
+[readme]: https://github.com/nelstrom/watson-discovery-byod/blob/master/README.md
 [api-query]: https://www.ibm.com/watson/developercloud/discovery/api/v1/?curl#query-collection
 [node-client]: https://www.npmjs.com/package/watson-developer-cloud
