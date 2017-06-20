@@ -1,0 +1,12 @@
+{
+  "title": "US Office of Personnel Management (2nd Breach)",
+  "alternative_name": "",
+  "text": "attackers have targeted the forms submitted by intelligence and military personnel for security clearances. The document includes personal information - everything from eye colour, to financial history, to past substance abuse, as well as contact details for the individual's friends and relatives",
+  "year": "2015",
+  "organisation": "government",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 21500000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.bbc.co.uk/news/world-us-canada-33120405",
+  "source_name": "BBC"
+}

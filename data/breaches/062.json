@@ -1,0 +1,12 @@
+{
+  "title": "D&B, Altegrity",
+  "alternative_name": "",
+  "text": "Hackers stole millions of social security numbers from large US data brokers Dun & Bradstreet Corp and Kroll Background America Inc, owned by Altegrity. Correction 7 Jan 2015: we previously stated that records were stolen from LexisNexis. LexisNexis conducted a thorough investigation of the malware intrusion and found no evidence that the malware accessed or stole any customer or consumer data.",
+  "year": "2014",
+  "organisation": "tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1000000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.usatoday.com/story/cybertruth/2013/09/26/lexisnexis-dunn--bradstreet-altegrity-hacked/2878769/",
+  "source_name": "USA Today"
+}

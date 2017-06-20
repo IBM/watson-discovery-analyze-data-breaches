@@ -1,0 +1,12 @@
+{
+  "title": "Monster.com",
+  "alternative_name": "Jobs website",
+  "text": "A trojan virus stole log-ins that were used to harvest user names, e-mail addresses, home addresses and phone numbers. Soon after phishing e-mails encouraged users to download a Monster Job Seeker Tool, which was in fact a program that encrypted files in their computer and left a ransom note demanding money for their decryption.",
+  "year": "2007",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1600000,
+  "data_sensitivity": 20,
+  "source_link": "http://news.bbc.co.uk/1/hi/6956349.stm",
+  "source_name": "BBC"
+}

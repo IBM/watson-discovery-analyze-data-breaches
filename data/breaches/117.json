@@ -1,0 +1,12 @@
+{
+  "title": "Dropbox",
+  "alternative_name": "",
+  "text": "User credentials were stolen in a 2012 hack, but the number affected has only just come to light.",
+  "year": "2012",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 68700000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.telegraph.co.uk/technology/2016/08/31/dropbox-hackers-stole-70-million-passwords-and-email-addresses/",
+  "source_name": "Telegraph"
+}

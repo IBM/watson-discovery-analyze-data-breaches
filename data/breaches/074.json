@@ -1,0 +1,12 @@
+{
+  "title": "Crescent Health Inc., Walgreens",
+  "alternative_name": "",
+  "text": "Names, Social Security numbers, health insurance identification numbers, health insurance information, dates of birth, diagnoses, other medical information, disability codes, addresses, and phone numbers may have been exposed via a laptop theft.",
+  "year": "2013",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 100000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.privacyrights.org/data-breach",
+  "source_name": "Privacy Rights"
+}

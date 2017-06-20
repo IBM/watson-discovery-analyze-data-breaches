@@ -1,0 +1,12 @@
+{
+  "title": "Citigroup",
+  "alternative_name": "",
+  "text": "Blame the messenger! A box of computer tapes containing information on 3.9 million customers was lost by United Parcel Service (UPS) while in transit to a credit reporting agency.",
+  "year": "2005",
+  "organisation": "financial",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 3900000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.nytimes.com/2005/06/07/business/07data.html?pagewanted=all&_moc.semityn.www",
+  "source_name": "NY Times"
+}

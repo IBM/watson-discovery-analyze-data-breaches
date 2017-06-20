@@ -1,0 +1,12 @@
+{
+  "title": "Lincoln Medical & Mental Health Center",
+  "alternative_name": "",
+  "text": "130,495 patients lost their protected health information after seven CDs were lost in transit.",
+  "year": "2010",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 130000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.phiprivacy.net/?tag=lincoln-medical-and-mental-health-center",
+  "source_name": "HHS"
+}

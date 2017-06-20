@@ -1,0 +1,12 @@
+{
+  "title": "AOL",
+  "alternative_name": "American Online",
+  "text": "A former America Online software engineer stole 92 million screen names and e-mail addresses and sold them to spammers who sent out up to 7 billion unsolicited e-mails.",
+  "year": "2004",
+  "organisation": "web",
+  "method_of_leak": "inside job, hacked",
+  "no_of_records_stolen": 92000000,
+  "data_sensitivity": 1,
+  "source_link": "http://money.cnn.com/2004/06/23/technology/aol_spam/",
+  "source_name": "CNN"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Yahoo",
+  "alternative_name": "",
+  "text": "Happened in 2013 but only disclosed late 2016. Data included names, telephone numbers, DOBs, passwords and security questions.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1000000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.nytimes.com/2016/12/14/technology/yahoo-hack.html?action=Click&contentCollection=BreakingNews&contentID=64651831&pgtype=Homepage&_r=0",
+  "source_name": "NYTimes"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "US Office of Personnel Management",
+  "alternative_name": "",
+  "text": "\"The intruders... gained access to...employees’ Social Security numbers, job assignments, performance ratings and training information\"",
+  "year": "2015",
+  "organisation": "government",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 4000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.washingtonpost.com/world/national-security/chinese-hackers-breach-federal-governments-personnel-office/2015/06/04/889c0e52-0af7-11e5-95fd-d580f1c5d44e_story.html?tid=hpModule_04941f10-8a79-11e2-98d9-3012c1cd8d1e",
+  "source_name": "WashingtonPost"
+}

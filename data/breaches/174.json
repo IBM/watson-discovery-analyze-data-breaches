@@ -1,0 +1,12 @@
+{
+  "title": "CheckFree Corporation",
+  "alternative_name": "Provider of online banking, online bill payment and electronic bill payment services for the financial services industry",
+  "text": "Customers who went to CheckFree's Web sites between 12:35 a.m. and 10:10 a.m. on the day of the attack were redirected to a Ukrainian Web server that used malicious software to try and install a password-stealing program on the victim's computer.",
+  "year": "2009",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 5000000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.computerworld.com/s/article/9125078/CheckFree_warns_5_million_customers_after_hack",
+  "source_name": "Computer World"
+}

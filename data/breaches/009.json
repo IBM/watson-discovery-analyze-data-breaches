@@ -1,0 +1,12 @@
+{
+  "title": "Waterly by MGAR Ltd",
+  "alternative_name": "App for paying water bills",
+  "text": "Jan. Israel-based app contained a vulnerability in the sign-in process that could potentially expose user account details. The problem was fixed within 2 weeks of being identifiied.",
+  "year": "2017",
+  "organisation": "app",
+  "method_of_leak": "vulnerability",
+  "no_of_records_stolen": 1000000,
+  "data_sensitivity": 300,
+  "source_link": "https://www.databreaches.net/waterly-app-potentially-exposed-up-to-1-million-israelis-details-researcher/",
+  "source_name": "Databreaches"
+}

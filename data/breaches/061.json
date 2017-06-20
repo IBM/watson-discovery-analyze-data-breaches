@@ -1,0 +1,12 @@
+{
+  "title": "Japan Airlines",
+  "alternative_name": "",
+  "text": "Oct 2014: Japan Airlines confirmed the possible theft of information from up to around 750,000 frequent-flier programme members. Data that may have been stolen included names, genders, birth dates, addresses, email addresses and places of work.",
+  "year": "2014",
+  "organisation": "transport",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 800000,
+  "data_sensitivity": 20,
+  "source_link": "http://online.wsj.com/articles/japan-airlines-reports-hacker-attack-1412053828",
+  "source_name": "Wall Street Journal"
+}

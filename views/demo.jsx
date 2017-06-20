@@ -2,57 +2,32 @@ import 'whatwg-fetch';
 import React from 'react';
 import { Icon } from 'watson-react-components';
 
-import Query from './Query/index.jsx';
+import HackTypes from './HackTypes/index.jsx';
 import TopEntities from './TopEntities/index.jsx';
-import TopStories from './TopStories/index.jsx';
-import SentimentAnalysis from './SentimentAnalysis/index.jsx';
-import MentionsAndSentiments from './MentionsAndSentiments/index.jsx';
+import GeneralSentiments from './GeneralSentiments/index.jsx';
 import NoResults from './NoResults/index.jsx';
-
-const hasResults = (entities) =>
-  entities.aggregations && entities.aggregations.length > 0 &&
-  entities.aggregations[0].field === 'enrichedTitle.entities.text';
+import ResultsList from './ResultsList/index.jsx';
 
 const parseQueryResults = (data) => {
   const parsedData = {
     results: data.results, // Top Results
-    entities: {}, // Topic cloud
-    sentiments: null, // Sentiment by source
+    entities: null, // Top entities
+    keywords: null, // Top keywords
     sentiment: null, // Overall sentiment
-    mentions: null, // Mentions and Sentiments
   };
 
   data.aggregations.forEach((aggregation) => {
-    // sentiments by source
-    if (aggregation.type === 'term' && aggregation.field.startsWith('blekko.basedomain')) {
-      parsedData.sentiments = aggregation;
-    }
     // Overall sentiment
-    if (aggregation.type === 'term' && aggregation.field.startsWith('docSentiment')) {
+    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.docSentiment.type')) {
       parsedData.sentiment = aggregation;
     }
 
-    if (aggregation.type === 'term' && aggregation.field === 'enrichedTitle.concepts.text') {
-      parsedData.entities.topics = aggregation.results;
+    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.entities.text')) {
+      parsedData.entities = aggregation;
     }
 
-    // Mentions and sentiments
-    if (aggregation.type === 'filter' &&
-      'aggregations' in aggregation &&
-      aggregation.aggregations[0].field === 'enrichedTitle.entities.text') {
-      parsedData.mentions = aggregation;
-    }
-
-    if (aggregation.type === 'nested' && aggregation.path === 'enrichedTitle.entities') {
-      const entities = aggregation.aggregations;
-      if (entities && entities.length > 0 && hasResults(entities[0])) {
-        if (entities[0].match === 'enrichedTitle.entities.type:Company') {
-          parsedData.entities.companies = entities[0].aggregations[0].results;
-        }
-        if (entities[0].match === 'enrichedTitle.entities.type:Person') {
-          parsedData.entities.people = entities[0].aggregations[0].results;
-        }
-      }
+    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.keywords.text')) {
+      parsedData.keywords = aggregation;
     }
   });
 
@@ -64,20 +39,30 @@ export default React.createClass({
 
   getInitialState() {
     return {
-      query: null,  // object that has text and date
+      query: {
+        hackType: null,
+        entityTypes: [],
+      },
       error: null,
       data: null,
       loading: false,
     };
   },
 
+  componentDidMount() {
+    this.fetchNewData();
+  },
+
   handleQueryChange(query) {
-    this.fetchNewData(query);
+    let newQuery = Object.assign({}, this.state.query);
+    newQuery = Object.assign(newQuery, query);
+    this.setState({ query: newQuery });
+    this.fetchNewData(newQuery);
   },
   /**
    * Call the query API every time the query change.
    */
-  fetchNewData(query) {
+  fetchNewData(query={}) {
     this.setState({ query, loading: true });
     fetch('/api/query', {
       method: 'POST',
@@ -94,6 +79,7 @@ export default React.createClass({
         response.json()
         .then((error) => this.setState({ error, loading: false }))
         .catch((errorMessage) => {
+          // eslint-disable-next-line no-console
           console.error(errorMessage);
           this.setState({
             error: { error: 'There was a problem with the request, please try again' },
@@ -109,7 +95,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <Query onQueryChange={this.handleQueryChange} query={this.state.query} />
+        <HackTypes onQueryChange={this.handleQueryChange} query={this.state.query} />
         { this.state.loading ?
           (
             <div className="results">
@@ -126,40 +112,30 @@ export default React.createClass({
                     query={this.state.query}
                     entities={this.state.data.entities}
                     onShowCode={this.toggleTopEntities}
+                    onQueryChange={this.handleQueryChange}
+                    title="Top Entities"
+                    description="Enriched with entity extraction"
                   />
                 </div>
                 <div className="results--panel-2">
-                  <TopStories
-                    query={this.state.query}
-                    stories={this.state.data.results}
-                    onShowCode={this.toggleTopResults}
-                    onSortChange={this.handleQueryChange}
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div className="results--panel-3">
-                  <SentimentAnalysis
+                  <GeneralSentiments
                     query={this.state.query}
                     sentiment={this.state.data.sentiment}
-                    sentiments={this.state.data.sentiments}
                   />
                 </div>
               </div>
+
               <div className="row">
-                <div className="results--panel-4">
-                  <MentionsAndSentiments
-                    query={this.state.query}
-                    mentions={this.state.data.mentions}
-                  />
+                <div className="results--panel-3">
+                  <ResultsList query={this.state.query} items={this.state.data.results} />
                 </div>
               </div>
             </div>
           </div>
         ) : null }
         { !this.state.loading && this.state.data && this.state.data.results.length === 0 ?
-          <NoResults query={this.state.query} />
-        : null }
+          <NoResults query={this.state.query} /> :
+          null }
       </div>
     );
   },

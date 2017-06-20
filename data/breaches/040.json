@@ -1,0 +1,12 @@
+{
+  "title": "Invest Bank",
+  "alternative_name": "United Arab Emirates bank",
+  "text": "Hacker breached a United Arab Emirates bank, demanding a ransom of $3m in bitcoin to stop tweeting data, mostly about corporate accounts. The hacker dumped files on the website of a basketball team, which he hacked for storage. The bank, Invest Bank, won't pay the ransom.",
+  "year": "2015",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 40000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.dailydot.com/politics/invest-bank-hacker-buba/",
+  "source_name": "DailyDot"
+}

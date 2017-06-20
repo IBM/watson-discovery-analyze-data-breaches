@@ -1,0 +1,12 @@
+{
+  "title": "Lynda.com",
+  "alternative_name": "owned by LinkedIn",
+  "text": "Hackers breached a database that held records of contact info and courses viewed. No official statement yet on how many records were actually stolen, and no evidence yet of them having been published anywhere.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 9500000,
+  "data_sensitivity": 1,
+  "source_link": "https://www.neowin.net/news/microsoft-owned-linkedin-is-sending-emails-to-users-about-a-lyndacom-data-breach",
+  "source_name": "Neowin"
+}

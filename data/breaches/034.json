@@ -1,0 +1,12 @@
+{
+  "title": "Fling",
+  "alternative_name": "Dating site",
+  "text": "A hacker claims to be selling info on sexual desires & preferences, as well as generic personal info, stolen from the dating site Fling.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 40000000,
+  "data_sensitivity": 4000,
+  "source_link": "https://www.europol.europa.eu/iocta/2016/data-breach.html",
+  "source_name": "Europol"
+}

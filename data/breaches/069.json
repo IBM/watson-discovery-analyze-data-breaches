@@ -1,0 +1,12 @@
+{
+  "title": "Target",
+  "alternative_name": "",
+  "text": "Investigators believe the data was obtained via software installed on machines that customers use to swipe magnetic strips on their cards when paying for merchandise at Target stores. Originally 40m customers. Now 70m!",
+  "year": "2014",
+  "organisation": "retail",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 70000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.chicagotribune.com/news/sns-rt-us-target-breach-20131218,0,3434295.story",
+  "source_name": "ITRC"
+}

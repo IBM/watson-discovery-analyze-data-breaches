@@ -1,0 +1,12 @@
+{
+  "title": "Living Social",
+  "alternative_name": "special offers website",
+  "text": "Online criminals gained access to user names, e-mail addresses, dates of birth & encrypted passwords for 50 million people. Databases storing financial information were not compromised in the attack, the company said.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 50000000,
+  "data_sensitivity": 1,
+  "source_link": "http://nakedsecurity.sophos.com/2013/04/27/livingsocial-hacked-50-million-affected/",
+  "source_name": "Naked Security"
+}

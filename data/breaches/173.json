@@ -1,0 +1,12 @@
+{
+  "title": "Health Net",
+  "alternative_name": "Largest US publicly traded managed health care company",
+  "text": "A portable hard drive with seven years of personal and medical information on about 1.5 million Health Net customers was lost for six months before being reported.",
+  "year": "2009",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 1500000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

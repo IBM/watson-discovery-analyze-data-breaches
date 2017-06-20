@@ -1,0 +1,12 @@
+{
+  "title": "Zomato",
+  "alternative_name": "Restaurants & events",
+  "text": "The hacker is selling the stolen dataset for around $1000.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 17000000,
+  "data_sensitivity": 4000,
+  "source_link": "https://www.hackread.com/zomato-hacked-17-million-accounts-sold-on-dark-web/",
+  "source_name": "HackRead"
+}

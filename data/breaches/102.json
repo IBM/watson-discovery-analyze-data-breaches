@@ -1,0 +1,12 @@
+{
+  "title": "Yahoo Voices",
+  "alternative_name": "",
+  "text": "Yahoo Voices service was hacked, exposing more than 450,000 usernames and passwords.",
+  "year": "2012",
+  "organisation": "tech, web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 500000,
+  "data_sensitivity": 1,
+  "source_link": "http://it.slashdot.org/story/12/07/12/1243217/nearly-half-a-million-yahoo-passwords-leaked-updated?utm_source=feedburnerGoogle+Reader&utm_medium=feed&utm_campaign=Feed%3A+Slashdot%2Fslashdot+%28Slashdot%29&utm_content=Google+Reader",
+  "source_name": "Slashdot"
+}

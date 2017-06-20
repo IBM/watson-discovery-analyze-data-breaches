@@ -1,45 +1,48 @@
-
 // Aggregations used to build the different parts of the UI
-const moment = require('moment');
-
 const entities = [
-  'nested(enrichedTitle.entities).filter(enrichedTitle.entities.type:Company).term(enrichedTitle.entities.text)',
-  'nested(enrichedTitle.entities).filter(enrichedTitle.entities.type:Person).term(enrichedTitle.entities.text)',
-  'term(enrichedTitle.concepts.text)',
+  'term(enriched_text.entities.text)',
+];
+
+const keywords = [
+  'term(enriched_text.keywords.text)',
 ];
 
 const sentiments = [
-  'term(blekko.basedomain).term(docSentiment.type)',
-  'term(docSentiment.type)',
-  'min(docSentiment.score)',
-  'max(docSentiment.score)',
-];
-
-const mentions = [
-  // eslint-disable-next-line
-  'filter(enrichedTitle.entities.type::Company).term(enrichedTitle.entities.text).timeslice(blekko.chrondate,1day).term(docSentiment.type)'
+  'term(enriched_text.docSentiment.type)',
 ];
 
 module.exports = {
-  aggregations: [].concat(entities, sentiments, mentions),
+  aggregations: [].concat(entities, keywords, sentiments),
   entities,
+  keywords,
   sentiments,
-  mentions,
-  build(query, full) {
+  build(query={}, full) {
+    let filters = [];
     const params = {
-      count: 5,
-      return: 'title,enrichedTitle.text,url,host,blekko.chrondate',
-      query: `"${query.text}",language:english`
+      count: 255,
+      return: 'id,title,text,enriched_text.entities,method_of_leak,source_link,source_name,method_of_leak,no_of_records_stolen,year',
     };
+    if (query.text && query.text.length) {
+      params.query = `"${query.text}"`;
+    }
     if (full) {
-      params.aggregations = [].concat(entities, sentiments, mentions);
+      params.aggregations = [].concat(entities, keywords, sentiments);
     }
-    if (query.date) {
-      params.filter = `blekko.hostrank>20,blekko.chrondate>${moment(query.date.from).unix()},blekko.chrondate<${moment(query.date.to).unix()}`;
+
+    if (query.hackType && query.hackType !== 'all') {
+      filters.push(`method_of_leak:"${query.hackType}"`);
     }
-    if (query.sort) {
-      params.sort = query.sort == 'date' ? '-blekko.chrondate,-_score' : '-_score';
+
+    if (query.entityTypes) {
+      query.entityTypes.forEach((entity) => {
+        filters.push(`enriched_text.entities.text:"${entity}"`);
+      });
     }
+
+    if (filters.length) {
+      params.filter = filters.join(',');
+    }
+
     return params;
   },
 };

@@ -1,0 +1,12 @@
+{
+  "title": "Home Depot",
+  "alternative_name": "",
+  "text": "Malware installed on cash register system across 2,200 stores syphoned credit card details of up to 56 million customers. May be the same group of Russian and Ukrainian hackers responsible for the data breaches at Target, Sally Beauty and P.F. Chang’s, among others",
+  "year": "2014",
+  "organisation": "retail",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 56000000,
+  "data_sensitivity": 300,
+  "source_link": "http://krebsonsecurity.com/2014/09/banks-credit-card-breach-at-home-depot/",
+  "source_name": "Krebson Security"
+}

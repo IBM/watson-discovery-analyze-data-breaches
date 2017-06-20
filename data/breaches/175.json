@@ -1,0 +1,12 @@
+{
+  "title": "Virginia Dept. Of Health",
+  "alternative_name": "",
+  "text": "An extortion demand posted on WikiLeaks sought $10 million to return over 8 million patient records and 35 million prescriptions allegedly stolen from Virginia Department of Health Professions.  All 36 servers were shut down  to protect records.",
+  "year": "2009",
+  "organisation": "government, healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 8300000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

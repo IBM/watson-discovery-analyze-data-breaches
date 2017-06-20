@@ -1,0 +1,12 @@
+{
+  "title": "Greek government",
+  "alternative_name": "",
+  "text": "A computer programmer was arrested in Greece for allegedly stealing the identity information of what could amount to 83% of the country's population. The 35-year-old was found in possession of 9 million data files containing identification card data, addresses, tax ID numbers and licence plate numbers, which he was also suspected of trying to sell.",
+  "year": "2012",
+  "organisation": "government",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 9000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.wired.co.uk/news/archive/2012-11/22/greece-id-theft",
+  "source_name": "Wired"
+}

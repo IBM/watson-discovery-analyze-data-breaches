@@ -1,0 +1,12 @@
+{
+  "title": "Tesco Bank",
+  "alternative_name": "",
+  "text": "Nov. £2.5m stolen from 9000 customer accounts.",
+  "year": "2017",
+  "organisation": "banking",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 9000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.theregister.co.uk/2016/11/30/tesco_bank_breach_former_insider_breach_theory/",
+  "source_name": "The Register"
+}

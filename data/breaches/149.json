@@ -1,0 +1,12 @@
+{
+  "title": "Steam",
+  "alternative_name": "Attackers used login details from a Steam forum hack to access a database that held ID and credit card data.",
+  "text": "The Valve Corporation",
+  "year": "2011",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 35000000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.bbc.co.uk/news/technology-15690187",
+  "source_name": "BBC"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Vodafone",
+  "alternative_name": "",
+  "text": "An IT contractor for the firm used his deep access to the telecom giant's system to copy customer names and bank account details.",
+  "year": "2013",
+  "organisation": "telecoms",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 2000000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.securityweek.com/attacker-steals-data-2-million-vodafone-germany-customers",
+  "source_name": "Security Week"
+}

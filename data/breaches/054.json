@@ -1,0 +1,12 @@
+{
+  "title": "Experian / T-mobile",
+  "alternative_name": "",
+  "text": "The world's biggest data monitoring firm disclosed a massive breach of customers who applied for service with T-Mobile. Names, addresses, birth dates, Social Security numbers, drivers license numbers and passport numbers.",
+  "year": "2015",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 15000000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.reuters.com/article/2015/10/02/us-tmobile-dataprotection-idUSKCN0RV5PL20151002",
+  "source_name": "Reuters"
+}

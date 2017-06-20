@@ -10,9 +10,9 @@ const NoContent = (props) => (
     <p className='no-content--set-message'>{props.message}</p>
     <p className='no-content--recommendations'>
       {props.query.restrictedDateRange ? (
-        "Try expanding the timeframe."
+        'Try expanding the timeframe.'
       ) : (
-        "Try modifying your query."
+        'Try modifying your query.'
       )}
     </p>
     </div>

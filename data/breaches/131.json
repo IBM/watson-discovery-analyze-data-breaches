@@ -1,0 +1,12 @@
+{
+  "title": "Spartanburg Regional Healthcare System",
+  "alternative_name": "",
+  "text": "The stolen computer contained a password-protected file with Social Security numbers as well as names, addresses, dates of birth and medical billing codes.",
+  "year": "2011",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 400000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.goupstate.com/news/20110527/spartanburg-regional-patients-affected-by-computer-breach",
+  "source_name": "GoupState"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Community Health Systems",
+  "alternative_name": "",
+  "text": "Aug 2014: Community Health Systems, which operates 206 hospitals across the US, had patient data from the last 5 years breached. Details included names, addresses, social security numbers. Suspected \"chinese hackers\" were thought responsible. Goal: identity theft.",
+  "year": "2014",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 4500000,
+  "data_sensitivity": 20,
+  "source_link": "http://money.cnn.com/2014/08/18/technology/security/hospital-chs-hack/",
+  "source_name": "CNN"
+}

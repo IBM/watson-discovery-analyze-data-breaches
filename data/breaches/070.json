@@ -1,0 +1,12 @@
+{
+  "title": "JP Morgan Chase",
+  "alternative_name": "",
+  "text": "July 2014: The US's largest bank was compromised by hackers, stealing names, addresses, phone numbers and emails of account holders. The hack began in June but was not discovered until July, when the hackers had already obtained the highest level of administrative privilege to dozens of the bank’s computer servers.",
+  "year": "2014",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 76000000,
+  "data_sensitivity": 300,
+  "source_link": "http://dealbook.nytimes.com/2014/10/02/jpmorgan-discovers-further-cyber-security-issues/?_php=true&_type=blogs&_r=0",
+  "source_name": "Dealbook"
+}

@@ -1,144 +1,163 @@
-# Discovery Demo [![Build Status](https://travis-ci.org/watson-developer-cloud/discovery-nodejs.svg?branch=master)](https://travis-ci.org/watson-developer-cloud/discovery-nodejs)
+# Discovery Demo [![Build Status](https://travis-ci.org/nelstrom/discovery-nodejs.svg?branch=byod)](https://travis-ci.org/nelstrom/discovery-nodejs)
 
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/nelstrom/discovery-nodejs&branch=byod)
 
-Use the IBM Watson [Discovery][service_url] service to add a cognitive search and content analytics engine to your applications to identify patterns, trends and actionable insights that drive better decision-making.
+In this developer journey you will upload your own data into the Watson Discovery Service. Then you'll configure a web application so that it can query the data collection you created. The web app allows you to explore that data.
 
-![Demo](readme-images/new-demo.gif)
+Once you are done with this journey you will know how to:
 
-Demo: https://discovery-news-demo.mybluemix.net/
+1. Built and run an API server with a HTML frontend written in React
+1. Configure Watson Discovery Service with the App
+1. Deploy the app to IBM Bluemix using cloudfoundry CLI tool
 
-## Getting started
+# Repo Contents
 
-1. You need a Bluemix account. If you don't have one, [sign up][sign_up].
+This repo contains code for:
 
-1. Download and install the [Cloud-foundry CLI][cloud_foundry] tool if you haven't already.
+1. Code for a responsive Frontend web application built using React
+1. Code for a backend Web and API Server built using express
+1. Data to be added to the Watson Discovery Collection
 
-1. Connect to Bluemix with the command line tool.
+# Getting Started
 
-  ```sh
-  cf api https://api.ng.bluemix.net
-  cf login
-  ```
+## Prerequisites
 
-1. Create and retrieve service keys to access the [Discovery][service_url] service:
+Make sure before you start you have the following tasks done:
 
-  ```none
-  cf create-service discovery standard my-discovery-service
-  cf create-service-key my-discovery-service myKey
-  cf service-key my-discovery-service myKey
-  ```
+1. Install [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm)
+2. Install the [Cloud-foundry CLI](https://github.com/cloudfoundry/cli) tool
+3. Have a [Bluemix account](https://console.ng.bluemix.net/registration/)
 
-1. Create an `.env` file in the root directory by copying the sample `.env.example` file using the following command:
+## Steps
 
-  ```none
-  cp .env.example .env
-  ```
-  Update the `.env` with your service instance information from step 4
+### 1. Clone the repo
 
-  The `.env` file will look something like the following:
+Clone the repo by running the following command in the terminal and go into that directory.
 
-  ```none
-  DISCOVERY_USERNAME=<username>
-  DISCOVERY_PASSWORD=<password>
-  ```
-
-1. Install the needed application dependencies with this command:
-
-  ```none
-  npm install
-  ```
-
-1. Start the application locally:
-
-  ```none
-  npm start
-  ```
-
-1. Point your browser to [http://localhost:3000](http://localhost:3000).
-
-1. Create a `manifest.yml` in the project directory that looks like this:
-   ```yml
-   name: <your application name>
-   command: npm start
-   services:
-     - my-discovery-service
-   ```
-
-1. When you're ready, push the application to Bluemix and bind your Discovery service with:
-
-  ```none
-  cf push <your application name>
-  ```
-
-After completing these steps, you are ready to test your application. Start a browser and enter the URL of your application.
-
-            <your application name>.mybluemix.net
-
-
-For more details about developing applications that use Watson Developer Cloud services in Bluemix, see [Getting started with Watson Developer Cloud and Bluemix][getting_started].
-
-
-## Troubleshooting
-
-* The main source of troubleshooting and recovery information is the Bluemix log. To view the log, run this command:
-
-  ```sh
-  cf logs <your application name> --recent
-  ```
-
-* For more details about the service, see the [documentation][docs] for the Discovery service.
-
-* *Hot Reload* is recommended for developing changes.
-    * This will allow changes to the code to immediately be reflected on the locally running instance of the application, rather than manually rebooting it.
-    * Install and use [this](https://github.com/remy/nodemon) according to the instructions found in the readme.
-
-----
-
-### Directory structure
-
-```none
-.
-├── app.js                      // express routes
-├── config                      // express configuration
-│   ├── error-handler.js
-│   ├── express.js
-│   └── security.js
-├── package.json
-├── public                      // static resources
-├── server.js                   // entry point
-├── test                        // tests
-└── views                       // react components
+```sh
+$ git clone https://github.com/nelstrom/discovery-nodejs/
+$ cd discovery-nodejs
 ```
 
-## License
+### 2. Install the dependencies
 
-  This sample code is licensed under Apache 2.0.
+Install all of the dependencies by running:
 
-## Contributing
+```sh
+$ npm install
+```
 
-  See [CONTRIBUTING](.github/CONTRIBUTING.md).
+This will install of the node modules specified in the package.json
 
-## Open Source @ IBM
-  Find more open source projects on the [IBM Github Page](http://ibm.github.io/)
+### 3. Create Watson Discovery Service
 
-## Privacy Notice
+Log in to your Bluemix account, then [create a Watson Discovery Service](https://console.ng.bluemix.net/catalog/services/discovery?env_id=ibm:yp:us-south).
+After clicking that link, you'll see a form like this:
 
-Sample web applications that include this package may be configured to track deployments to [IBM Bluemix](https://www.bluemix.net/) and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) service on each deployment:
+![Create a Watson Discovery Service](readme-images/create-watson-discovery-service.png)
 
-* Node.js package version
-* Node.js repository URL
-* Application Name (`application_name`)
-* Space ID (`space_id`)
-* Application Version (`application_version`)
-* Application URIs (`application_uris`)
-* Labels of bound services
-* Number of instances for each bound service and associated plan information
+Change the name of the service to something more memorable (or accept the autogenrated **Discovery-XY** name), then press the **Create** button.
 
-This data is collected from the `package.json` file in the sample application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
+Next, you need to find out the username and password for the service that you just created.
+Click on **Service credentials**, then press **View credentials**, as demonstrated here:
 
-[deploy_track_url]: https://github.com/cloudant-labs/deployment-tracker
-[cloud_foundry]: https://github.com/cloudfoundry/cli
-[getting_started]: https://www.ibm.com/watson/developercloud/doc/common/index.html
-[service_url]: http://www.ibm.com/watson/developercloud/discovery.html
-[docs]: http://www.ibm.com/watson/developercloud/doc/discovery/index.html
-[sign_up]: https://console.ng.bluemix.net/registration/
+![Upload data to collection](readme-images/getting-credentials.gif)
+
+Take note of the `username` and `password` fields revealed here.
+In step 6, you'll use these credentials to configure the app so that it can access the service that you just created.
+
+### 4. Create a collection and upload data to it
+
+Click on **Manage**, then use the **Launch tool** button to open the tooling for your Watson Discovery Service.
+
+![Launch Discovery Tooling](readme-images/launch-discovery-tool.png)
+
+You should now see an index listing for your data collections.
+The **Watson Discovery News** service is provided as an example of pre-enriched data.
+Next, click the **Create a data collection** button.
+In the form that appears, you can enter a name for your collection and specify a configuration to use.
+The default configuration is fine for the data set in this repository.
+
+![Name your new collection](readme-images/create-collection.png)
+
+Click the **Create** button.
+On the next screen, you'll see details about the collection that you just created.
+
+![Collection details](readme-images/collection-details.png)
+
+Under the **API Information** section, you'll find the keys you need to access this collection using the API.
+Take note of the `collection_id` and `environment_id`.
+In step 6, you'll use these credentials to configure the app so that it can access this collection.
+
+### 5. Upload data to your collection
+
+Next, you'll populate your collection with data.
+Find the `data/breaches` directory in this repository.
+Select all the files in that directory, then drag them and drop them on the upload widget, as demonstrated here:
+
+![Upload data to collection](readme-images/upload-data.gif)
+
+You can expect to wait a few minutes while the files are uploaded and processed by the Watson Discovery Service.
+
+### 6. Setup environment variables
+
+Create a `.env` file, using the `.env.example` file provided as a template:
+
+```sh
+$ cp .env.example .env
+```
+
+Open the file in a text editor and you should see something like this:
+
+```
+DISCOVERY_USERNAME=<username>
+DISCOVERY_PASSWORD=<password>
+ENVIRONMENT_ID=<environment>
+COLLECTION_ID=<collection>
+```
+
+Replace each of the `<placeholder>` values with the credentials that you noted down in previous steps.
+After you've done that, load these variables into your shell's environment by running:
+
+```sh
+$ export `cat .env`
+```
+
+### 7. Run the app locally
+
+Start the app by running:
+
+```sh
+$ npm install
+```
+
+You can stop the app running by pressing `ctrl-c`.
+
+### 8. Deploy the app
+
+To deploy to Bluemix make sure you have cloud foundry CLI tool installed. Then run the following commands to connect it with Bluemix and login with your Bluemix credentials.
+
+```sh
+$ cf api https://api.ng.bluemix.net
+$ cf login
+```
+
+Then to deploy just run the following command and it will push the code, deploy it to a server and run it.
+
+```sh
+$ cf push
+```
+
+Go to the URL that is printed at the end after deployment is done and you can view the app.
+
+# Architecture
+
+## Backend Server
+
+Backend server is responsible for server side rendering of the views to be displayed on the browser. It acts as a proxy server, forwarding queries from the frontend to the Watson Discovery Service API while keeping sensitive API keys concealed from the user.
+
+This backend is written using express and uses express-react-views engine to render views written using React.
+
+## Frontend Web App
+
+The frontend uses React to render search results and can reuse all of the views that are used by the backend for server side rendering. The frontend is using watson-react-component and is responsive.

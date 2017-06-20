@@ -906,7 +906,7 @@ html {
   overflow-x: hidden;
 }
 
-.query--text-input-container {
+.query--hack-type-select {
   display: block;
   position: relative;
 }
@@ -1057,7 +1057,7 @@ html {
   .query .text-input--input {
     padding-left: 0rem;
   }
-  .query--text-input-container {
+  .query--hack-type-select {
     width: 48.93617%;
     margin-right: 2.12766%;
     float: left;
@@ -1847,19 +1847,15 @@ input:focus, button:focus, textarea:focus {
   display: flex;
   align-items: flex-end;
 }
-.query--flex-container .query--text-input-container {
-  width: 40%;
+.query--flex-container .query--hack-type-label {
+  color: white;
+  font-weight: 300;
+  width: 50%;
+}
+.query--flex-container .query--hack-type-select {
+  width: 50%;
 }
 
-.query--flex-container .query--date-buttons-container {
-  width: 60%;
-}
-
-@media (max-width: 800px) {
-  .query--flex-container .query--date-buttons-container {
-    font-size: smaller;
-  }
-}
 
 .query--date-buttons-disabled {
   opacity: 0.4;
@@ -1871,14 +1867,51 @@ input:focus, button:focus, textarea:focus {
     flex-direction: column;
     align-items: center;
   }
-  .query--flex-container .query--text-input-container {
+  .query--flex-container .query--hack-type-label {
     width: 100%;
   }
+  .query--flex-container .query--hack-type-select {
+    width: 100%;
+  }
+}
 
-  .query--flex-container .query--date-buttons-container {
+.widget--detail {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 16px;
+}
+
+.widget--detail:last-of-type {
+  border-bottom-style: none;
+}
+
+.widget--original-data {
+  width: 60%;
+  float: left;
+  padding-right: 32px;
+}
+
+.widget--enriched-data {
+  width: 30%;
+  float: left;
+}
+
+.widget--source-details table {
+  border-bottom-style: none;
+}
+.widget--source-details th {
+  text-align: left;
+}
+.widget--source-details td {
+  padding: 0.2em 0em;
+}
+
+@media (max-width: 600px) {
+  .widget--original-data {
     width: 100%;
+    padding-right: 0;
   }
-  .query--flex-container .query--date-buttons-container {
-    font-size: x-small;
+  .widget--enriched-data {
+    width: 100%;
+    float: left;
   }
 }

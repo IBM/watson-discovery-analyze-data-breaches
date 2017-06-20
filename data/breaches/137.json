@@ -1,0 +1,12 @@
+{
+  "title": "Washington Post",
+  "alternative_name": "",
+  "text": "Unknown hackers broke into The Washington Post's jobs website stealing about 1.27 million user IDs and email addresses.",
+  "year": "2011",
+  "organisation": "media",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1300000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.pcmag.com/article2/0,2817,2388200,00.asp",
+  "source_name": "PC Mag"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "ClixSense",
+  "alternative_name": "",
+  "text": "Sept. The information stolen contains usernames, passwords, home addresses, payment histories, and other banking details.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 6600000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.digitaltrends.com/computing/clixsense-hacked/",
+  "source_name": "DigitalTrends"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "River City Media",
+  "alternative_name": "Spam operator",
+  "text": "A dodgy backup has allegedly resulted in over a billion leaked email addresses, plus other personal info in some cases, and has exposed RCM's business plans & operations.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "leak",
+  "no_of_records_stolen": 1370000000,
+  "data_sensitivity": 20,
+  "source_link": "https://betanews.com/2017/03/06/river-city-media-spam-database-leak/",
+  "source_name": "Beta News"
+}

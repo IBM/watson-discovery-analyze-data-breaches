@@ -1,0 +1,12 @@
+{
+  "title": "Medicaid",
+  "alternative_name": "US health program for low income people and families",
+  "text": "The Utah Department of Technology Services had recently moved their claims records to a new server, and hackers believed to be operating out of Eastern Europe were able to circumvent the server’s multi-layered security system containing Social Security numbers for the Medicaid claims.",
+  "year": "2012",
+  "organisation": "government, healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 800000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

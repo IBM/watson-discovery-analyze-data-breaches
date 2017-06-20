@@ -1,0 +1,12 @@
+{
+  "title": "AT&T",
+  "alternative_name": "",
+  "text": "A laptop was stolen from a car containing unencrypted Social\nSecurity numbers and bonus/salary info of AT&T employees.",
+  "year": "2008",
+  "organisation": "telecoms",
+  "method_of_leak": "lost / stolen computer",
+  "no_of_records_stolen": 100000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "South Carolina Government",
+  "alternative_name": "South Carolina Department of Health and Human Services",
+  "text": "A man was charged with five counts of violating medical confidentiality laws and one count of disclosure of confidential information after he gained access to personal information for more than 228,000 Medicaid beneficiaries.",
+  "year": "2012",
+  "organisation": "healthcare",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 200000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.thestate.com/2012/04/20/2241321/personal-information-of-more-than.html#.UFpUVqRYtmg",
+  "source_name": "TheState"
+}

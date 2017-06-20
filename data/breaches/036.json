@@ -1,0 +1,12 @@
+{
+  "title": "Philippines’ Commission on Elections",
+  "alternative_name": "COMELEC",
+  "text": "After a message was posted on the COMELEC website by hackers from Anonymous, warning the government not to mess with the elections, the entire database was stolen and posted online.",
+  "year": "2016",
+  "organisation": "government",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 55000000,
+  "data_sensitivity": 50000,
+  "source_link": "http://blog.trendmicro.com/trendlabs-security-intelligence/55m-registered-voters-risk-philippine-commission-elections-hacked/",
+  "source_name": "TrendMicro"
+}

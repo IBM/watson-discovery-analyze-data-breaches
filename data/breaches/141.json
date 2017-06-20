@@ -1,0 +1,12 @@
+{
+  "title": "State of Texas",
+  "alternative_name": "",
+  "text": "3.5 million records were accidentally published online including people's names, mailing addresses, social security numbers, and in some cases dates of birth and driver's license numbers.",
+  "year": "2011",
+  "organisation": "government",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 3500000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.informationweek.com/security/attacks/texas-data-breach-exposed-35-million-rec/229401489?queryText=Texas%20data%20leak",
+  "source_name": "Information Week"
+}

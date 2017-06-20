@@ -1,0 +1,12 @@
+{
+  "title": "Voter Database",
+  "alternative_name": "",
+  "text": "A database of 191 million US voters has been exposed as a result of incorrect configuration. The owner of the database is yet to be identified. The feds are on it.",
+  "year": "2015",
+  "organisation": "government",
+  "method_of_leak": "configuration error",
+  "no_of_records_stolen": 191000000,
+  "data_sensitivity": 20,
+  "source_link": "http://uk.reuters.com/article/us-usa-voters-breach-idUKKBN0UB1E020151229",
+  "source_name": "Reuters"
+}

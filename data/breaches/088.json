@@ -1,0 +1,12 @@
+{
+  "title": "Ubuntu",
+  "alternative_name": "The discussion forum for the popular alternative, open-source operating system",
+  "text": "July 2013: Discussion forum for the operating system was compromised leaking personal details and password. The passwords were cryptographically scrambled using the MD5 hashing algorithm - considered an inadequate means of protecting stored passwords by security experts.",
+  "year": "2013",
+  "organisation": "tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 2000000,
+  "data_sensitivity": 300,
+  "source_link": "http://arstechnica.com/security/2013/07/hack-exposes-e-mail-addresses-password-data-for-2-million-ubuntu-forum-users/",
+  "source_name": "Data Loss Database"
+}

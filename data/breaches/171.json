@@ -1,0 +1,12 @@
+{
+  "title": "Blue Cross Blue Shield of Tennessee",
+  "alternative_name": "US health insurance organization",
+  "text": "A thief stole 57 hard drives from the closet of a BlueCross call center in Chattanooga, Tenn. Data on the stolen hard drives was encoded but not encrypted. Bluecross stated there was no evidence the information was accessed due to the specialized nature of the hardware stolen.",
+  "year": "2009",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 1000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.scmagazine.com/thief-steals-57-hard-drives-from-bluecross-blueshield-of-tennessee/article/162178/",
+  "source_name": "ITRC"
+}

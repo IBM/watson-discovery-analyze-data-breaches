@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import { Tabs, Pane } from 'watson-react-components';
 import Cloud from './cloud.jsx';
 import QuerySyntax from '../QuerySyntax/index.jsx';
 import queryBuilder from '../../query-builder.js';  // eslint-disable-line
@@ -9,16 +8,19 @@ export default React.createClass({
   displayName: 'TopEntities',
 
   propTypes: {
+    title: React.PropTypes.string,
+    description: React.PropTypes.string,
     entities: PropTypes.object.isRequired,
     query: React.PropTypes.shape({
-      text: React.PropTypes.string,
-      date: React.PropTypes.object,
+      hackType: React.PropTypes.string,
+      entityTypes: React.PropTypes.array
     }),
+    onQueryChange: React.PropTypes.func.isRequired,
   },
 
   getInitialState() {
     return {
-      showQuery: false,
+      showQuery: false
     };
   },
 
@@ -30,13 +32,31 @@ export default React.createClass({
     this.setState({ showQuery: false });
   },
 
+  addFilter(event) {
+    event.preventDefault();
+    let text = event.target.text;
+    let filters = this.props.query.entityTypes || [];
+    filters.push(text);
+    this.props.onQueryChange({
+      entityTypes: filters
+    });
+  },
+
+  clearFilter(event) {
+    event.preventDefault();
+    this.props.onQueryChange({
+      entityTypes: []
+    });
+  },
+
   render() {
+    let filterCount = (this.props.query.entityTypes || []).length;
     return (
       <div>
         {!this.state.showQuery ? (
           <div className="top-entities widget">
             <div className="widget--header">
-              <h2 className="base--h2 widget--header-title">Top Entities</h2>
+              <h2 className="base--h2 widget--header-title">{this.props.title}</h2>
               <div className="widget--header-spacer" />
               <button
                 className="base--button widget--header-button"
@@ -46,51 +66,23 @@ export default React.createClass({
               </button>
             </div>
             <p className="base--p top-entities--description">
-              Easily extract frequently mentioned entities - such as people, topics and companies with Pre-enriched News.
+              {this.props.description}
             </p>
-            <Tabs selected={0}>
-              <Pane label="Topics">
-                {this.props.entities.topics.length > 0 ? (
-                  <Cloud data={this.props.entities.topics} />
-                  ) : (
-                    <NoContent
-                      query={this.props.query}
-                      message={'No Topics found.'}
-                    />
-                  )
-                }
+            {this.props.entities.results.length > 0 ? (
+              <div>
+                <Cloud data={this.props.entities.results} handleClick={this.addFilter} />
+                {filterCount > 0 ? (
+                  <button onClick={this.clearFilter}>Clear filters</button>
+                ) : null }
+              </div>
+            ) : (
+              <NoContent
+                query={this.props.query}
+                message={'No Topics found.'}
+              />
+            )
+            }
 
-              </Pane>
-              <Pane label="Companies">
-              {this.props.entities.companies.length > 0 ? (
-                <Cloud
-                  data={
-                    this.props.entities.companies ?
-                    this.props.entities.companies.filter((item) =>
-                      item.key.toLowerCase() !== this.props.query.text.toLowerCase()) :
-                    []
-                  }
-                />
-                ) : (
-                  <NoContent
-                    query={this.props.query}
-                    message={'No Companies found.'}
-                  />
-                )
-              }
-              </Pane>
-              <Pane label="People">
-              {this.props.entities.people.length > 0 ? (
-                <Cloud data={this.props.entities.people} />
-                ) : (
-                <NoContent
-                  query={this.props.query}
-                  message={'No People found.'}
-                />
-                )
-              }
-              </Pane>
-            </Tabs>
           </div>
         ) : (
           <QuerySyntax

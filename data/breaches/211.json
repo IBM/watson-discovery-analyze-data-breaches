@@ -1,0 +1,12 @@
+{
+  "title": "Cardsystems Solutions Inc.",
+  "alternative_name": "Third-party payment processor for Visa, Mastercard, Amex,  and Discover",
+  "text": "CardSystems was fingered by MasterCard after it spotted fraud on credit card accounts and found a common thread, tracing it back to CardSystems.  An unauthorized entity put a specific code into CardSystems' network, enabling the person or group to gain access to the data. It's not clear how many of the 40 million accounts were actually stolen.",
+  "year": "2005",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 40000000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.msnbc.msn.com/id/8260050/ns/technology_and_science-security/t/million-credit-cards-exposed/#.UFiz7aRYtmg",
+  "source_name": "MSNBC"
+}

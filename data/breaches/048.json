@@ -1,0 +1,12 @@
+{
+  "title": "Sanrio",
+  "alternative_name": "Hello Kitty and other franchises",
+  "text": "Security researcher was able to access a database of 3.3m of Sanrio's Sanriotown.com accounts, with links to other Sanrio Hello Kitty portals.",
+  "year": "2015",
+  "organisation": "web",
+  "method_of_leak": "configuration error",
+  "no_of_records_stolen": 3300000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.csoonline.com/article/3017171/security/database-leak-exposes-3-3-million-hello-kitty-fans.html",
+  "source_name": "CSOonline"
+}

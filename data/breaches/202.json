@@ -1,0 +1,12 @@
+{
+  "title": "UK Revenue & Customs",
+  "alternative_name": "HMRC",
+  "text": "A set of discs containing confidential details of 25 million child benefit recipients was lost.",
+  "year": "2007",
+  "organisation": "government",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 25000000,
+  "data_sensitivity": 1,
+  "source_link": "http://news.bbc.co.uk/2/hi/uk_news/7103911.stm",
+  "source_name": "BBC News"
+}

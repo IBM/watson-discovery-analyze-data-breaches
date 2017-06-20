@@ -1,0 +1,12 @@
+{
+  "title": "NASDAQ",
+  "alternative_name": "Nasdaq OMX Group",
+  "text": "Nasdaq forum website hacked by hacking ring, email addresses and passwords compromised",
+  "year": "2014",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 500000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.reuters.com/article/2013/07/18/net-us-nasdaq-cybercrime-website-idUSBRE96H1F520130718",
+  "source_name": "Reuters"
+}

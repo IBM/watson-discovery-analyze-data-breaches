@@ -1,0 +1,12 @@
+{
+  "title": "Nemours Foundation",
+  "alternative_name": "US children's hospitals",
+  "text": "A health care organization that runs children’s hospitals reported the loss of 1.05 million records when data backup tapes were lost.",
+  "year": "2011",
+  "organisation": "healthcare",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 1100000,
+  "data_sensitivity": 4000,
+  "source_link": "http://zerosecurity.org/technews/past-three-years-over-21m-medical-record-breaches/",
+  "source_name": "HHS"
+}

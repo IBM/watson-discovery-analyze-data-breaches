@@ -1,0 +1,12 @@
+{
+  "title": "Sony Pictures",
+  "alternative_name": "",
+  "text": "Wide-ranging hack of potentially every piece of data held by the company, including: unreleased films & scripts, employee social security numbers, salaries and health check results, as well as sensitive internal business documents relating to lay-offs, restructures and executive salaries. Lead suspects are \"North Korean hackers\" perhaps related to the Seth Rogen film, \"The Interview\" which mocks the North Korean dictator, Kim Jong Un.",
+  "year": "2014",
+  "organisation": "media",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 10000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.buzzfeed.com/tomgara/sony-hack",
+  "source_name": "Buzzfeed"
+}

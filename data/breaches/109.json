@@ -1,0 +1,12 @@
+{
+  "title": "Global Payments",
+  "alternative_name": "Credit, debit and check processing for merchants (Visa, Mastercard, etc)",
+  "text": "1.5 million credit card numbers from its systems may have been exposed after detecting “unauthorized access” into its processing system.",
+  "year": "2012",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1500000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.washingtonpost.com/business/technology/faq-the-global-payments-hack/2012/04/02/gIQAIHLLrS_story.html",
+  "source_name": "ITRC"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Twitter",
+  "alternative_name": "",
+  "text": "Hackers had access to limited user information -- usernames, email addresses, session tokens and encrypted/salted versions of passwords -- for approximately 250,000 users.",
+  "year": "2013",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 250000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.wired.co.uk/news/archive/2013-02/02/twitter-hacked",
+  "source_name": "Wired"
+}

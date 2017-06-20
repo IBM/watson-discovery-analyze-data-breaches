@@ -1,0 +1,12 @@
+{
+  "title": "Kromtech",
+  "alternative_name": "MacKeeper software",
+  "text": "A security researcher stumbled on a leak, which exposed usernames, email addresses and passwords of users. He notified Kromtech, who patched it quickly.",
+  "year": "2015",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 13000000,
+  "data_sensitivity": 1,
+  "source_link": "https://thestack.com/security/2015/12/15/mackeeper-discloses-13-million-mac-users-details-with-poor-hash-protection/",
+  "source_name": "TheStack"
+}

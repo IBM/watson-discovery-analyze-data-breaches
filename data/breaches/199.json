@@ -1,0 +1,12 @@
+{
+  "title": "Hannaford Brothers Supermarket Chain",
+  "alternative_name": "Delhaize Group: Hannaford Bros, Sweetbay, Food Lion, Bloom, Bottom Dollar, Harveys, Kash n' Karry",
+  "text": "An estimated 4.2 million credit and debit card numbers were stolen.",
+  "year": "2007",
+  "organisation": "retail",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 4200000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

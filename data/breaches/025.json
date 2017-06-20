@@ -1,0 +1,12 @@
+{
+  "title": "Verizon",
+  "alternative_name": "Security services",
+  "text": "Customer database and information about company's security flaws stolen and put up for sale.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 10000,
+  "data_sensitivity": 1,
+  "source_link": "http://arstechnica.com/security/2016/03/after-verizon-breach-1-5-million-customer-records-put-up-for-sale/",
+  "source_name": "Arstechnica"
+}

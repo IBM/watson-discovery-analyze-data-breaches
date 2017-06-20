@@ -1,0 +1,12 @@
+{
+  "title": "DaFont",
+  "alternative_name": "Font sharing site",
+  "text": "May. Apparently the hacker found out others were selling the site's database, so he decided to get in on the action himself.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 700000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.zdnet.com/article/font-sharing-site-dafont-hacked-thousands-of-accounts-stolen/",
+  "source_name": "ZDNet"
+}

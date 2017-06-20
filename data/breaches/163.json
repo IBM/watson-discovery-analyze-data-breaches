@@ -1,0 +1,12 @@
+{
+  "title": "Betfair",
+  "alternative_name": "UK gambling site",
+  "text": "Betfair waited 18 months to report the breach of their online gambling site, alarming banking institutions and security experts. Betfair's systems breach, which occurred in March and April 2010, was not uncovered until this past May, when a server crashed.",
+  "year": "2010",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 2300000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

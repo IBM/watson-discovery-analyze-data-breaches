@@ -1,0 +1,12 @@
+{
+  "title": "Interpark",
+  "alternative_name": "",
+  "text": "July. South Korean police are blaming North Korea for stealing data in an attempt to obtain foreign currency.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 10000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.nytimes.com/2016/07/29/world/asia/north-korea-hacking-interpark.html",
+  "source_name": "NYTimes"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Puerto Rico Department of Health",
+  "alternative_name": "",
+  "text": "Double whammy. Two separate breaches. On September 3rd, 2010 data on 115,000 people was stolen from unauthorized access of an electronic device, on the 21st they reported an additional 400,000 records were hacked.",
+  "year": "2010",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 500000,
+  "data_sensitivity": 4000,
+  "source_link": "http://www.hhs.gov/ocr/privacy/hipaa/administrative/breachnotificationrule/breachtool.html",
+  "source_name": "HHS"
+}

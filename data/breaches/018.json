@@ -1,0 +1,12 @@
+{
+  "title": "Dailymotion",
+  "alternative_name": "video sharing site",
+  "text": "85.2m email addresses extracted, but only 18.3m had associated passwords.",
+  "year": "2017",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 85200000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.zdnet.com/article/dailymotion-hack-exposes-millions-of-accounts/",
+  "source_name": "ZDNet"
+}

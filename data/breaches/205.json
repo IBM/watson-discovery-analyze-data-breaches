@@ -1,0 +1,12 @@
+{
+  "title": "KDDI",
+  "alternative_name": "Japanese telecommunications operator",
+  "text": "Press report: \"Tokyo police have arrested two men for trying to extort nearly US$90,000 from KDDI Corp. The pair allegedly threatened to disclose the existence of storage media containing personal data belonging to four million KDDI customers prior to a shareholder meeting; however, KDDI alerted the police as soon as they were contacted by the blackmailers; the police monitored communications between KDDI and the pair for several weeks. \"",
+  "year": "2006",
+  "organisation": "telecoms",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 4000000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.computerworld.com/s/article/9001150/KDDI_suffers_massive_data_breach",
+  "source_name": "Computer World"
+}

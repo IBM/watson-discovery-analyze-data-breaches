@@ -1,0 +1,12 @@
+{
+  "title": "NMBS",
+  "alternative_name": "Belgian national railway operator",
+  "text": "Data stored on a non-secure server, making it possible to access names, gender, DOB, email and postal address data of customers externally by means of a simple search engine query. Most of the data belong to customers in Belgium, France and the UK, including thousands of Commission and Parliament employees.  Caused, the NMBS said, by a data worker “clicking on the wrong button”.",
+  "year": "2013",
+  "organisation": "transport",
+  "method_of_leak": "accidentally published",
+  "no_of_records_stolen": 1500000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.europarl.europa.eu/sides/getDoc.do?pubRef=-//EP//TEXT+WQ+E-2013-001939+0+DOC+XML+V0//EN&language=nl",
+  "source_name": "European Parliament"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Mail. ru",
+  "alternative_name": "Game-related forums",
+  "text": "Two hackers attacked three game-related forums hosted by Russian company Mail.ru.",
+  "year": "2016",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 25000000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.zdnet.com/article/over-25-million-accounts-stolen-after-mail-ru-forums-raided-by-hackers/",
+  "source_name": "ZDNet"
+}

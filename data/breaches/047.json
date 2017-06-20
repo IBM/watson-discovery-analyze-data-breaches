@@ -1,0 +1,12 @@
+{
+  "title": "Carefirst",
+  "alternative_name": "Blue Cross, Blue Shield US medical insurer",
+  "text": "Attacked happened in June 2014. Was announced in June 2015.",
+  "year": "2015",
+  "organisation": "healthcare",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 1100000,
+  "data_sensitivity": 1,
+  "source_link": "http://carefirstanswers.com/",
+  "source_name": "Carefirstanswers"
+}

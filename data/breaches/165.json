@@ -1,0 +1,12 @@
+{
+  "title": "Educational Credit Management Corp",
+  "alternative_name": "US student loan guarantor",
+  "text": "A contractor for the US Department of Education stole the records of 3.3 million people. Data included names, addresses, Social Security numbers and dates of birth of borrowers, but no financial or bank account information.",
+  "year": "2010",
+  "organisation": "financial",
+  "method_of_leak": "lost / stolen media",
+  "no_of_records_stolen": 3300000,
+  "data_sensitivity": 20,
+  "source_link": "http://www.foxnews.com/us/2010/03/26/student-loan-company-data-m-people-stolen/",
+  "source_name": "ITRC"
+}

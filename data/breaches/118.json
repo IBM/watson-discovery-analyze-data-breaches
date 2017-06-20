@@ -1,0 +1,12 @@
+{
+  "title": "LinkedIn",
+  "alternative_name": "",
+  "text": "Information about a 2012 data breach has just come to light.",
+  "year": "2012",
+  "organisation": "web",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 117000000,
+  "data_sensitivity": 1,
+  "source_link": "http://money.cnn.com/2016/05/19/technology/linkedin-hack/",
+  "source_name": "CNN"
+}

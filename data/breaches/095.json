@@ -1,0 +1,12 @@
+{
+  "title": "Adobe",
+  "alternative_name": "",
+  "text": "Sep 17th 2013. Hackers obtained access to a large swathe of Adobe customer IDs and encrypted passwords & removed sensitive information (i.e. names, encrypted credit or debit card numbers, expiration dates, etc.). Approximately 36 million Adobe customers were involved: 3.1 million whose credit or debit card information was taken and nearly 33 million active users whose current, encrypted passwords were in the database taken. Correction Jan 2015: we previously reported 152m records were taking, but the remainder affected invalid, inactive, test accounts or had out-of-date passwords associated with them.",
+  "year": "2013",
+  "organisation": "tech",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 36000000,
+  "data_sensitivity": 50000,
+  "source_link": "http://helpx.adobe.com/x-productkb/policy-pricing/customer-alert.html",
+  "source_name": "Adobe"
+}

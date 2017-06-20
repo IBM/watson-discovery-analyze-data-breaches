@@ -1,0 +1,12 @@
+{
+  "title": "Bethesda Game Studios",
+  "alternative_name": "US video game company (Elder Scrolls, Fallout 3)",
+  "text": "Hacking collective Lulzsec stole account information of 200,000 user.",
+  "year": "2011",
+  "organisation": "gaming",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 200000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.pcworld.com/article/231215/lulzsec_a_short_history_of_hacking.html",
+  "source_name": "PC World"
+}

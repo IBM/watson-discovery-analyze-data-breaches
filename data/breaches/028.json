@@ -1,0 +1,12 @@
+{
+  "title": "World Check",
+  "alternative_name": "Run by Thompson Reuters",
+  "text": "2014 version of World-Check, a database of suspected terrorists and criminals, leaked online. It's unclear what data the records include.",
+  "year": "2016",
+  "organisation": "media",
+  "method_of_leak": "leak",
+  "no_of_records_stolen": 2200000,
+  "data_sensitivity": 300,
+  "source_link": "https://thestack.com/security/2016/06/29/2-million-person-terror-database-leaked-online/",
+  "source_name": "TheStack"
+}

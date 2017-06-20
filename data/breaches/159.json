@@ -1,0 +1,12 @@
+{
+  "title": "US Federal Reserve Bank of Cleveland",
+  "alternative_name": "",
+  "text": "A Malaysian man has been charged with hacking into major U.S. corporations, including the U.S. Federal Reserve Bank of Cleveland and FedComp after U.S. Secret Service investigators found more than \"400,000 stolen credit and debit card account numbers allegedly obtained by hacking into various computer systems of other financial institutions\"",
+  "year": "2010",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 400000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}

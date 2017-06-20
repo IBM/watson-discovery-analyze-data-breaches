@@ -1,0 +1,12 @@
+{
+  "title": "New York Taxis",
+  "alternative_name": "",
+  "text": "A freedom of information request resulted in the release of data on all 173 million journeys undertaken by New York taxis in one year. Unfortunately, the data was incorrectly anonymised and relatively easy to decode, revealing the driver IDs, pickup & dropoff times, and GPS routes taken for every single cab journey.",
+  "year": "2014",
+  "organisation": "transport",
+  "method_of_leak": "poor security",
+  "no_of_records_stolen": 52000,
+  "data_sensitivity": 1,
+  "source_link": "https://medium.com/@vijayp/f6bc289679a1",
+  "source_name": "Medium"
+}

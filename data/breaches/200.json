@@ -1,0 +1,12 @@
+{
+  "title": "TD Ameritrade",
+  "alternative_name": "US online broker",
+  "text": "TD Ameritrade settled a class action lawsuit to compensate as many as 6.3 million TD Ameritrade customers whose data was stolen by hackers costing the Nebraska online brokerage firm less than $2 per victim.",
+  "year": "2007",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 6300000,
+  "data_sensitivity": 1,
+  "source_link": "http://www.wired.com/threatlevel/2008/07/ameritrade-hack/",
+  "source_name": "Wired"
+}

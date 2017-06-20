@@ -1,0 +1,12 @@
+{
+  "title": "Massive American business hack",
+  "alternative_name": "7-Eleven, JC Penney, Hannaford, Heartland, JetBlue, Dow Jones, Euronet, Visa Jordan, Global Payment, Diners Singapore and Ingenicard",
+  "text": "Over eight years, a hacking ring targeted banks, payment processors and chain stores, to steal more than 160 million credit and debit card numbers, targeting more than 800,000 bank accounts",
+  "year": "2012",
+  "organisation": "financial",
+  "method_of_leak": "hacked",
+  "no_of_records_stolen": 160000000,
+  "data_sensitivity": 50000,
+  "source_link": "http://www.nydailynews.com/news/national/russians-ukrainian-charged-largest-hacking-spree-u-s-history-article-1.1408948",
+  "source_name": "NYDailyNews"
+}

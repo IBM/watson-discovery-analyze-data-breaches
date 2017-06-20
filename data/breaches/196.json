@@ -1,0 +1,12 @@
+{
+  "title": "Compass Bank",
+  "alternative_name": "",
+  "text": "A former employee stole a hardrive containing 1m account details from the bank, then used it to defraud cutomers of nearly $32,000.",
+  "year": "2007",
+  "organisation": "financial",
+  "method_of_leak": "inside job",
+  "no_of_records_stolen": 1000000,
+  "data_sensitivity": 300,
+  "source_link": "http://www.idtheftcenter.org/artman2/publish/lib_survey/ITRC_2008_Breach_List.shtml",
+  "source_name": "ITRC"
+}
