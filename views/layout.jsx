@@ -31,7 +31,7 @@ function Layout(props) {
           mainBreadcrumbs="Discovery"
           mainBreadcrumbsUrl="http://www.ibm.com/watson/developercloud/discovery.html"
           subBreadcrumbs={TITLE}
-          subBreadcrumbsUrl="https://watson-cognitive-security-papercutting-subtenancy.mybluemix.net/"
+          subBreadcrumbsUrl="https://watson-discovery-byod-hypoplastic-intarsia.mybluemix.net/"
         />
         <Jumbotron
           serviceName={TITLE}
