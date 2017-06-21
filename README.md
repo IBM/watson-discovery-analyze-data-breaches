@@ -1,6 +1,6 @@
-# Discovery Demo [![Build Status](https://travis-ci.org/nelstrom/watson-discovery-byod.svg?branch=byod)](https://travis-ci.org/nelstrom/watson-discovery-byod)
+# Discovery Demo [![Build Status](https://travis-ci.org/IBM/watson-discovery-byod.svg?branch=byod)](https://travis-ci.org/IBM/watson-discovery-byod)
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/nelstrom/watson-discovery-byod)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-discovery-byod)
 
 In this developer journey you will upload your own data into the Watson Discovery Service. Then you'll configure a web application so that it can query the data collection you created. The web app allows you to explore that data.
 
@@ -35,7 +35,7 @@ Make sure before you start you have the following tasks done:
 Clone the repo by running the following command in the terminal and go into that directory.
 
 ```sh
-$ git clone https://github.com/nelstrom/watson-discovery-byod.git
+$ git clone https://github.com/IBM/watson-discovery-byod.git
 $ cd watson-discovery-byod
 ```
 

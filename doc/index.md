@@ -131,10 +131,10 @@ Notice how the preview in the right panel contains an `enriched_text` field with
 
 This time in the preview panel there's an additional `enriched_title` field. With the title of "Netflix Twitter account" in the sample document, the `Netflix` and `Twitter` entities have been extracted and labelled with `type:'company'`. You can tweak your configuration to apply whichever enrichments you need to each of the appropriate fields from your data.
 
-[byod]: https://github.com/nelstrom/watson-discovery-byod
+[byod]: https://github.com/IBM/watson-discovery-byod
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
 [convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
-[data]: https://github.com/nelstrom/watson-discovery-byod/tree/master/data/breaches
-[readme]: https://github.com/nelstrom/watson-discovery-byod/blob/master/README.md
+[data]: https://github.com/IBM/watson-discovery-byod/tree/master/data/breaches
+[readme]: https://github.com/IBM/watson-discovery-byod/blob/master/README.md
 [api-query]: https://www.ibm.com/watson/developercloud/discovery/api/v1/?curl#query-collection
 [node-client]: https://www.npmjs.com/package/watson-developer-cloud
