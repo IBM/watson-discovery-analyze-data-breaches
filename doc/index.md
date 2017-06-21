@@ -26,7 +26,7 @@ You can download the dataset as Comma-separated values (CSV), by clicking the **
 The Discovery Service can import documents in various formats, including PDFs, Word documents, HTML files, and JSON files.
 CSV files are not accepted by the Dicovery Service, so we created a [script to convert the data from CSV to JSON format][convert].
 The script creates one JSON file for each row in the CSV file.
-You can find the resulting JSON files in [the `data` directory][data] of the Cognitive Security repository.
+You can find the resulting JSON files in [the `data` directory][data] of the Watson Discovery BYOD repository.
 Here's an example JSON file:
 
 ```json
@@ -46,7 +46,7 @@ Here's an example JSON file:
 
 The structure of the CSV file has been preserved, but some of the field names have been renamed. For example, the `story` field in the CSV file has been renamed as `text` in the JSON file. When you import a JSON document into the Discovery Service, it automatically applies enrichments to the field called `text`. You can apply enrichments to other fields by creating a custom configuration for your data collection, and we'll discuss how to do this later. But for now it makes sense to massage our data so that it can use the default configuration.
 
-The [README file][readme] for the Cognitive Security demo includes detailed instructions on how to create a Watson Discovery Service of your own. After you've created your own collection, uploading the data into the collection couldn't be easier. You just drag the files from your filesystem and drop them onto the uploader widget:
+The [README file][readme] for the Watson Discovery BYOD demo includes detailed instructions on how to create a Watson Discovery Service of your own. After you've created your own collection, uploading the data into the collection couldn't be easier. You just drag the files from your filesystem and drop them onto the uploader widget:
 
 ![Upload data to collection](images/upload-data.gif)
 
