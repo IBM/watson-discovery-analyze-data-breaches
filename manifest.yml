@@ -5,11 +5,11 @@ declared-services:
     plan: free
 applications:
 - path: .
-  name: watson-discovery-byod
+  name: watson-discovery-analyze-data-breaches
   command: npm start
   memory: 512M
   instances: 1
   disk_quota: 256M
   random-route: true
   services:
-  - my-discovery-service
+  - discovery-breach-service
