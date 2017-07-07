@@ -20,7 +20,6 @@ require('cf-deployment-tracker-client').track();
 const queryBuilder = require('./query-builder');
 const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
 const DEFAULT_NAME = 'data-breaches';
-const DISCOVERY_ACTION = 'rnr';
 
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
 const discovery = new DiscoveryV1({
@@ -85,5 +84,18 @@ const NewsDemoApp = new Promise((resolve) => {
   require('./config/error-handler')(app);
   resolve(app);
 });
+
+/**
+ * Handle setup errors by logging and appending to the global error text.
+ * @param {String} reason - The error message for the setup error.
+ */
+function handleSetupError(reason) {
+  setupError += ' ' + reason;
+  console.error('The app failed to initialize properly. Setup and restart needed.' + setupError);
+  // We could allow our chatbot to run. It would just report the above error.
+  // Or we can add the following 2 lines to abort on a setup error allowing Bluemix to restart it.
+  console.error('\nAborting due to setup error!');
+  process.exit(1);
+}
 
 module.exports = NewsDemoApp;
