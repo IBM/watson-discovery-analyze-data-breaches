@@ -17,17 +17,39 @@
 // Deployment tracking
 require('cf-deployment-tracker-client').track();
 
+// setupError will be set to an error message if we cannot recover from service setup or init error.
+let setupError = '';
+
 const queryBuilder = require('./query-builder');
+const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
+const DEFAULT_NAME = 'data-breaches';
 
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
 const discovery = new DiscoveryV1({
-  // If unspecified here, the DISCOVERY_USERNAME and
-  // DISCOVERY_PASSWORD env properties will be checked
-  // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
-  username: process.env.DISCOVERY_USERNAME,
-  password: process.env.DISCOVERY_PASSWORD,
+  // uname/pwd will be pulled in from VCAP_SERVICES or .env
   version_date: '2016-11-09',
   qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
+});
+
+// Pull in all json files to add to discovery collection
+var discoveryDocs = [];
+const fs = require('fs');
+const path = require('path');
+var arrayOfFiles = fs.readdirSync('./data/breaches/');
+arrayOfFiles.forEach(function(file) {
+  discoveryDocs.push(path.join('./data/breaches/', file));
+});
+
+// let discoveryParams; // discoveryParams will be set after Discovery is validated and setup.
+const discoverySetup = new WatsonDiscoverySetup(discovery);
+const discoverySetupParams = { default_name: DEFAULT_NAME, documents: discoveryDocs };
+discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
+  if (err) {
+    handleSetupError(err);
+  } else {
+    console.log('Discovery is ready!' + data);
+    // discoveryParams = data;
+  }
 });
 
 // gather news collection info
@@ -65,5 +87,18 @@ const NewsDemoApp = new Promise((resolve) => {
   require('./config/error-handler')(app);
   resolve(app);
 });
+
+/**
+ * Handle setup errors by logging and appending to the global error text.
+ * @param {String} reason - The error message for the setup error.
+ */
+function handleSetupError(reason) {
+  setupError += ' ' + reason;
+  console.error('The app failed to initialize properly. Setup and restart needed.' + setupError);
+  // We could allow our chatbot to run. It would just report the above error.
+  // Or we can add the following 2 lines to abort on a setup error allowing Bluemix to restart it.
+  console.error('\nAborting due to setup error!');
+  process.exit(1);
+}
 
 module.exports = NewsDemoApp;
