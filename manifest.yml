@@ -10,6 +10,6 @@ applications:
   memory: 512M
   instances: 1
   disk_quota: 256M
-  random-route: true
+  random-route: false
   services:
   - breaches-discovery-service
