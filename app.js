@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+// Deployment tracking
+require('cf-deployment-tracker-client').track();
+
 const queryBuilder = require('./query-builder');
 
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
