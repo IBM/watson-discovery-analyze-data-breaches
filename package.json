@@ -1,5 +1,5 @@
 {
-  "name": "watson-discovery-byod",
+  "name": "watson-discovery-analyze-data-breaches",
   "version": "1.0.0",
   "description": "Discovery sample application",
   "main": "server.js",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IBM/watson-discovery-byod.git"
+    "url": "https://github.com/IBM/watson-discovery-analyze-breaches.git"
   },
   "bugs": {
-    "url": "https://github.com/IBM/watson-discovery-byod/issues"
+    "url": "https://github.com/IBM/watson-discovery-analyze-breaches/issues"
   },
   "author": "IBM Corp.",
   "engines": {
