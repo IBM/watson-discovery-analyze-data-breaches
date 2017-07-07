@@ -47,7 +47,7 @@ discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
   if (err) {
     handleSetupError(err);
   } else {
-    console.log('Discovery is ready!');
+    console.log('Discovery is ready!' + data);
     // discoveryParams = data;
   }
 });
