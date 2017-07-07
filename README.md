@@ -52,9 +52,9 @@ Use the ``Deploy to Bluemix`` button **OR** create the services and run locally.
   <img width="600" src="doc/source/images/toolchain-pipeline.png">
 </p>
 
-3. To see the app and services created and configured for this journey, use the Bluemix dashboard. The app is named `watson-discovery-analyze-data-breaches` with a unique suffix. The following services are created:
+3. To see the app and services created and configured for this journey, use the Bluemix dashboard. The app is named `watson-data-breaches` with a unique suffix. The following services are created:
 
-    * discovery-breach-service
+    * breaches-discovery-service
 
 ## Run locally
 > NOTE: These steps are only needed when running locally instead of using the ``Deploy to Bluemix`` button.

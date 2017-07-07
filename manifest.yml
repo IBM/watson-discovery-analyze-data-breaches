@@ -1,15 +1,15 @@
 ---
 declared-services:
-  discovery-breaches-service:
+  breaches-discovery-service:
     label: discovery
     plan: free
 applications:
 - path: .
-  name: watson-discovery-analyze-data-breaches
+  name: watson-data-breaches
   command: npm start
   memory: 512M
   instances: 1
   disk_quota: 256M
   random-route: true
   services:
-  - discovery-breaches-service
+  - breaches-discovery-service
