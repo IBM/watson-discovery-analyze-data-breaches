@@ -42,7 +42,8 @@ arrayOfFiles.forEach(function(file) {
 
 // let discoveryParams; // discoveryParams will be set after Discovery is validated and setup.
 const discoverySetup = new WatsonDiscoverySetup(discovery);
-const discoverySetupParams = { default_name: DEFAULT_NAME, documents: discoveryDocs };
+const partialDocs = discoveryDocs.slice(0, 15);
+const discoverySetupParams = { default_name: DEFAULT_NAME, documents: partialDocs };
 discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
   if (err) {
     handleSetupError(err);
