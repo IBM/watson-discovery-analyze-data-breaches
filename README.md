@@ -85,7 +85,7 @@ Launch the **Watson Discovery** tool. Create a **new data collection**
 and give the data collection a unique name.
 
 <p align="center">
-  <img width="400" src="doc/source/images/create-collection.png">
+  <img width="600" src="doc/source/images/create-collection.png">
 </p>
 
 > Save the **environment_id** and **collection_id** for your `.env` file in the next step.
@@ -139,6 +139,7 @@ DISCOVERY_COLLECTION_ID=<add_discovery_collection>
 # Links
 
 * [Demo on Youtube](https://www.youtube.com/watch?v=XXXXXXX)
+* [Blog: Bring your own data to Watson Discovery Service](doc/index.md)
 * [Watson Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
 
 # Troubleshooting

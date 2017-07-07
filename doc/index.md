@@ -21,7 +21,7 @@ For the [Watson Discovory BYOD][byod] demonstration, we used a public dataset th
 The data is available as a [spreadsheet on Google Docs][spreadsheet].
 You can download the dataset as Comma-separated values (CSV), by clicking the **File** menu, then **Download as** then selecting the `.csv` file format.
 
-![Export CSV file from Google docs](images/export-csv.png)
+![Export CSV file from Google docs](source/images/export-csv.png)
 
 The Discovery Service can import documents in various formats, including PDFs, Word documents, HTML files, and JSON files.
 CSV files are not accepted by the Dicovery Service, so we created a [script to convert the data from CSV to JSON format][convert].
@@ -48,7 +48,7 @@ The structure of the CSV file has been preserved, but some of the field names ha
 
 The [README file][readme] for the Watson Discovery BYOD demo includes detailed instructions on how to create a Watson Discovery Service of your own. After you've created your own collection, uploading the data into the collection couldn't be easier. You just drag the files from your filesystem and drop them onto the uploader widget:
 
-![Upload data to collection](images/upload-data.gif)
+![Upload data to collection](source/images/upload-data.gif)
 
 It may take a few minutes for the files to upload, and for the Discovery Service to perform its enrichments on the dataset.
 
@@ -56,11 +56,11 @@ It may take a few minutes for the files to upload, and for the Discovery Service
 
 Now that you've got your data into a collection, you can start having fun by running queries against your dataset. The tooling for the Discovery Service provides some utilities to help you with building queries. Press the **Query this collection** button, and you'll see an overview showing some insights into your data.
 
-![Data insights](images/data-insights.png)
+![Data insights](source/images/data-insights.png)
 
 Now press the **Build your own query** button to bring up a query building form. This interface allows you to compose a query by specifying keywords, filters, and aggregations. To begin with, just leave all fields blank and press the **Run Query** button. In the panel on the right, you should now see the results from running this query.
 
-![Running a query](images/empty-query.png)
+![Running a query](source/images/empty-query.png)
 
 You can use this interface to explore the data in the collection. Click on the disclosure icons to expand and contract fields. You should find that all each result corresponds to one of the JSON files that you uploaded earlier. All of the original fields from the JSON file are there, and you'll find some additional fields too: `id`, `score`, `extracted_metadata`, and `enriched_text`.
 
@@ -76,7 +76,7 @@ For example, let's filter the collection to show all of the records where `metho
 
 Then press the **Run query** button. In the right column, you should now see the result list filtered:
 
-![Running a query](images/filter-by-method-of-leak.png)
+![Running a query](source/images/filter-by-method-of-leak.png)
 
 Try modifying that query to show all the records where the `method_of_leak` is `'accidentally published'`. Now try modifying it to show results where `year` is `2017`, or where `organisation` is `'healthcare'`.
 
@@ -96,7 +96,7 @@ For example, let's filter the collection to show all of the records where `'bank
 
 Then press the **Run query** button. In the right column, you should now see the result list filtered:
 
-![Running a query](images/filter-by-entity.png)
+![Running a query](source/images/filter-by-entity.png)
 
 In the same way, you could adapt this query to filter on other fields within the `enriched_text` field. Try modifying that filter to only show results where the `docSentiment` has `type:'positive'`.
 
@@ -123,11 +123,11 @@ On the **Your data** page that summarises the status and API information for you
 
 You can upload sample documents and use these to test your configuration. For example, if you upload the `001.json` file and apply the default configuration to it you should see something like this:
 
-![Default enrichments apply to text field](images/configuring-enrichments.png)
+![Default enrichments apply to text field](source/images/configuring-enrichments.png)
 
 Notice how the preview in the right panel contains an `enriched_text` field with all of the specified enrichements. If you wanted to extract entities from the `title` field, you could set up your configuration like this:
 
-![Entity extraction on title field](images/enriched-title.png)
+![Entity extraction on title field](source/images/enriched-title.png)
 
 This time in the preview panel there's an additional `enriched_title` field. With the title of "Netflix Twitter account" in the sample document, the `Netflix` and `Twitter` entities have been extracted and labelled with `type:'company'`. You can tweak your configuration to apply whichever enrichments you need to each of the appropriate fields from your data.
 
