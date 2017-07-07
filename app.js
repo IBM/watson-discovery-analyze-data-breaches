@@ -17,6 +17,9 @@
 // Deployment tracking
 require('cf-deployment-tracker-client').track();
 
+// setupError will be set to an error message if we cannot recover from service setup or init error.
+let setupError = '';
+
 const queryBuilder = require('./query-builder');
 const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
 const DEFAULT_NAME = 'data-breaches';
@@ -37,7 +40,7 @@ arrayOfFiles.forEach(function(file) {
   discoveryDocs.push(path.join('./data/breaches/', file));
 });
 
-let discoveryParams; // discoveryParams will be set after Discovery is validated and setup.
+// let discoveryParams; // discoveryParams will be set after Discovery is validated and setup.
 const discoverySetup = new WatsonDiscoverySetup(discovery);
 const discoverySetupParams = { default_name: DEFAULT_NAME, documents: discoveryDocs };
 discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
@@ -45,7 +48,7 @@ discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
     handleSetupError(err);
   } else {
     console.log('Discovery is ready!');
-    discoveryParams = data;
+    // discoveryParams = data;
   }
 });
 
