@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches.svg?branch=byod)](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches)
+[![Build Status](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches.svg?branch=master)](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches)
 ![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/3999122db8b59f04eecad8d229814d83/badge.svg)
 
 # Use the Watson Discovery Service to analyze cyber security breaches  
