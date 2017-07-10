@@ -17,9 +17,6 @@
 // Deployment tracking
 require('cf-deployment-tracker-client').track();
 
-// setupError will be set to an error message if we cannot recover from service setup or init error.
-let setupError = '';
-
 const queryBuilder = require('./query-builder');
 const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
@@ -48,7 +45,7 @@ var discoverySetupParams = { default_name: DEFAULT_COLLECTION_NAME };
 const discoverySetup = new WatsonDiscoverySetup(discovery);
 discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
   if (err) {
-    handleSetupError(err);
+    discoverySetup.handleSetupError(err);
   } else {
     console.log('Discovery is ready!');
 
