@@ -25,8 +25,8 @@ const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
 const DEFAULT_COLLECTION_NAME = 'data-breaches';
 
-var environment_id = process.env.ENVIRONMENT_ID;
-var collection_id = process.env.COLLECTION_ID;
+var environment_id;
+var collection_id;
 
 const discovery = new DiscoveryV1({
   // uname/pwd will be pulled in from VCAP_SERVICES or .env
@@ -55,18 +55,15 @@ discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
     // now load data into discovery service collection
     var collectionParams = data;
 
-    // set collection creds
+    // set collection creds - at this point the collectionParams
+    // will point to the actual credentials, whether the user
+    // entered them in .env for an existing collection, or if
+    // we had to create them from scratch.
     environment_id = collectionParams.environment_id;
     collection_id = collectionParams.collection_id;
     
-    collectionParams.numDocs = discoveryDocs.length;
-    collectionParams.docChunkSize = 5;  // number of docs to process at one time
-    collectionParams.documents = discoveryDocs.slice(0, collectionParams.docChunkSize);
-    collectionParams.docCurrentIdx = 0;
-    collectionParams.checkedForExistingDocs = false;
-    collectionParams.docsAlreadyLoaded = false;
-    console.log('Begin loading ' + collectionParams.numDocs + ' json files into discovery. Please be patient as this can take several minutes.');
-    console.log('Processing docs[' + collectionParams.docCurrentIdx + ':' + (collectionParams.docCurrentIdx + collectionParams.docChunkSize) + ']');
+    collectionParams.documents = discoveryDocs;
+    console.log('Begin loading ' + discoveryDocs.length + ' json files into discovery. Please be patient as this can take several minutes.');
     loadCollectionFiles(collectionParams);
   }
 });
@@ -79,11 +76,7 @@ function loadCollectionFiles(params) {
       console.log(err);
     } else {
       var collectionParams = data;
-      collectionParams.docCurrentIdx += collectionParams.docChunkSize;
       if ((! collectionParams.docsAlreadyLoaded) && (collectionParams.docCurrentIdx < collectionParams.numDocs)) {
-        var endIdx = Math.min(collectionParams.docCurrentIdx + collectionParams.docChunkSize, collectionParams.numDocs);
-        console.log('Next load of docs = [' + collectionParams.docCurrentIdx + ':' + endIdx + ']');
-        collectionParams.documents = discoveryDocs.slice(collectionParams.docCurrentIdx, endIdx);
         loadCollectionFiles(collectionParams);
       } else {
         console.log('Discovery collection loading has completed!');
@@ -94,9 +87,6 @@ function loadCollectionFiles(params) {
 
 // gather news collection info
 const NewsDemoApp = new Promise((resolve) => {
-  // const environment_id = process.env.ENVIRONMENT_ID;
-  // const collection_id = process.env.COLLECTION_ID;
-
   // Bootstrap application settings
   const express = require('express');
   const app = express();
