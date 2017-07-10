@@ -23,15 +23,13 @@ let setupError = '';
 const queryBuilder = require('./query-builder');
 const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
-const vcapServices = require('vcap_services');
+const DEFAULT_COLLECTION_NAME = 'data-breaches';
 
-const DEFAULT_NAME = 'data-breaches';
-const discoveryCredentials = vcapServices.getCredentials('discovery');
+var environment_id;
+var collection_id;
 
 const discovery = new DiscoveryV1({
   // uname/pwd will be pulled in from VCAP_SERVICES or .env
-  password: discoveryCredentials.password,
-  username: discoveryCredentials.username,
   version_date: '2017-04-27',
   qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
 });
@@ -45,24 +43,50 @@ arrayOfFiles.forEach(function(file) {
   discoveryDocs.push(path.join('./data/breaches/', file));
 });
 
-// let discoveryParams; // discoveryParams will be set after Discovery is validated and setup.
+// setup Discovery by finding/creating environment and finding/creating collection
+var discoverySetupParams = { default_name: DEFAULT_COLLECTION_NAME };
 const discoverySetup = new WatsonDiscoverySetup(discovery);
-const partialDocs = discoveryDocs.slice(0, 15);
-const discoverySetupParams = { default_name: DEFAULT_NAME, documents: partialDocs };
 discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
   if (err) {
     handleSetupError(err);
   } else {
-    console.log('Discovery is ready!' + data);
-    // discoveryParams = data;
+    console.log('Discovery is ready!');
+
+    // now load data into discovery service collection
+    var collectionParams = data;
+
+    // set collection creds - at this point the collectionParams
+    // will point to the actual credentials, whether the user
+    // entered them in .env for an existing collection, or if
+    // we had to create them from scratch.
+    environment_id = collectionParams.environment_id;
+    collection_id = collectionParams.collection_id;
+    
+    collectionParams.documents = discoveryDocs;
+    console.log('Begin loading ' + discoveryDocs.length + ' json files into discovery. Please be patient as this can take several minutes.');
+    loadCollectionFiles(collectionParams);
   }
 });
 
+// load json files into discovery collection
+function loadCollectionFiles(params) {
+  discoverySetup.loadDiscoveryData(params, (err, data) => {
+    if (err) {
+      handleSetupError(err);
+      console.log(err);
+    } else {
+      var collectionParams = data;
+      if ((! collectionParams.docsAlreadyLoaded) && (collectionParams.docCurrentIdx < collectionParams.numDocs)) {
+        loadCollectionFiles(collectionParams);
+      } else {
+        console.log('Discovery collection loading has completed!');
+      }
+    }
+  });
+}
+
 // gather news collection info
 const NewsDemoApp = new Promise((resolve) => {
-  const environment_id = process.env.ENVIRONMENT_ID;
-  const collection_id = process.env.COLLECTION_ID;
-
   // Bootstrap application settings
   const express = require('express');
   const app = express();
