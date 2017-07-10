@@ -25,13 +25,16 @@ const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
 const vcapServices = require('vcap_services');
 
-const DEFAULT_NAME = 'data-breaches';
-const discoveryCredentials = vcapServices.getCredentials('discovery');
+const DEFAULT_COLLECTION_NAME = 'data-breaches';
+// const discoveryCredentials = vcapServices.getCredentials('discovery');
+
+var environment_id = process.env.ENVIRONMENT_ID;
+var collection_id = process.env.COLLECTION_ID;
 
 const discovery = new DiscoveryV1({
   // uname/pwd will be pulled in from VCAP_SERVICES or .env
-  password: discoveryCredentials.password,
-  username: discoveryCredentials.username,
+  // password: discoveryCredentials.password,
+  // username: discoveryCredentials.username,
   version_date: '2017-04-27',
   qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
 });
@@ -45,23 +48,59 @@ arrayOfFiles.forEach(function(file) {
   discoveryDocs.push(path.join('./data/breaches/', file));
 });
 
-// let discoveryParams; // discoveryParams will be set after Discovery is validated and setup.
+// setup Discovery by finding/creating environment and finding/creating collection
+var discoverySetupParams = { default_name: DEFAULT_COLLECTION_NAME };
 const discoverySetup = new WatsonDiscoverySetup(discovery);
-const partialDocs = discoveryDocs.slice(0, 15);
-const discoverySetupParams = { default_name: DEFAULT_NAME, documents: partialDocs };
 discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
   if (err) {
     handleSetupError(err);
   } else {
-    console.log('Discovery is ready!' + data);
-    // discoveryParams = data;
+    console.log('Discovery is ready!');
+
+    // now load data into discovery service collection
+    var collectionParams = data;
+
+    // set collection creds
+    environment_id = collectionParams.environment_id;
+    collection_id = collectionParams.collection_id;
+    
+    collectionParams.numDocs = discoveryDocs.length;
+    collectionParams.docChunkSize = 5;  // number of docs to process at one time
+    collectionParams.documents = discoveryDocs.slice(0, collectionParams.docChunkSize);
+    collectionParams.docCurrentIdx = 0;
+    collectionParams.checkedForExistingDocs = false;
+    collectionParams.docsAlreadyLoaded = false;
+    console.log('Begin loading ' + collectionParams.numDocs + ' json files into discovery. Please be patient as this can take several minutes.');
+    console.log('Processing docs[' + collectionParams.docCurrentIdx + ':' + (collectionParams.docCurrentIdx + collectionParams.docChunkSize) + ']');
+    loadCollectionFiles(collectionParams);
   }
 });
 
+// load json files into discovery collection
+function loadCollectionFiles(params) {
+  discoverySetup.loadDiscoveryData(params, (err, data) => {
+    if (err) {
+      handleSetupError(err);
+      console.log(err);
+    } else {
+      var collectionParams = data;
+      collectionParams.docCurrentIdx += collectionParams.docChunkSize;
+      if ((! collectionParams.docsAlreadyLoaded) && (collectionParams.docCurrentIdx < collectionParams.numDocs)) {
+        var endIdx = Math.min(collectionParams.docCurrentIdx + collectionParams.docChunkSize, collectionParams.numDocs);
+        console.log('Next load of docs = [' + collectionParams.docCurrentIdx + ':' + endIdx + ']');
+        collectionParams.documents = discoveryDocs.slice(collectionParams.docCurrentIdx, endIdx);
+        loadCollectionFiles(collectionParams);
+      } else {
+        console.log('Discovery collection loading has completed!');
+      }
+    }
+  });
+}
+
 // gather news collection info
 const NewsDemoApp = new Promise((resolve) => {
-  const environment_id = process.env.ENVIRONMENT_ID;
-  const collection_id = process.env.COLLECTION_ID;
+  // const environment_id = process.env.ENVIRONMENT_ID;
+  // const collection_id = process.env.COLLECTION_ID;
 
   // Bootstrap application settings
   const express = require('express');
