@@ -1,17 +1,17 @@
 /**
- * Copyright 2015 IBM Corp. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
+ * Copyright 2017 IBM Corp. All Rights Reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the 'License'); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
  */
 
 // Deployment tracking
@@ -34,7 +34,7 @@ const discovery = new DiscoveryV1({
   qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
 });
 
-// Pull in all json files to add to discovery collection
+// pull in all json files to add to discovery collection
 var discoveryDocs = [];
 const fs = require('fs');
 const path = require('path');
@@ -64,26 +64,9 @@ discoverySetup.setupDiscovery(discoverySetupParams, (err, data) => {
     
     collectionParams.documents = discoveryDocs;
     console.log('Begin loading ' + discoveryDocs.length + ' json files into discovery. Please be patient as this can take several minutes.');
-    loadCollectionFiles(collectionParams);
+    discoverySetup.loadCollectionFiles(collectionParams);
   }
 });
-
-// load json files into discovery collection
-function loadCollectionFiles(params) {
-  discoverySetup.loadDiscoveryData(params, (err, data) => {
-    if (err) {
-      handleSetupError(err);
-      console.log(err);
-    } else {
-      var collectionParams = data;
-      if ((! collectionParams.docsAlreadyLoaded) && (collectionParams.docCurrentIdx < collectionParams.numDocs)) {
-        loadCollectionFiles(collectionParams);
-      } else {
-        console.log('Discovery collection loading has completed!');
-      }
-    }
-  });
-}
 
 // gather news collection info
 const NewsDemoApp = new Promise((resolve) => {
