@@ -23,18 +23,13 @@ let setupError = '';
 const queryBuilder = require('./query-builder');
 const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
 const DiscoveryV1 = require('watson-developer-cloud/discovery/v1');
-const vcapServices = require('vcap_services');
-
 const DEFAULT_COLLECTION_NAME = 'data-breaches';
-// const discoveryCredentials = vcapServices.getCredentials('discovery');
 
 var environment_id = process.env.ENVIRONMENT_ID;
 var collection_id = process.env.COLLECTION_ID;
 
 const discovery = new DiscoveryV1({
   // uname/pwd will be pulled in from VCAP_SERVICES or .env
-  // password: discoveryCredentials.password,
-  // username: discoveryCredentials.username,
   version_date: '2017-04-27',
   qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
 });
