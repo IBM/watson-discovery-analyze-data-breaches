@@ -3,7 +3,7 @@ import { Header, Jumbotron, Footer } from 'watson-react-components';
 
 // eslint-disable-next-line
 const DESCRIPTION = 'Learn more about which companies have been affected by which cyber breaches';
-const TITLE = 'Watson Discovery BYOD';
+const TITLE = 'Watson Discovery - Analyze Data Breaches';
 
 function Layout(props) {
   return (
@@ -31,11 +31,11 @@ function Layout(props) {
           mainBreadcrumbs="Discovery"
           mainBreadcrumbsUrl="http://www.ibm.com/watson/developercloud/discovery.html"
           subBreadcrumbs={TITLE}
-          subBreadcrumbsUrl="https://watson-discovery-byod-hypoplastic-intarsia.mybluemix.net/"
+          subBreadcrumbsUrl="/"
         />
         <Jumbotron
           serviceName={TITLE}
-          repository="https://github.com/IBM/watson-discovery-byod"
+          repository="https://github.com/IBM/watson-discovery-analyze-data-breaches"
           documentation="http://www.ibm.com/watson/developercloud/doc/discovery/index.html"
           apiReference="http://www.ibm.com/watson/developercloud/discovery/api"
           startInBluemix="https://console.ng.bluemix.net/registration/?target=/catalog/services/discovery/"
