@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IBM/watson-discovery-analyze-breaches.git"
+    "url": "https://github.com/IBM/watson-discovery-analyze-data-breaches.git"
   },
   "bugs": {
-    "url": "https://github.com/IBM/watson-discovery-analyze-breaches/issues"
+    "url": "https://github.com/IBM/watson-discovery-analyze-data-breaches/issues"
   },
   "author": "IBM Corp.",
   "engines": {

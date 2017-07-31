@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches.svg?branch=master)](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches)
-![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/3999122db8b59f04eecad8d229814d83/badge.svg)
+![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/6b6ce01511b2c9436bb356e3c8b3c64e/badge.svg)
 
 # Use the Watson Discovery Service to analyze cyber security breaches  
 
@@ -42,7 +42,7 @@ Want to take your Watson app to the next level? Looking to leverage Watson Brand
 Use the ``Deploy to Bluemix`` button **OR** create the services and run locally.
 
 ## Deploy to Bluemix
-[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/3999122db8b59f04eecad8d229814d83/button.svg)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
+[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/6b6ce01511b2c9436bb356e3c8b3c64e/button.svg)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
 
 1. Press the above ``Deploy to Bluemix`` button and then click on ``Deploy``.
 
@@ -138,7 +138,7 @@ DISCOVERY_COLLECTION_ID=<add_discovery_collection>
 
 # Links
 
-* [Demo on Youtube](https://www.youtube.com/watch?v=XXXXXXX)
+* [Demo on Youtube](https://youtu.be/zAu9tHefdDc)
 * [Blog: Bring your own data to Watson Discovery Service](doc/index.md)
 * [Watson Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
 
