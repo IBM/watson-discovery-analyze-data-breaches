@@ -3,7 +3,7 @@
 ## Overview
 
 The Watson Discovery Service can analyse your data and enrich it, as well as letting you query your data using a cognitive search engine.
-[Watson Discovory BYOD][byod] demonstrates how you can build an application using the Watson Discovery Service with your own dataset.
+This journey demonstrates how you can build an application using the Watson Discovery Service with your own dataset.
 You'll find out how to prepare a dataset of your own so that it can be imported and enriched by the Discovery Service.
 And you'll find out how to build a search engine using that dataset.
 
@@ -17,7 +17,7 @@ And you'll find out how to build a search engine using that dataset.
 
 ## Preparing the dataset
 
-For the [Watson Discovory BYOD][byod] demonstration, we used a public dataset that lists cyber security breaches between 2004 and 2017.
+For this journey, we used a public dataset that lists cyber security breaches between 2004 and 2017.
 The data is available as a [spreadsheet on Google Docs][spreadsheet].
 You can download the dataset as Comma-separated values (CSV), by clicking the **File** menu, then **Download as** then selecting the `.csv` file format.
 
@@ -26,7 +26,7 @@ You can download the dataset as Comma-separated values (CSV), by clicking the **
 The Discovery Service can import documents in various formats, including PDFs, Word documents, HTML files, and JSON files.
 CSV files are not accepted by the Dicovery Service, so we created a [script to convert the data from CSV to JSON format][convert].
 The script creates one JSON file for each row in the CSV file.
-You can find the resulting JSON files in [the `data` directory][data] of the Watson Discovery BYOD repository.
+You can find the resulting JSON files in [the `data` directory][data].
 Here's an example JSON file:
 
 ```json
@@ -46,7 +46,7 @@ Here's an example JSON file:
 
 The structure of the CSV file has been preserved, but some of the field names have been renamed. For example, the `story` field in the CSV file has been renamed as `text` in the JSON file. When you import a JSON document into the Discovery Service, it automatically applies enrichments to the field called `text`. You can apply enrichments to other fields by creating a custom configuration for your data collection, and we'll discuss how to do this later. But for now it makes sense to massage our data so that it can use the default configuration.
 
-The [README file][readme] for the Watson Discovery BYOD demo includes detailed instructions on how to create a Watson Discovery Service of your own. After you've created your own collection, uploading the data into the collection couldn't be easier. You just drag the files from your filesystem and drop them onto the uploader widget:
+The [README file][readme] for this journey includes detailed instructions on how to create a Watson Discovery Service of your own. After you've created your own collection, uploading the data into the collection couldn't be easier. You just drag the files from your filesystem and drop them onto the uploader widget:
 
 ![Upload data to collection](source/images/upload-data.gif)
 
@@ -64,7 +64,7 @@ Now press the **Build your own query** button to bring up a query building form.
 
 You can use this interface to explore the data in the collection. Click on the disclosure icons to expand and contract fields. You should find that all each result corresponds to one of the JSON files that you uploaded earlier. All of the original fields from the JSON file are there, and you'll find some additional fields too: `id`, `score`, `extracted_metadata`, and `enriched_text`.
 
-If you drill down into the `enriched_text` field, you'll find fields such as `entities`, `docSentiment`, `taxonomy`, and so on. When your data was imported to the Discovery Service, enrichments were applied to the `text` field, and these fields are the result of that process.
+If you drill down into the `enriched_text` field, you'll find fields such as `entities`, `sentiment`, `categories`, and so on. When your data was imported to the Discovery Service, enrichments were applied to the `text` field, and these fields are the result of that process.
 
 ## Filtering by original fields
 
@@ -113,7 +113,7 @@ curl -u "{username}":"{password}"
 
 If you replace the `{username}`, `{password}`, `{environment_id}`, and `{collection_id}` placeholders with the appropriate keys for your Discovery Service, you should see the same results as when you ran that query through the tooling.
 
-The [Watson Discovory BYOD][byod] demo app uses the [Node client][node-client] to connect to the Discovery Service and run queries against it. You can use it as a reference to help you build an application that queries your own dataset.
+This journey app uses the [Node client][node-client] to connect to the Discovery Service and run queries against it. You can use it as a reference to help you build an application that queries your own dataset.
 
 ## Applying enrichments to your own data
 
@@ -131,10 +131,9 @@ Notice how the preview in the right panel contains an `enriched_text` field with
 
 This time in the preview panel there's an additional `enriched_title` field. With the title of "Netflix Twitter account" in the sample document, the `Netflix` and `Twitter` entities have been extracted and labelled with `type:'company'`. You can tweak your configuration to apply whichever enrichments you need to each of the appropriate fields from your data.
 
-[byod]: https://github.com/IBM/watson-discovery-byod
 [spreadsheet]: https://docs.google.com/spreadsheets/d/1Je-YUdnhjQJO_13r8iTeRxpU2pBKuV6RVRHoYCgiMfg/edit#gid=322165570
-[convert]: https://github.com/nelstrom/extract-json/blob/master/convert.rb
-[data]: https://github.com/IBM/watson-discovery-byod/tree/master/data/breaches
-[readme]: https://github.com/IBM/watson-discovery-byod/blob/master/README.md
+[convert]: https://github.com/IBM/watson-discovery-analyze-data-breaches/blob/master/bin/convert.rb
+[data]: https://github.com/IBM/watson-discovery-analyze-data-breaches/tree/master/data/breaches
+[readme]: https://github.com/IBM/watson-discovery-analyze-data-breaches/blob/master/README.md
 [api-query]: https://www.ibm.com/watson/developercloud/discovery/api/v1/?curl#query-collection
 [node-client]: https://www.npmjs.com/package/watson-developer-cloud

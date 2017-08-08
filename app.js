@@ -27,7 +27,7 @@ var collection_id;
 
 const discovery = new DiscoveryV1({
   // uname/pwd will be pulled in from VCAP_SERVICES or .env
-  version_date: '2017-04-27',
+  version_date: '2017-08-01',
   qs: { aggregation: `[${queryBuilder.aggregations.join(',')}]` },
 });
 

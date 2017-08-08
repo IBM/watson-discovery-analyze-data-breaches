@@ -2,7 +2,7 @@
 declared-services:
   breaches-discovery-service:
     label: discovery
-    plan: free
+    plan: lite
 applications:
 - path: .
   name: watson-data-breaches
