@@ -18,7 +18,7 @@ const parseQueryResults = (data) => {
 
   data.aggregations.forEach((aggregation) => {
     // Overall sentiment
-    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.docSentiment.type')) {
+    if (aggregation.type === 'term' && (aggregation.field === 'enriched_text.sentiment.document.label')) {
       parsedData.sentiment = aggregation;
     }
 

@@ -8,7 +8,7 @@ const keywords = [
 ];
 
 const sentiments = [
-  'term(enriched_text.docSentiment.type)',
+  'term(enriched_text.sentiment.document.label)',
 ];
 
 module.exports = {
