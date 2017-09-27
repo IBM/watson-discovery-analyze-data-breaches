@@ -5,11 +5,13 @@ declared-services:
     plan: lite
 applications:
 - path: .
-  name: watson-data-breaches
+  name: watsondiscoveryanalyzedatabreaches
+  buildpack: sdk-for-nodejs
   command: npm start
+  timeout: 180
   memory: 256M
   instances: 1
   disk_quota: 256M
-  random-route: false
+  random-route: true
   services:
   - breaches-discovery-service
