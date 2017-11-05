@@ -16,6 +16,7 @@
 
 // Deployment tracking
 require('cf-deployment-tracker-client').track();
+require('metrics-tracker-client').track();
 
 const queryBuilder = require('./query-builder');
 const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');

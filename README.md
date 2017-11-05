@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches.svg?branch=master)](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches)
-![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/aeeda3d21ade121afd1a7f2b99501c71/badge.svg)
+![Bluemix Deployments](https://metrics-tracker.mybluemix.net/stats/aeeda3d21ade121afd1a7f2b99501c71/badge.svg)
 
 # Use the Watson Discovery Service to analyze cyber security breaches  
 
@@ -42,7 +42,7 @@ Want to take your Watson app to the next level? Looking to leverage Watson Brand
 Use the ``Deploy to Bluemix`` button **OR** create the services and run locally.
 
 ## Deploy to Bluemix
-[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/aeeda3d21ade121afd1a7f2b99501c71/button.svg)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
+[![Deploy to Bluemix](https://metrics-tracker.mybluemix.net/stats/aeeda3d21ade121afd1a7f2b99501c71/button.svg)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
 
 1. Press the above ``Deploy to Bluemix`` button and then click on ``Deploy``.
 
@@ -157,7 +157,7 @@ DISCOVERY_COLLECTION_ID=<add_discovery_collection>
 
 # Privacy Notice
 If using the `Deploy to Bluemix` button some metrics are tracked, the following
-information is sent to a [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) service
+information is sent to a [Deployment Tracker](https://github.com/IBM/metrics-tracker-service) service
 on each deployment:
 
 * Node.js package version
@@ -168,11 +168,12 @@ on each deployment:
 * Space ID (`space_id`)
 * Application Version (`application_version`)
 * Application URIs (`application_uris`)
+* Cloud Foundry API (`cf_api`)
 * Labels of bound services
 * Number of instances for each bound service and associated plan information
 
-This data is collected from the `package.json` file in the sample application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
+This data is collected from the `package.json` and `repository.yaml` files in the sample application and the `VCAP_APPLICATION` and `VCAP_SERVICES` environment variables in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix to measure the usefulness of our examples, so that we can continuously improve the content we offer to you. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
 
 ## Disabling Deployment Tracking
 
-To disable tracking, simply remove ``require("cf-deployment-tracker-client").track();`` from the ``app.js`` file in the top level directory.
+To disable tracking, simply remove ``require("cf-deployment-tracker-client").track();`` and `require("metrics-tracker-client").track();` from the ``app.js`` file in the top level directory.
