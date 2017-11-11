@@ -144,8 +144,7 @@ DISCOVERY_COLLECTION_ID=<add_discovery_collection>
 
 # Privacy Notice
 
-If using the Deploy to IBM Cloud button some metrics are tracked, the following information is sent to a [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service) service
-on each deployment:
+If using the `Deploy to IBM Cloud` button some metrics are tracked, the following information is sent to a [Deployment Tracker](https://github.com/IBM/metrics-tracker-service) service on each deployment:
 
 * Node.js package version
 * Node.js repository URL
@@ -162,7 +161,7 @@ This data is collected from the `package.json` file in the sample application an
 
 ## Disabling Deployment Tracking
 
-To disable tracking, simply remove ``cf_deployment_tracker.track()`` from the ``app.js`` file in the top level directory.
+To disable tracking, simply remove `require("metrics-tracker-client").track();` from the ``app.js`` file in the top level directory.
 
 # Links
 
