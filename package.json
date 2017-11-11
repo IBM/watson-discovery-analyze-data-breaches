@@ -33,7 +33,6 @@
     "babel-register": "^6.18.0",
     "babelify": "^7.3.0",
     "body-parser": "^1.15.2",
-    "cf-deployment-tracker-client": "^0.1.2",
     "classnames": "^2.2.5",
     "compression": "^1.6.2",
     "debug": "^2.6.0",
