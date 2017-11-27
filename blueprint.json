@@ -1,0 +1,43 @@
+{
+  "name": "Mine enterprise data for insight with cognitive technology",
+  "description": "Create a cognitive Node.js web app to import, enrich, and explore data using the Watson Discovery Service",
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "appIconURL": "blueprint/appicon.svg",
+  "previewURLs": [],
+  "type": "WEB",
+  "tags": [
+    "node",
+    "security",
+    "watson"
+  ],
+  "generators": {
+    "node": [
+      "generator-starterkit-content-downloader",
+      "generator-ibm-cloud-enablement",
+      "generator-ibm-service-enablement"
+    ]
+  },
+  "generatorOptions": {
+    "generator-starterkit-content-downloader": {
+      "registry": "https://npm-registry.whitewater.ibm.com",
+      "scope": "@arf",
+      "version": "0.0.x"
+    },
+    "generator-ibm-cloud-enablement": {
+      "version": "0.0.x"
+    },
+    "generator-ibm-service-enablement": {
+      "version": "0.0.x"
+    }
+  },
+  "requiredCapabilities": [
+    "discovery"
+  ],
+  "requiredCapabilitiesURLs": {
+    "discovery": "https://console.bluemix.net/catalog/services/discovery"
+  },
+  "servicePlans": {
+    "discovery": "lite"
+  },
+  "email": "cloud@us.ibm.com"
+}
