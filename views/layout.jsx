@@ -18,13 +18,13 @@ function Layout(props) {
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
         <link rel="stylesheet" href="/css/watson-react-components.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
-        {/* Bluemix Analytics - begin*/}
+        {/* IBM Cloud Analytics - begin*/}
         <script type="text/javascript">{`
           window._analytics = { coremetrics: false, optimizely: false, addRoll: false };
         `}</script>
         <meta name="segment" property="watson-demos" value="watson-cognitive-security" />
         <script src={props.bluemixAnalytics} />
-        {/* Bluemix Analytics  - end*/}
+        {/* IBM Cloud Analytics  - end*/}
       </head>
       <body>
         <Header
@@ -38,7 +38,7 @@ function Layout(props) {
           repository="https://github.com/IBM/watson-discovery-analyze-data-breaches"
           documentation="http://www.ibm.com/watson/developercloud/doc/discovery/index.html"
           apiReference="http://www.ibm.com/watson/developercloud/discovery/api"
-          startInBluemix="https://console.ng.bluemix.net/registration/?target=/catalog/services/discovery/"
+          startInIBM Cloud="https://console.ng.bluemix.net/registration/?target=/catalog/services/discovery/"
           version="GA"
           description={DESCRIPTION}
         />

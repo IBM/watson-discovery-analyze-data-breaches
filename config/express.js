@@ -26,7 +26,7 @@ module.exports = function (app) {
   app.set('view engine', 'jsx');
   app.engine('jsx', require('express-react-views').createEngine());
 
-  // Only loaded when running in Bluemix
+  // Only loaded when running in IBM Cloud
   if (process.env.VCAP_APPLICATION) {
     require('./security')(app);
   }
