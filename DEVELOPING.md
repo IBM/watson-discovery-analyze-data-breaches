@@ -20,6 +20,6 @@ Additional Links:
 
 * Watson Discovery, an IBM API adding value to corporate data -  [https://bbvaopen4u.com/en/actualidad/watson-discovery-ibm-api-adding-value-corporate-data](https://bbvaopen4u.com/en/actualidad/watson-discovery-ibm-api-adding-value-corporate-data)
 
-* Watson Discovery, understanding big data with less effort -  [https://www.ibm.com/blogs/watson/2016/12/watson-discovery-service-understand-data-scale-less-effort/](https://www.ibm.com/blogs/watson/2016/12/watson-discovery-service-understand-data-scale-less-effort/)    
+* Watson Discovery, understanding big data with less effort -  [https://www.ibm.com/blogs/watson/2016/12/watson-discovery-service-understand-data-scale-less-effort/](https://www.ibm.com/blogs/watson/2016/12/watson-discovery-service-understand-data-scale-less-effort/)
 
 * Using IBM Watson Discovery to Query Unstructured Data - [https://dzone.com/articles/using-ibm-watson-discovery-to-query-unstructured-d](https://dzone.com/articles/using-ibm-watson-discovery-to-query-unstructured-d)
