@@ -42,7 +42,7 @@ Use the ``Deploy to IBM Cloud`` button **OR** create the services and run locall
 
 1. Press the above ``Deploy to IBM Cloud`` button and then click on ``Deploy``.
 
-2. In ``Toolchains``, click on ``Delivery Pipeline`` to watch while the app is deployed. Once deployed, the app can be viewed by clicking ``View app``.
+2. In **Toolchains**, click on **Delivery Pipeline** to watch while the app is deployed. Once deployed, the app can be viewed by clicking **View app**.
 
 <p align="center">
   <img width="600" src="doc/source/images/toolchain-pipeline.png">
