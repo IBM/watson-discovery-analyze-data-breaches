@@ -21,7 +21,7 @@ Once you have completed this Code Pattern, you will know how to:
 
 # Included components
 
-* [Watson Discovery](https://www.ibm.com/watson/developercloud/discovery.html): A cognitive search and content analytics engine for applications to identify patterns, trens, and actionable insights.
+* [Watson Discovery](https://www.ibm.com/watson/developercloud/discovery.html): A cognitive search and content analytics engine for applications to identify patterns, trends, and actionable insights.
 
 # Featured technologies
 
@@ -42,7 +42,7 @@ Use the ``Deploy to IBM Cloud`` button **OR** create the services and run locall
 
 1. Press the above ``Deploy to IBM Cloud`` button and then click on ``Deploy``.
 
-2. In Toolchains, click on Delivery Pipeline to watch while the app is deployed. Once deployed, the app can be viewed by clicking 'View app'.
+2. In **Toolchains**, click on **Delivery Pipeline** to watch while the app is deployed. Once deployed, the app can be viewed by clicking **View app**.
 
 <p align="center">
   <img width="600" src="doc/source/images/toolchain-pipeline.png">
@@ -140,7 +140,7 @@ DISCOVERY_COLLECTION_ID=<add_discovery_collection>
 
 * Error: Only one free environent is allowed per organization
 
-  > To work with a free trial, a small free Discovery environment is created. If you already have a Discovery environment, this will fail. If you are not using Discovery, check for an old service thay you may want to delete. Otherwise use the .env DISCOVERY_ENVIRONMENT_ID to tell the app which environment you want it to use. A collection will be created in this environment using the default configuration.
+  > To work with a free trial, a small free Discovery environment is created. If you already have a Discovery environment, this will fail. If you are not using Discovery, check for an old service thay you may want to delete. Otherwise use the `.env DISCOVERY_ENVIRONMENT_ID` to tell the app which environment you want it to use. A collection will be created in this environment using the default configuration.
 
 # Privacy Notice
 
