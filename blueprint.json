@@ -1,35 +1,37 @@
 {
-  "name": "Mine enterprise data for insight with cognitive technology",
-  "description": "Create a cognitive Node.js web app to import, enrich, and explore data using the Watson Discovery Service",
-  "thumbnailURL": "blueprint/thumbnail.svg",
   "appIconURL": "blueprint/appicon.svg",
-  "previewURLs": [],
-  "type": "WEB",
-  "tags": [
-    "node",
-    "security",
-    "watson"
-  ],
+  "demoURL": "https://mine-enterprise-data-2.stage1.mybluemix.net",
+  "description": "Create a cognitive Node.js web app to import, enrich, and explore data using the Watson Discovery Service",
+  "email": "cloud@us.ibm.com",
+  "generatorOptions": {
+    "generator-git-starterkit-credentials-builder": {
+      "scope": "@arf",
+      "version": "0.x.x"
+    },
+    "generator-ibm-cloud-enablement": {
+      "options": {
+        "port": "3000"
+      },
+      "version": "0.8.x"
+    },
+    "generator-ibm-service-enablement": {
+      "version": "0.6.4"
+    },
+    "generator-starterkit-content-downloader": {
+      "scope": "@arf",
+      "version": "0.x.x"
+    }
+  },
   "generators": {
     "node": [
       "generator-starterkit-content-downloader",
       "generator-ibm-cloud-enablement",
-      "generator-ibm-service-enablement"
+      "generator-ibm-service-enablement",
+      "generator-git-starterkit-credentials-builder"
     ]
   },
-  "generatorOptions": {
-    "generator-starterkit-content-downloader": {
-      "registry": "https://npm-registry.whitewater.ibm.com",
-      "scope": "@arf",
-      "version": "0.0.x"
-    },
-    "generator-ibm-cloud-enablement": {
-      "version": "0.0.x"
-    },
-    "generator-ibm-service-enablement": {
-      "version": "0.0.x"
-    }
-  },
+  "name": "Mine enterprise data for insight with cognitive technology",
+  "previewURLs": [],
   "requiredCapabilities": [
     "discovery"
   ],
@@ -39,5 +41,10 @@
   "servicePlans": {
     "discovery": "lite"
   },
-  "email": "cloud@us.ibm.com"
+  "tags": [
+    "cli",
+    "devex"
+  ],
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "type": "WEB"
 }
