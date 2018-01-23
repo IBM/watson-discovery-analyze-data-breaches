@@ -27,7 +27,7 @@
     "generator-starterkit-content-downloader": {
       "registry": "https://na.artifactory.swg-devops.com/artifactory/api/npm/bmd-npm",
       "scope": "@arf",
-      "version": "0.0.x"
+      "version": "0.0.8"
     }
   },
   "requiredCapabilities": [
