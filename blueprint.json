@@ -1,6 +1,6 @@
 {
   "appIconURL": "blueprint/appicon.svg",
-  "demoURL": "https://mine-enterprise-data-2.stage1.mybluemix.net",
+  "demoURL": "https://discovery-github.mybluemix.net",
   "description": "Create a cognitive Node.js web app to import, enrich, and explore data using the Watson Discovery Service",
   "email": "cloud@us.ibm.com",
   "generatorOptions": {
