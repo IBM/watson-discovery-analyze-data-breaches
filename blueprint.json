@@ -30,7 +30,7 @@
       "generator-git-starterkit-credentials-builder"
     ]
   },
-  "name": "Mine enterprise data for insight with cognitive technology",
+  "name": "Mine enterprise data",
   "previewURLs": [],
   "requiredCapabilities": [
     "discovery"
