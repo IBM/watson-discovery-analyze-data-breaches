@@ -1,8 +1,0 @@
-id: watson-discovery-analyze-data-breaches
-event_id: web
-event_organizer: dev-journeys
-runtimes:
-  - Cloud Foundry
-services:
-  - Discovery
-language: nodejs

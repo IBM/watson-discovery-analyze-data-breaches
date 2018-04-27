@@ -15,7 +15,6 @@
  */
 
 // Deployment tracking
-require('metrics-tracker-client').track();
 
 const queryBuilder = require('./query-builder');
 const WatsonDiscoverySetup = require('./lib/watson-discovery-setup');
