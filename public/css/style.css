@@ -1059,8 +1059,10 @@ html {
   }
   .query--hack-type-select {
     width: 48.93617%;
-    margin-right: 2.12766%;
+    margin-right: 0px;
+    margin-top: 0px;
     float: left;
+    border: 2px solid #9753e1;
   }
   .query--date-container {
     width: 48.93617%;
@@ -1317,8 +1319,7 @@ html {
 }
 
 .sentiment--bar_negative {
-  background: -webkit-repeating-linear-gradient(left, #e2237e, #e2237e 0.7rem, transparent 0rem, transparent 0.9rem);
-  background: repeating-linear-gradient(90deg, #e2237e, #e2237e 0.7rem, transparent 0rem, transparent 0.9rem);
+  background-color: #e2237e;
 }
 
 .sentiment--bar_hidden {
@@ -1845,17 +1846,20 @@ input:focus, button:focus, textarea:focus {
 
 .query--flex-container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .query--flex-container .query--hack-type-label {
   color: white;
   font-weight: 300;
   width: 50%;
+  margin-right: 2.12766%;
+}
+.query--flex-container .query--hack-type-label label{
+  margin: .25em 0 .25em;
 }
 .query--flex-container .query--hack-type-select {
   width: 50%;
 }
-
 
 .query--date-buttons-disabled {
   opacity: 0.4;

@@ -43,6 +43,9 @@ module.exports = {
       params.filter = filters.join(',');
     }
 
+    // show results containing entities first
+    params.sort = 'enriched_text.entities.text';
+
     return params;
   },
 };

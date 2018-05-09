@@ -33,7 +33,7 @@ export default React.createClass({
         {!this.state.showQuery ? (
           <div className="sentiment widget">
             <div className="widget--header">
-              <h2 className="base--h2 widget--header-title">General Sentiments</h2>
+              <h2 className="base--h2 widget--header-title">Sentiments</h2>
               <div className="widget--header-spacer" />
               <button
                 className="base--button widget--header-button"
