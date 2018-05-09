@@ -40,13 +40,17 @@ const SentimentChart = React.createClass({
           <div className="sentiment--labels">
             <div className="sentiment--info sentiment--info_negative">
               <div className="sentiment--score">{`${Math.round(percentages.negative)}%`}</div>
-              <div className="sentiment--label">Negative Sentiment</div>
+              <div className="sentiment--label">Negative</div>
             </div>
-            {/* To make sure positive and negative are spread apart */}
+            {/* To make sure values are spread apart */}
             <div className="sentiment--info sentiment--spacer" />
+            <div className="sentiment--info sentiment--info_neutral">
+              <div className="sentiment--score">{`${Math.round(percentages.neutral)}%`}</div>
+              <div className="sentiment--label">Neutral</div>
+            </div>
             <div className="sentiment--info sentiment--info_positive">
               <div className="sentiment--score">{`${Math.round(percentages.positive)}%`}</div>
-              <div className="sentiment--label">Positive Sentiment</div>
+              <div className="sentiment--label">Positive</div>
             </div>
           </div>
         ) : null}

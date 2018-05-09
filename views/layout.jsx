@@ -3,7 +3,7 @@ import { Header, Jumbotron, Footer } from 'watson-react-components';
 
 // eslint-disable-next-line
 const DESCRIPTION = 'Learn more about which companies have been affected by which cyber breaches';
-const TITLE = 'Watson Discovery - Analyze Data Breaches';
+const TITLE = 'Watson Discovery - Data Breach Analysis';
 
 function Layout(props) {
   return (
