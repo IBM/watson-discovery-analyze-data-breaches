@@ -54,6 +54,7 @@
     "react-daterange-picker": "^1.1.0",
     "react-dates": "^4.3.2",
     "react-dom": "^15.4.2",
+    "react-js-pagination": "^3.0.2",
     "recharts": "^0.20.2",
     "uglifyify": "^3.0.4",
     "watson-developer-cloud": "^3.1.1",
