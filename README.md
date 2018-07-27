@@ -92,11 +92,9 @@ Under `Add data to this collection` use `Drag and drop your documents here or br
 ### 4. Configure credentials
 
 The credentials for the IBM Cloud Discovery service can be found in the ``Services`` menu in IBM Cloud,
-by selecting the ``Service Credentials`` option for the service.
+by selecting the `Service Credentials` option for the service.
 
-The other settings for Conversation and Discovery were collected during the
-earlier setup steps (``DISCOVERY_COLLECTION_ID``, ``DISCOVERY_ENVIRONMENT_ID`` and
-``WORKSPACE_ID``).
+The other settings for Discovery were collected during the earlier setup steps (`DISCOVERY_COLLECTION_ID` and `DISCOVERY_ENVIRONMENT_ID`).
 
 Copy the [`env.sample`](env.sample) to `.env`.
 
@@ -111,11 +109,19 @@ Edit the `.env` file with the necessary settings.
 # Replace the credentials here with your own.
 # Rename this file to .env before starting the app.
 
-# Watson Discovery
-DISCOVERY_USERNAME=<add_discovery_username>
-DISCOVERY_PASSWORD=<add_discovery_password>
-DISCOVERY_ENVIRONMENT_ID=<add_discovery_environment>
-DISCOVERY_COLLECTION_ID=<add_discovery_collection>
+# Watson Services
+# IMPORTANT: If your service is provisioned with IAM authentication, comment out the
+# username/password credentials and use the IAM credentials key/value pair
+
+# Watson Discovery authentication using username/password authentication
+DISCOVERY_USERNAME = <put discovery username here>
+DISCOVERY_PASSWORD = <put discovery password here>
+# Watson Discovery authentication using IAM
+#DISCOVERY_IAM_APIKEY=<put discovery IAM apikey here>
+#DISCOVERY_URL=<put discovery url here>
+
+DISCOVERY_ENVIRONMENT_ID=<put discovery environment id here>
+DISCOVERY_COLLECTION_ID=<put discovery collection id here>
 
 # Run locally on a non-default port (default is 3000)
 # PORT=3000

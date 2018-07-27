@@ -11,7 +11,7 @@ casper.test.begin('Discovery Demo', 3, function suite(test) {
 
   casper.start(baseHost, function runAfterStart(result) {
     test.assert(result.status === 200, 'Front page opens');
-    test.assertEquals(this.getTitle(), 'Discovery Demo', 'Title is found');
+    test.assertEquals(this.getTitle(), 'Watson Discovery - Data Breach Analysis', 'Title is found');
     testForButtons();
   });
 

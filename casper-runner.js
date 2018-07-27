@@ -16,9 +16,16 @@
 
 require('dotenv').config();
 
-if (!process.env.DISCOVERY_USERNAME) {
+function hasCredentials() {
+  if ((process.env.DISCOVERY_USERNAME && process.env.DISCOVERY_USERNAME !== '<put discovery username here>') ||
+    (process.env.DISCOVERY_IAM_APIKEY && process.env.DISCOVERY_IAM_APIKEY !== '<put discovery IAM apikey here>'))
+    return true;
+  return false;
+}
+
+if (!hasCredentials()) {
   // eslint-disable-next-line no-console
-  console.log('Skipping integration tests because DISCOVERY_USERNAME is null');
+  console.log('Skipping integration tests because DISCOVERY_USERNAME and DISCOVERY_IAM_APIKEY is null.');
 } else {
   const spawn = require('child_process').spawn;
 

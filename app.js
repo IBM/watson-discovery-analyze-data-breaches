@@ -25,7 +25,7 @@ var environment_id;
 var collection_id;
 
 var discovery;
-const version_date = '2017-08-01';
+const version_date = '2018-03-05';
 const qs = { aggregation: `[${queryBuilder.aggregations.join(',')}]` };
 if (process.env.service_watson_discovery !== undefined) {
   // Authentication for starter kit + Kubernetes
@@ -34,13 +34,13 @@ if (process.env.service_watson_discovery !== undefined) {
     url: service_watson_discovery['url'],
     username: service_watson_discovery['username'],
     password: service_watson_discovery['password'],
-    version_date: version_date,
+    version: version_date,
     qs: qs,
   });
 } else {
   // Credentials will be pulled in from VCAP_SERVICES or .env
   discovery = new DiscoveryV1({
-    version_date: version_date,
+    version: version_date,
     qs: qs,
   });
 }
