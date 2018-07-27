@@ -18,9 +18,16 @@ const path = require('path');
 // load default variables for testing
 require('dotenv').config({ path: path.join(__dirname, '../../../.env') });
 
-if (!process.env.DISCOVERY_USERNAME || process.env.DISCOVERY_USERNAME === '<username>') {
+function hasCredentials() {
+  if ((process.env.DISCOVERY_USERNAME && process.env.DISCOVERY_USERNAME !== '<put discovery username here>') ||
+    (process.env.DISCOVERY_IAM_APIKEY && process.env.DISCOVERY_IAM_APIKEY !== '<put discovery IAM apikey here>'))
+    return true;
+  return false;
+}
+
+if (!hasCredentials()) {
   // eslint-disable-next-line
-  console.log('Skipping integration tests because DISCOVERY_USERNAME is null.');
+  console.log('Skipping integration tests because DISCOVERY_USERNAME and DISCOVERY_IAM_APIKEY is null.');
 } else {
   const app = require('../../../app');
   const request = require('supertest');
