@@ -106,11 +106,8 @@ Edit the `.env` file with the necessary settings.
 #### `env.sample:`
 
 ```
-# Replace the credentials here with your own.
-# Rename this file to .env before starting the app.
-
-# Replace the credentials here with your own.
-# Rename this file to .env before starting the app.
+# Copy this file to .env and replace the credentials with
+# your own before starting the app.
 
 # Watson Discovery
 DISCOVERY_URL=<add_discovery_url>
