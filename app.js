@@ -27,23 +27,11 @@ var collection_id;
 var discovery;
 const version_date = '2018-03-05';
 const qs = { aggregation: `[${queryBuilder.aggregations.join(',')}]` };
-if (process.env.service_watson_discovery !== undefined) {
-  // Authentication for starter kit + Kubernetes
-  var service_watson_discovery = JSON.parse(process.env.service_watson_discovery);
-  discovery = new DiscoveryV1({
-    url: service_watson_discovery['url'],
-    username: service_watson_discovery['username'],
-    password: service_watson_discovery['password'],
-    version: version_date,
-    qs: qs,
-  });
-} else {
-  // Credentials will be pulled in from VCAP_SERVICES or .env
-  discovery = new DiscoveryV1({
-    version: version_date,
-    qs: qs,
-  });
-}
+// Credentials will be pulled in from VCAP_SERVICES or .env
+discovery = new DiscoveryV1({
+  version: version_date,
+  qs: qs,
+});
 
 // pull in all json files to add to discovery collection
 var discoveryDocs = [];
