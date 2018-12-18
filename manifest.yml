@@ -7,11 +7,10 @@ applications:
 - path: .
   name: watsondiscoveryanalyzedatabreaches
   buildpack: sdk-for-nodejs
-  command: npm start
-  timeout: 180
   memory: 256M
   instances: 1
-  disk_quota: 256M
   random-route: false
   services:
   - breaches-discovery-service
+env:
+  OPTIMIZE_MEMORY: true

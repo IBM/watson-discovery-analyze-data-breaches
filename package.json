@@ -4,7 +4,7 @@
   "description": "Discovery sample application",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node --max_old_space_size=256 server.js",
     "debug": "node --debug server.js",
     "test-page": "./node_modules/mocha/bin/_mocha test/integration/page",
     "test-integration": "casperjs test ./test/integration/test.*.js",
@@ -45,7 +45,7 @@
     "express-secure-only": "^0.2.1",
     "helmet": "^3.4.0",
     "moment": "^2.17.1",
-    "morgan": "^1.7.0",
+    "morgan": "^1.9.1",
     "node-prismjs": "^0.1.0",
     "prismjs": "^1.6.0",
     "react": "^15.4.2",
@@ -57,8 +57,8 @@
     "react-js-pagination": "^3.0.2",
     "recharts": "^0.20.2",
     "uglifyify": "^3.0.4",
-    "watson-developer-cloud": "^3.7.0",
-    "watson-react-components": "^0.5.8",
+    "watson-developer-cloud": "3.7.0",
+    "watson-react-components": "^0.6.19",
     "whatwg-fetch": "^2.0.1"
   },
   "devDependencies": {
@@ -72,7 +72,7 @@
     "phantomjs-prebuilt": "^2.1.14",
     "react-addons-test-utils": "^15.5.1",
     "sinon": "^2.2.0",
-    "supertest": "^2.0.1"
+    "supertest": "^3.3.0"
   },
   "babel": {
     "presets": [
