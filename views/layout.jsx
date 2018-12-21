@@ -38,7 +38,7 @@ function Layout(props) {
           repository="https://github.com/IBM/watson-discovery-analyze-data-breaches"
           documentation="http://www.ibm.com/watson/developercloud/doc/discovery/index.html"
           apiReference="http://www.ibm.com/watson/developercloud/discovery/api"
-          startInIBM Cloud="https://console.ng.bluemix.net/registration/?target=/catalog/services/discovery/"
+          startInIBM Cloud="https://cloud.ibm.com/registration/?target=/catalog/services/discovery/"
           version="GA"
           description={DESCRIPTION}
         />

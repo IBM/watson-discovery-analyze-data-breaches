@@ -39,7 +39,7 @@ Use the ``Deploy to IBM Cloud`` button **OR** create the services and run locall
 
 ## Deploy to IBM Cloud
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
 
 1. Press the above ``Deploy to IBM Cloud`` button and then click on ``Deploy``.
 
@@ -77,7 +77,7 @@ We'll be using the folder [`data/breaches/`](data/breaches/)
 
 Create the following services:
 
-* [**Watson Discovery**](https://console.ng.bluemix.net/catalog/services/discovery)
+* [**Watson Discovery**](https://cloud.ibm.com/catalog/services/discovery)
 
 ### 3. Load the Discovery files
 
