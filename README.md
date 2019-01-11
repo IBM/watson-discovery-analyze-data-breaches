@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches.svg?branch=master)](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches)
+[![Build Status](https://api.travis-ci.org/IBM/watson-discovery-analyze-data-breaches.svg?branch=master)](https://travis-ci.org/IBM/watson-discovery-analyze-data-breaches)
 
 # Use the Watson Discovery Service to analyze cyber security breaches
 
@@ -26,12 +26,12 @@ Once you have completed this code pattern, you will know how to:
 # Featured technologies
 
 * [Node.js](https://nodejs.org/en/) - An asynchronous event driven JavaScript runtime, designed to build scalable applications
-* [React](https://facebook.github.io/react/) - Javascript library for building User Interfaces
+* [React](https://reactjs.org/) - Javascript library for building User Interfaces
 * [Express](https://expressjs.com) - A popular and minimalistic web framework for creating API and Web server
 
 # Watch the Video
 
-[![video](http://img.youtube.com/vi/zAu9tHefdDc/0.jpg)](https://youtu.be/zAu9tHefdDc)
+[![video](https://img.youtube.com/vi/zAu9tHefdDc/0.jpg)](https://youtu.be/zAu9tHefdDc)
 
 # Steps
 
@@ -39,7 +39,7 @@ Use the ``Deploy to IBM Cloud`` button **OR** create the services and run locall
 
 ## Deploy to IBM Cloud
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/watson-discovery-analyze-data-breaches.git)
 
 1. Press the above ``Deploy to IBM Cloud`` button and then click on ``Deploy``.
 
@@ -77,7 +77,7 @@ We'll be using the folder [`data/breaches/`](data/breaches/)
 
 Create the following services:
 
-* [**Watson Discovery**](https://console.ng.bluemix.net/catalog/services/discovery)
+* [**Watson Discovery**](https://cloud.ibm.com/catalog/services/discovery)
 
 ### 3. Load the Discovery files
 
@@ -101,15 +101,15 @@ by selecting the `Service Credentials` option for the service.
 
 The other settings for Discovery were collected during the earlier setup steps (`DISCOVERY_COLLECTION_ID` and `DISCOVERY_ENVIRONMENT_ID`).
 
-Copy the [`env.sample`](env.sample) to `.env`.
+Copy the [`env.example`](env.example) to `.env`.
 
 ```bash
-cp env.sample .env
+cp env.example .env
 ```
 
 Edit the `.env` file with the necessary settings.
 
-#### `env.sample:`
+#### `env.example`
 
 ```bash
 # Copy this file to .env and replace the credentials with
@@ -154,19 +154,19 @@ DISCOVERY_COLLECTION_ID=<add_discovery_collection_id>
 * [Demo on Youtube](https://youtu.be/zAu9tHefdDc): Watch the video.
 * [Watson Node.js SDK](https://github.com/watson-developer-cloud/node-sdk): Download the Watson Node SDK.
 * [Blog: Bring your own data to Watson Discovery Service](doc/index.md): Steps to building the data for this code pattern.
-* [Data set: World’s biggest data breaches (Information is Beautiful)](http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/): Check out the data set used for this code pattern, as well as others available for you to use.
+* [Data set: World’s biggest data breaches (Information is Beautiful)](https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/): Check out the data set used for this code pattern, as well as others available for you to use.
 * [Watson Discovery, an IBM API adding value to corporate data](https://bbvaopen4u.com/en/actualidad/watson-discovery-ibm-api-adding-value-corporate-data): Dive into IBM Watson Discovery Service, enabling companies to structure and understand large masses of data.
 * [Blog: Watson Discovery Service – Understand your data at scale with less effort](https://www.ibm.com/blogs/watson/2016/12/watson-discovery-service-understand-data-scale-less-effort/): Align and connect different data sets to expose critical correlations and causal factors.
 * [Blog: Using IBM Watson Discovery to query unstructured data](https://dzone.com/articles/using-ibm-watson-discovery-to-query-unstructured-d): Make sense of and identify patterns in large amounts of unstructured data.
 
 # Learn more
 
-* **Artificial Intelligence Code Patterns**: Enjoyed this code pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **Artificial Intelligence Code Patterns**: Enjoyed this code pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our code pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
