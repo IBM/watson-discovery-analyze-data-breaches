@@ -27,4 +27,4 @@ rules:
     - error
     - always
   no-console:
-    - warn
+    - off

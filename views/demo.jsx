@@ -69,25 +69,25 @@ export default React.createClass({
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(query),
     })
-    .then((response) => {
-      if (response.ok) {
-        response.json()
-          .then((json) => {
-            this.setState({ loading: false, data: parseQueryResults(json) });
-          });
-      } else {
-        response.json()
-        .then((error) => this.setState({ error, loading: false }))
-        .catch((errorMessage) => {
-          // eslint-disable-next-line no-console
-          console.error(errorMessage);
-          this.setState({
-            error: { error: 'There was a problem with the request, please try again' },
-            loading: false,
-          });
-        });
-      }
-    });
+      .then((response) => {
+        if (response.ok) {
+          response.json()
+            .then((json) => {
+              this.setState({ loading: false, data: parseQueryResults(json) });
+            });
+        } else {
+          response.json()
+            .then((error) => this.setState({ error, loading: false }))
+            .catch((errorMessage) => {
+              // eslint-disable-next-line no-console
+              console.error(errorMessage);
+              this.setState({
+                error: { error: 'There was a problem with the request, please try again' },
+                loading: false,
+              });
+            });
+        }
+      });
     // scroll to the loading bar
     window.scrollTo(100, 344);
   },

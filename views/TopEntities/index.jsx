@@ -92,7 +92,7 @@ export default React.createClass({
             onGoBack={this.onShowResults}
           />
         )
-      }
+        }
       </div>
     );
   },
