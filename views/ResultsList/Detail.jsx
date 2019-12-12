@@ -52,7 +52,7 @@ export default React.createClass({
               <ul>
                 {entities.map((entity) =>
                   <li title={entity.type}
-                      key={entity.text + entity.type}
+                    key={entity.text + entity.type}
                   >
                     {entity.text}
                   </li>

@@ -7,14 +7,14 @@ const NoContent = (props) => (
       <Icon type="info" />
     </div>
     <div className='no-content--messages'>
-    <p className='no-content--set-message'>{props.message}</p>
-    <p className='no-content--recommendations'>
-      {props.query.restrictedDateRange ? (
-        'Try expanding the timeframe.'
-      ) : (
-        'Try modifying your query.'
-      )}
-    </p>
+      <p className='no-content--set-message'>{props.message}</p>
+      <p className='no-content--recommendations'>
+        {props.query.restrictedDateRange ? (
+          'Try expanding the timeframe.'
+        ) : (
+          'Try modifying your query.'
+        )}
+      </p>
     </div>
   </div>
 );

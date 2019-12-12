@@ -36,7 +36,7 @@ export default React.createClass({
               >
                 <a href="#" onClick={this.props.handleClick}>{item.key}</a>
               </div>) :
-              []
+            []
         }
       </div>
     );

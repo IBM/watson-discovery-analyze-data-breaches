@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
- /* eslint no-unused-vars: "off" */
+/* eslint no-unused-vars: "off" */
 
 module.exports = (app) => {
   // catch 404 and forward to error handler

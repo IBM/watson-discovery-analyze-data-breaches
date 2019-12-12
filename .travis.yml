@@ -1,6 +1,5 @@
 language: node_js
-dist: trusty
-node_js: 6
+node_js: node
 script:
   - ./.travis_script.sh
 cache:

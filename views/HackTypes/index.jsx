@@ -33,8 +33,8 @@ export default React.createClass({
             </div>
             <div className="query--hack-type-select">
               <select id="hack-type-select"
-                      onChange={this.handleChange}
-                      value={this.state.selectedValue}>
+                onChange={this.handleChange}
+                value={this.state.selectedValue}>
                 <option value="all">All</option>
                 <option value="hacked">Hacked</option>
                 <option value="accidentally published">Accidentally published</option>
