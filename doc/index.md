@@ -104,14 +104,7 @@ As you can see, applying filters on generated fields is just as easy as filterin
 
 ## Using queries in your own application
 
-The [API documentation][api-query] documents how to run a query against your own collection programatically. For example, to show results where `method_of_leak:hacked` using `curl`, you could run:
-
-```
-curl -u "{username}":"{password}"
-\ "https://gateway.watsonplatform.net/discovery/api/v1/environments/{environment_id}/collections/{collection_id}/query?version=2016-12-01&filter=method_of_leak:hacked&return=text"
-```
-
-If you replace the `{username}`, `{password}`, `{environment_id}`, and `{collection_id}` placeholders with the appropriate keys for your Discovery Service, you should see the same results as when you ran that query through the tooling.
+The [API documentation][api-query] documents how to run a query against your own collection programatically -- using `curl` or a variety of popular programming languages.
 
 This journey app uses the [Node client][node-client] to connect to the Discovery Service and run queries against it. You can use it as a reference to help you build an application that queries your own dataset.
 
@@ -135,5 +128,5 @@ This time in the preview panel there's an additional `enriched_title` field. Wit
 [convert]: https://github.com/IBM/watson-discovery-analyze-data-breaches/blob/master/bin/convert.rb
 [data]: https://github.com/IBM/watson-discovery-analyze-data-breaches/tree/master/data/breaches
 [readme]: https://github.com/IBM/watson-discovery-analyze-data-breaches/blob/master/README.md
-[api-query]: https://www.ibm.com/watson/developercloud/discovery/api/v1/?curl#query-collection
+[api-query]: https://cloud.ibm.com/apidocs/discovery#queryusingget
 [node-client]: https://www.npmjs.com/package/watson-developer-cloud
